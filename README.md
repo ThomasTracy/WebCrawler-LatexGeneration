@@ -10,7 +10,7 @@ Crawling and dowloading images from [Baidu image](image.baidu.com) (Google's cop
 **GraphicCrawler**  
 Crawling and downloading diagrams from [Mathwork](https://www.mathworks.com/help/matlab/graphics.html). Due to different html structure will here not only Multiprocessing but also Asycio be used to make the downloading faster.  All diagramms will be saved to folder Graphics.  
 **EquationCrawler**  
-When we retrieve some mathematical concepts on Wikipedia, many mathematical formulas are often included in the search results. This crawler will parse randomly on Wikipedia and download all the equations until the desired quantity is reached. It is worth nothing that all equations on html skript of Wikipedia are written in latex form, which means we can directly use in latter latex-generation. Equations will be saved in txt equations.  
+When we retrieve some mathematical concepts on Wikipedia, many mathematical formulas are often included in the search results. This crawler will parse randomly on Wikipedia and download all the equations until the desired quantity is reached. It is worth nothing that all equations on html skript of Wikipedia are written in latex form, which means we can directly use in latter latex-generation. Equations will be saved in txt Equation.  
 **PDFPaser**  
 The normal text and paragraphs we dont need to download from internet. Instead we can directly cut from real thesis. Paragraphs will be saved in txt Text  
 ## Latex Generation  
