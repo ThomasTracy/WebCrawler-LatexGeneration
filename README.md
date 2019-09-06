@@ -19,3 +19,7 @@ The generated PDF pages should be devided into two styles. The one called `good 
 All text data need to be washed before write into latex. For example all special characters such as α, β need to be transformed in to latex form(/Alpha, /Beta...). Moreover datawanshing make paragraphs seemed more beautiful.  
 **PDFGenerator**  
 Finally all data will be randomly filled in a latex file. Toatally will 50000 `good page` and 50000 `bad paged` be generated
+
+
+![](https://github.com/ThomasTracy/WebCrawler-LatexGeneration/blob/master/good_page.jpg "good page")
+![](https://github.com/ThomasTracy/WebCrawler-LatexGeneration/blob/master/bad_page.jpg "bad page")
