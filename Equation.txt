@@ -1,0 +1,1627 @@
+\displaystyle \varphi (n)=n\prod _{p\mid n}\left(1-{\frac {1}{p}}\right),
+\displaystyle \varphi (p^{k})=p^{k-1}(p-1)=p^{k}\left(1-{\frac {1}{p}}\right).
+\displaystyle n={p_{1}}^{k_{1}}\cdots {p_{r}}^{k_{r}},
+\displaystyle {\begin{aligned}\varphi (n)&=\varphi \left(p_{1}^{k_{1}}\right)\varphi \left(p_{2}^{k_{2}}\right)\cdots \varphi \left(p_{r}^{k_{r}}\right)\\&=p_{1}^{k_{1}}\left(1-{\frac {1}{p_{1}}}\right)p_{2}^{k_{2}}\left(1-{\frac {1}{p_{2}}}\right)\cdots p_{r}^{k_{r}}\left(1-{\frac {1}{p_{r}}}\right)\\&=p_{1}^{k_{1}}p_{2}^{k_{2}}\cdots p_{r}^{k_{r}}\left(1-{\frac {1}{p_{1}}}\right)\left(1-{\frac {1}{p_{2}}}\right)\cdots \left(1-{\frac {1}{p_{r}}}\right)\\&=n\left(1-{\frac {1}{p_{1}}}\right)\left(1-{\frac {1}{p_{2}}}\right)\cdots \left(1-{\frac {1}{p_{r}}}\right).\end{aligned}}
+\displaystyle \varphi (36)=\varphi \left(2^{2}3^{2}\right)=36\left(1-{\tfrac {1}{2}}\right)\left(1-{\tfrac {1}{3}}\right)=36\cdot {\tfrac {1}{2}}\cdot {\tfrac {2}{3}}=12.
+\displaystyle {\mathcal {F}}\{\mathbf {x} \}[m]=\sum \limits _{k=1}^{n}x_{k}\cdot e^{{-2\pi i}{\frac {mk}{n}}}
+\displaystyle \varphi (n)={\mathcal {F}}\{\mathbf {x} \}[1]=\sum \limits _{k=1}^{n}\gcd(k,n)e^{-2\pi i{\frac {k}{n}}}.
+\displaystyle \varphi (n)=\sum \limits _{k=1}^{n}\gcd(k,n)\cos {2\pi {\frac {k}{n}}}.
+\displaystyle \sum _{d\mid n}\varphi (d)=n,
+\displaystyle {\tfrac {1}{20}},\,{\tfrac {2}{20}},\,{\tfrac {3}{20}},\,{\tfrac {4}{20}},\,{\tfrac {5}{20}},\,{\tfrac {6}{20}},\,{\tfrac {7}{20}},\,{\tfrac {8}{20}},\,{\tfrac {9}{20}},\,{\tfrac {10}{20}},\,{\tfrac {11}{20}},\,{\tfrac {12}{20}},\,{\tfrac {13}{20}},\,{\tfrac {14}{20}},\,{\tfrac {15}{20}},\,{\tfrac {16}{20}},\,{\tfrac {17}{20}},\,{\tfrac {18}{20}},\,{\tfrac {19}{20}},\,{\tfrac {20}{20}}
+\displaystyle {\tfrac {1}{20}},\,{\tfrac {1}{10}},\,{\tfrac {3}{20}},\,{\tfrac {1}{5}},\,{\tfrac {1}{4}},\,{\tfrac {3}{10}},\,{\tfrac {7}{20}},\,{\tfrac {2}{5}},\,{\tfrac {9}{20}},\,{\tfrac {1}{2}},\,{\tfrac {11}{20}},\,{\tfrac {3}{5}},\,{\tfrac {13}{20}},\,{\tfrac {7}{10}},\,{\tfrac {3}{4}},\,{\tfrac {4}{5}},\,{\tfrac {17}{20}},\,{\tfrac {9}{10}},\,{\tfrac {19}{20}},\,{\tfrac {1}{1}}
+\displaystyle \varphi (n)=\sum _{d\mid n}\mu \left(d\right)\cdot {\frac {n}{d}}=n\sum _{d\mid n}{\frac {\mu (d)}{d}},
+\displaystyle \prod _{p\mid n}\left(1-{\frac {1}{p}}\right)
+\displaystyle \sum _{d\mid n}{\frac {\mu (d)}{d}}.
+\displaystyle a^{\varphi (n)}\equiv 1\mod n.
+\displaystyle a\mid b\implies \varphi (a)\mid \varphi (b)
+\displaystyle n\mid \varphi (a^{n}-1)\quad {\text{for }}a,n>1
+\displaystyle \varphi (mn)=\varphi (m)\varphi (n)\cdot {\frac {d}{\varphi (d)}}\quad {\text{where }}d=\operatorname {gcd} (m,n)
+\displaystyle \varphi (2m)={\begin{cases}2\varphi (m)&{\text{ if }}m{\text{ is even}}\\\varphi (m)&{\text{ if }}m{\text{ is odd}}\end{cases}}
+\displaystyle \varphi \left(n^{m}\right)=n^{m-1}\varphi (n)
+\displaystyle \varphi (\operatorname {lcm} (m,n))\cdot \varphi (\operatorname {gcd} (m,n))=\varphi (m)\cdot \varphi (n)
+\displaystyle \operatorname {lcm} (m,n)\cdot \operatorname {gcd} (m,n)=m\cdot n
+\displaystyle {\frac {\varphi (n)}{n}}={\frac {\varphi (\operatorname {rad} (n))}{\operatorname {rad} (n)}}
+\displaystyle \sum _{d\mid n}{\frac {\mu ^{2}(d)}{\varphi (d)}}={\frac {n}{\varphi (n)}}
+\displaystyle \sum _{1\leq k\leq n \atop (k,n)=1}\!\!k={\tfrac {1}{2}}n\varphi (n)\quad {\text{for }}n>1
+\displaystyle \sum _{k=1}^{n}\varphi (k)={\tfrac {1}{2}}\left(1+\sum _{k=1}^{n}\mu (k)\left\lfloor {\frac {n}{k}}\right\rfloor ^{2}\right)={\frac {3}{\pi ^{2}}}n^{2}+O\left(n(\log n)^{\frac {2}{3}}(\log \log n)^{\frac {4}{3}}\right)
+\displaystyle \sum _{k=1}^{n}{\frac {\varphi (k)}{k}}=\sum _{k=1}^{n}{\frac {\mu (k)}{k}}\left\lfloor {\frac {n}{k}}\right\rfloor ={\frac {6}{\pi ^{2}}}n+O\left((\log n)^{\frac {2}{3}}(\log \log n)^{\frac {4}{3}}\right)
+\displaystyle \sum _{k=1}^{n}{\frac {k}{\varphi (k)}}={\frac {315\,\zeta (3)}{2\pi ^{4}}}n-{\frac {\log n}{2}}+O\left((\log n)^{\frac {2}{3}}\right)
+\displaystyle \sum _{k=1}^{n}{\frac {1}{\varphi (k)}}={\frac {315\,\zeta (3)}{2\pi ^{4}}}\left(\log n+\gamma -\sum _{p{\text{ prime}}}{\frac {\log p}{p^{2}-p+1}}\right)+O\left({\frac {(\log n)^{\frac {2}{3}}}{n}}\right)
+\displaystyle \sum _{\stackrel {1\leq k\leq n}{\operatorname {gcd} (k,m)=1}}\!\!\!\!1=n{\frac {\varphi (m)}{m}}+O\left(2^{\omega (m)}\right)
+\displaystyle \sum _{\stackrel {1\leq k\leq n}{\gcd(k,n)=1}}\!\!\!\!\gcd(k-1,n)=\varphi (n)d(n),
+\displaystyle \phi =-\sum _{k=1}^{\infty }{\frac {\varphi (k)}{k}}\log \left(1-{\frac {1}{\phi ^{k}}}\right)
+\displaystyle {\frac {1}{\phi }}=-\sum _{k=1}^{\infty }{\frac {\mu (k)}{k}}\log \left(1-{\frac {1}{\phi ^{k}}}\right).
+\displaystyle \sum _{k=1}^{\infty }{\frac {\mu (k)-\varphi (k)}{k}}\log \left(1-{\frac {1}{\phi ^{k}}}\right)=1.
+\displaystyle e=\prod _{k=1}^{\infty }\left(1-{\frac {1}{\phi ^{k}}}\right)^{\frac {\mu (k)-\varphi (k)}{k}}.
+\displaystyle {\begin{aligned}\sum _{k=1}^{\infty }{\frac {\varphi (k)}{k}}\left(-\log \left(1-x^{k}\right)\right)&={\frac {x}{1-x}}\\{\text{and}}\;\sum _{k=1}^{\infty }{\frac {\mu (k)}{k}}\left(-\log \left(1-x^{k}\right)\right)&=x,\qquad \quad {\text{for }}0<x<1.\end{aligned}}
+\displaystyle \sum _{n=1}^{\infty }{\frac {\varphi (n)}{n^{s}}}={\frac {\zeta (s-1)}{\zeta (s)}}.
+\displaystyle \sum _{n=1}^{\infty }{\frac {\varphi (n)q^{n}}{1-q^{n}}}={\frac {q}{(1-q)^{2}}}
+\displaystyle \lim \sup {\frac {\varphi (n)}{n}}=1,
+\displaystyle {\frac {\varphi (n)}{n^{1-\delta }}}\rightarrow \infty .
+\displaystyle {\frac {6}{\pi ^{2}}}<{\frac {\varphi (n)\sigma (n)}{n^{2}}}<1,
+\displaystyle \lim \inf {\frac {\varphi (n)}{n}}\log \log n=e^{-\gamma }.
+\displaystyle \lim \inf {\frac {\varphi (n)}{n}}=0.
+\displaystyle \varphi (n)>{\frac {n}{e^{\gamma }\;\log \log n+{\frac {3}{\log \log n}}}}\quad {\text{for }}n>2
+\displaystyle \varphi (n)<{\frac {n}{e^{\gamma }\log \log n}}\quad {\text{for infinitely many }}n.
+\displaystyle \varphi (1)+\varphi (2)+\cdots +\varphi (n)={\frac {3n^{2}}{\pi ^{2}}}+O\left(n(\log n)^{\frac {2}{3}}(\log \log n)^{\frac {4}{3}}\right)\quad {\text{as }}n\rightarrow \infty ,
+\displaystyle {\begin{aligned}\lim \inf {\frac {\varphi (n+1)}{\varphi (n)}}&=0\quad {\text{and}}\\[5px]\lim \sup {\frac {\varphi (n+1)}{\varphi (n)}}&=\infty .\end{aligned}}
+\displaystyle \left\{{\frac {\varphi (n+1)}{\varphi (n)}},\;\;n=1,2,\cdots \right\}
+\displaystyle \left\{{\frac {\varphi (n)}{n}},\;\;n=1,2,\cdots \right\}
+\displaystyle {\frac {x}{\log x}}e^{{\big (}C+o(1){\big )}(\log \log \log x)^{2}}
+\displaystyle {\Big \vert }\{n:\phi (n)\leq x\}{\Big \vert }={\frac {\zeta (2)\zeta (3)}{\zeta (6)}}\cdot x+R(x)
+\displaystyle \phi (n)
+\displaystyle J_{k}(n)
+\displaystyle \lambda (n)
+\displaystyle (\mathbb {Z} /8\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{2},
+\displaystyle (f*g)(t)=\sum _{s\in G}f(s)g(t-s)
+\displaystyle \chi _{\operatorname {sq} }
+\displaystyle \gamma _{f_{a}}={\frac {(a-1)\zeta (a)-1}{a-1}}
+\displaystyle 0<a_{1}<a_{2}\cdots <a_{\phi (n)}<n,
+\displaystyle \pi _{4,1}(x)\sim \pi _{4,3}(x),
+\displaystyle \sum _{d|n}\mu (d)=i(n),
+\displaystyle I=I_{1}\cap I_{2}\cap \cdots \cap I_{k}=I_{1}I_{2}\cdots I_{k}.
+\displaystyle {\frac {\pi ^{2}}{6}}
+\displaystyle \lim _{\varepsilon \to 0}{\frac {\zeta (1+\varepsilon )+\zeta (1-\varepsilon )}{2}}
+\displaystyle ax_{j}\equiv ax_{k}{\pmod {n}}
+\displaystyle \textstyle \sum _{n=1}^{\infty }a_{n}n^{-s_{0}}
+\displaystyle \prod _{p}f(p)\;
+\displaystyle C^{\operatorname {op} }\to \mathbf {Rings} {\stackrel {\textrm {forgetful}}{\longrightarrow }}\mathbf {Sets} 
+\displaystyle \displaystyle A\;\subseteq \;\{\lim _{n}a_{n}:\,\forall n\;\geq \;0,\,\ a_{n}\in A\}
+\displaystyle \mathbf {x} =\mathbf {y} 
+\displaystyle q^{n}=\sum _{d\mid n}dN_{d},
+\displaystyle \left(\sum _{n=0}^{\infty }a_{n}x^{n}\right)\left(\sum _{n=0}^{\infty }b_{n}x^{n}\right)=\sum _{i=0}^{\infty }\sum _{j=0}^{\infty }a_{i}b_{j}x^{i+j}=\sum _{n=0}^{\infty }\left(\sum _{i=0}^{n}a_{i}b_{n-i}\right)x^{n}=\sum _{n=0}^{\infty }c_{n}x^{n}.
+\displaystyle f(n)=n+{\sqrt {(n^{2}+1)}},n\in \mathbb {N} ,n>0
+\displaystyle R/I\otimes _{R}R/J\cong R/(I+J)
+\displaystyle \operatorname {Re} (s)<\sigma 
+\displaystyle a^{(N-1)/2}\equiv -1{\pmod {N}}
+\displaystyle |\lambda (n)|\mu (n)=\lambda (n)|\mu (n)|=\mu (n),
+\displaystyle {\begin{aligned}Q(X)&=\prod _{i=1}^{k}(X-x_{i})\\[6pt]Q_{i}(X)&={\frac {Q(X)}{X-x_{i}}}.\end{aligned}}
+\displaystyle {\begin{aligned}\sum _{1\leq n\leq x}\mu (n)g\left({\frac {x}{n}}\right)&=\sum _{1\leq n\leq x}\mu (n)\sum _{1\leq m\leq {\frac {x}{n}}}f\left({\frac {x}{mn}}\right)\\&=\sum _{1\leq n\leq x}\mu (n)\sum _{1\leq m\leq {\frac {x}{n}}}\sum _{1\leq r\leq x}[r=mn]f\left({\frac {x}{r}}\right)\\&=\sum _{1\leq r\leq x}f\left({\frac {x}{r}}\right)\sum _{1\leq n\leq x}\mu (n)\sum _{1\leq m\leq {\frac {x}{n}}}\left[m={\frac {r}{n}}\right]\qquad {\text{rearranging the summation order}}\\&=\sum _{1\leq r\leq x}f\left({\frac {x}{r}}\right)\sum _{n|r}\mu (n)\\&=\sum _{1\leq r\leq x}f\left({\frac {x}{r}}\right)i(r)\\&=f(x)\qquad {\text{since }}i(r)=0{\text{ except when }}r=1\end{aligned}}
+\displaystyle \gamma =\lim _{n\to \infty }{\frac {1}{n}}\,\sum _{k=1}^{n}\left(\left\lceil {\frac {n}{k}}\right\rceil -{\frac {n}{k}}\right)
+\displaystyle f(x)=\Omega (g(x))
+\displaystyle R[t]=\left\{a_{n}t^{n}+a_{n-1}t^{n-1}+\dots +a_{1}t+a_{0}\mid n\geq 0,a_{j}\in R\right\}
+\displaystyle A_{t}(n):=\sum _{\begin{matrix}0\leq k\leq m\leq t\\0\leq r\leq t\end{matrix}}\sum _{d|n}\left[{\begin{matrix}t\\m\end{matrix}}\right]\left\{{\begin{matrix}m\\k\end{matrix}}\right\}{\binom {t-k}{r}}{\binom {{\frac {n}{d}}-1-r+k}{k}}(-1)^{t-k-r}k!d^{m}\cdot a_{d}\cdot \left[t\leq d\leq \left\lfloor {\frac {n}{r+1}}\right\rfloor \right]_{\delta },
+\displaystyle F_{a}(s):=\sum _{n=1}^{\infty }{\frac {a(n)}{n^{s}}}.
+\displaystyle \operatorname {Id} _{k}(n)=n^{k}
+\displaystyle u_{k}^{T}u_{k'}^{*}=\sum _{n=0}^{N-1}\left(e^{{\frac {i2\pi }{N}}kn}\right)\left(e^{{\frac {i2\pi }{N}}(-k')n}\right)=\sum _{n=0}^{N-1}e^{{\frac {i2\pi }{N}}(k-k')n}=N~\delta _{kk'}
+\displaystyle \mathrm {E} (\mathrm {2} )=\sum _{d=1}^{\infty }d{\frac {6}{\pi ^{2}d^{2}}}={\frac {6}{\pi ^{2}}}\sum _{d=1}^{\infty }{\frac {1}{d}}.
+\displaystyle c^{d}\equiv (m^{e})^{d}\equiv m{\pmod {n}}
+\displaystyle a\,\mathrm {mod} \,b=a-b\left\lfloor {a \over b}\right\rfloor 
+\displaystyle \lambda (n)=\phi (n){\text{ if and only if }}n={\begin{cases}1,2,4;\\3,5,7,9,11,\ldots {\text{ i.e. }}p^{k}{\text{ where }}p{\text{ is an odd prime}};\\6,10,14,18,\ldots {\text{ i.e. }}2p^{k}{\text{ where }}p{\text{ is an odd prime}}.\end{cases}}
+\displaystyle \ln n
+\displaystyle \sum _{n=1}^{\infty }q^{n}\sigma _{0}(n)=\sum _{n=1}^{\infty }{\frac {q^{n}}{1-q^{n}}}
+\displaystyle X_{\mathbf {k} }
+\displaystyle {\begin{aligned}\sum _{n=1}^{N}a_{n}n^{-s}&=A(N)N^{-s}+\sum _{n=1}^{N-1}A(n)(n^{-s}-(n+1)^{-s})\\&=(A(N)-L)N^{-s}+\sum _{n=1}^{N-1}(A(n)-L)(n^{-s}-(n+1)^{-s})\\&={\mathcal {O}}(N^{\sigma +\varepsilon -s})+\sum _{n=1}^{N-1}{\mathcal {O}}(n^{\sigma +\varepsilon -s-1})\end{aligned}}
+\displaystyle p(n)=|\left\{(a_{1},a_{2},\dots a_{k}):0<a_{1}\leq a_{2}\leq \cdots \leq a_{k}\;\land \;n=a_{1}+a_{2}+\cdots +a_{k}\right\}|.
+\displaystyle F(m)=\sin \left({\frac {2\pi }{N}}m\right)\prod _{s=K+1}^{L-1}\left[\cos \left({\frac {2\pi }{N}}m\right)-\cos \left({\frac {2\pi }{N}}s\right)\right]
+\displaystyle q^{s}\cdot D^{(s)}\left[{\frac {q^{i}}{1-q^{i}}}\right]=\sum _{m=0}^{s}\sum _{k=0}^{m}\left[{\begin{matrix}s\\m\end{matrix}}\right]\left\{{\begin{matrix}m\\k\end{matrix}}\right\}{\frac {(-1)^{s-k}k!i^{m}}{(1-q^{i})^{k+1}}}
+\displaystyle f(n,m)=O(g(n,m))
+\displaystyle R\to S
+\displaystyle 973\cdot 2^{16}+1
+\displaystyle (1-{\frac {1}{1}})
+\displaystyle {\mathcal {F}}^{-1}(\mathbf {x} )={\textrm {swap}}({\mathcal {F}}({\textrm {swap}}(\mathbf {x} )))/N
+\displaystyle {\frac {a^{2^{n}}+1}{2}}
+\displaystyle \phi :R\to S
+\displaystyle g^{0},g^{1},g^{2},\dots ,
+\displaystyle c\equiv m^{e}{\pmod {n}}
+\displaystyle {\mathcal {F}}(\{x_{N-n}\})_{k}=X_{N-k}
+\displaystyle Ne^{-0.69(\Delta \ln \Delta )^{1/3}}
+\displaystyle 2x^{2}=O(x^{2})
+\displaystyle \operatorname {Li} (x)=\int _{2}^{x}{\frac {dt}{\log t}}=\operatorname {li} (x)-\operatorname {li} (2).
+\displaystyle \mathrm {E} (k)=\sum _{d=1}^{\infty }d^{1-k}\zeta (k)^{-1}={\frac {\zeta (k-1)}{\zeta (k)}}.
+\displaystyle R[t]\to S,\quad f\mapsto f(x)
+\displaystyle 2^{2}\cdot 3\cdot 5
+\displaystyle a\mid b\implies \varphi (a)\mid \varphi (b)
+\displaystyle {\begin{aligned}|6x^{4}-2x^{3}+5|&\leq 6x^{4}+|2x^{3}|+5\\&\leq 6x^{4}+2x^{4}+5x^{4}\\&=13x^{4}\end{aligned}}
+\displaystyle J_{k}(n)=n^{k}\prod _{p\mid n}\left(1-{\frac {1}{p^{k}}}\right)=n^{k}\left({\frac {p_{1}^{k}-1}{p_{1}^{k}}}\right)\left({\frac {p_{2}^{k}-1}{p_{2}^{k}}}\right)\cdots \left({\frac {p_{\omega (n)}^{k}-1}{p_{\omega (n)}^{k}}}\right).
+\displaystyle n=p_{1}^{r_{1}}p_{2}^{r_{2}}\dots p_{k}^{r_{k}}
+\displaystyle z^{a}=z^{b+kn}=z^{b}z^{kn}=z^{b}(z^{n})^{k}=z^{b}1^{k}=z^{b}.
+\displaystyle Q_{m}=N|x_{m}|^{2}~.
+\displaystyle {\mathfrak {D}}_{w}^{A\uplus B}(s)={\mathfrak {D}}_{w}^{A}(s)+{\mathfrak {D}}_{w}^{B}(s).
+\displaystyle 2\cdot 6\cdot 30
+\displaystyle \textstyle A(N)-L={\mathcal {O}}(N^{\sigma +\varepsilon })
+\displaystyle \operatorname {ord} (ab)=\operatorname {ord} (ba)
+\displaystyle {\mathcal {F}}\colon \mathbb {C} ^{N}\to \mathbb {C} ^{N}
+\displaystyle {\mathcal {F}}\left\{\mathbf {x\cdot y} \right\}_{k}\ {\stackrel {\mathrm {def} }{=}}\sum _{n=0}^{N-1}x_{n}\cdot y_{n}\cdot e^{-i{\frac {2\pi }{N}}kn}
+\displaystyle F_{n}=F_{n-1}+2^{2^{n-1}}F_{0}\cdots F_{n-2}
+\displaystyle X_{k_{1},k_{2}}
+\displaystyle O\left({X^{1/2}(\log X)^{3/4}}\right)
+\displaystyle \mu \colon X\wedge X\to X
+\displaystyle D_{h}(s)=\sum _{f{\text{ monic}}}h(f)|f|^{-s},
+\displaystyle H(\mathbf {x} )={\mathcal {F}}((1+i)\mathbf {x} ^{*})/{\sqrt {2N}}
+\displaystyle \sigma _{\alpha }(n)=({\textrm {Id}}_{\alpha }*1)(n)=\sum _{d\mid n}d^{\alpha }\,
+\displaystyle 119\cdot 2^{13}+1
+\displaystyle N=p'_{1}\cdot p'_{2}\cdots p'_{m}
+\displaystyle f(x)=\Omega _{R}(g(x))\ (x\rightarrow \infty )\;\Leftrightarrow \;\limsup _{x\to \infty }{\frac {f(x)}{g(x)}}>0
+\displaystyle V=\{e,(12)(34),(13)(24),(14)(23)\}
+\displaystyle {\frac {\zeta (s)}{\zeta (2s)}}=\sum _{n=1}^{\infty }{\frac {|\mu (n)|}{n^{s}}}\equiv \sum _{n=1}^{\infty }{\frac {\mu ^{2}(n)}{n^{s}}}.
+\displaystyle {\frac {1}{Q(X)}}
+\displaystyle e^{x}=\sum _{n=0}^{\infty }{x^{n} \over n!}=\lim _{n\to \infty }\left({\frac {1}{0!}}+{\frac {x}{1!}}+{\frac {x^{2}}{2!}}+\cdots +{\frac {x^{n}}{n!}}\right).
+\displaystyle \prod _{p^{k}\mid n}f(p^{k})\;
+\displaystyle \operatorname {End} _{R}(U)\simeq \bigoplus _{1}^{r}\operatorname {M} _{m_{i}}(\operatorname {End} _{R}(U_{i}))
+\displaystyle |\mu (n)|=\sum _{\delta \mid n}\mu \left({\frac {n}{\delta }}\right)2^{\omega (\delta )}.
+\displaystyle {\tfrac {1}{20}},\,{\tfrac {1}{10}},\,{\tfrac {3}{20}},\,{\tfrac {1}{5}},\,{\tfrac {1}{4}},\,{\tfrac {3}{10}},\,{\tfrac {7}{20}},\,{\tfrac {2}{5}},\,{\tfrac {9}{20}},\,{\tfrac {1}{2}},\,{\tfrac {11}{20}},\,{\tfrac {3}{5}},\,{\tfrac {13}{20}},\,{\tfrac {7}{10}},\,{\tfrac {3}{4}},\,{\tfrac {4}{5}},\,{\tfrac {17}{20}},\,{\tfrac {9}{10}},\,{\tfrac {19}{20}},\,{\tfrac {1}{1}}
+\displaystyle g(x)=x\left(1+\left\lfloor x^{-1}\right\rfloor \right)-1
+\displaystyle O((\log n)^{2})
+\displaystyle \gamma _{n}=\lim _{m\rightarrow \infty }{\left(\left(\sum _{k=1}^{m}{\frac {(\ln k)^{n}}{k}}\right)-{\frac {(\ln m)^{n+1}}{n+1}}\right)}.
+\displaystyle \displaystyle U=\bigoplus _{i=1}^{r}U_{i}^{\oplus m_{i}}
+\displaystyle \mathbb {C} \setminus \{1\}
+\displaystyle H_{n}=1+{\frac {1}{2}}+{\frac {1}{3}}+\cdots +{\frac {1}{n}}
+\displaystyle \operatorname {End} _{R}(R^{n})\simeq \operatorname {M} _{n}(R)
+\displaystyle g^{0},\dots ,g^{\phi (n)-1}
+\displaystyle \left({{\frac {1}{3}}+{\frac {1}{5}}}\right)+\left({{\frac {1}{5}}+{\frac {1}{7}}}\right)+\left({{\frac {1}{11}}+{\frac {1}{13}}}\right)+\cdots ,
+\displaystyle {\mathfrak {a}}_{i}
+\displaystyle \log \zeta (s)=-\sum _{p}\log \left(1-p^{-s}\right)=\sum _{p,n}{\frac {p^{-ns}}{n}}.
+\displaystyle {\tfrac {1+{\sqrt {5}}}{2}}\approx 
+\displaystyle \psi (x)=\sum _{n\leq x}\Lambda (n).\;
+\displaystyle \zeta (s)^{m}=\sum _{n=1}^{\infty }{\frac {a_{n}}{n^{s}}}
+\displaystyle {\begin{aligned}\gamma &=\sum _{k=2}^{\infty }(-1)^{k}{\frac {\left\lfloor \log _{2}k\right\rfloor }{k}}\\[5pt]&={\tfrac {1}{2}}-{\tfrac {1}{3}}+2\left({\tfrac {1}{4}}-{\tfrac {1}{5}}+{\tfrac {1}{6}}-{\tfrac {1}{7}}\right)+3\left({\tfrac {1}{8}}-{\tfrac {1}{9}}+{\tfrac {1}{10}}-{\tfrac {1}{11}}+\cdots -{\tfrac {1}{15}}\right)+\cdots ,\end{aligned}}
+\displaystyle x_{n+1}=x_{n}-{\frac {f(x_{n})}{f'(x_{n})}}=x_{n}-{\frac {1/x_{n}-b}{-1/x_{n}^{2}}}=2x_{n}-bx_{n}^{2}=x_{n}(2-bx_{n}).
+\displaystyle {\overline {\phi }}(t)=x
+\displaystyle \displaystyle f(x)=y.
+\displaystyle P(X)=\sum _{i=1}^{k}A_{i}{\frac {Q_{i}(X)}{Q_{i}(x_{i})}}.
+\displaystyle \sin x+1\not =\Omega _{-}(1)\ (x\rightarrow \infty ).
+\displaystyle x_{n}\in i\mathbb {R} \quad \forall n\in \{0,\ldots ,N-1\}\implies X_{k}=-X_{-k\mod N}^{*}\quad \forall k\in \{0,\ldots ,N-1\}
+\displaystyle \zeta ^{r}
+\displaystyle \scriptstyle 0<c<1
+\displaystyle {\begin{aligned}{\frac {x}{\log x-1}}&<\pi (x)&&{\text{for }}x\geq 5393,{\text{ and}}\\\pi (x)&<{\frac {x}{\log x-1.1}}&&{\text{for }}x\geq 60184.\end{aligned}}
+\displaystyle {\mathcal {F}}\left(\mathbf {x} \right)
+\displaystyle \ell =\sum _{n=1}^{\infty }a_{n}n^{-s_{0}}
+\displaystyle {\frac {1}{2(n+1)}}<\gamma _{n}(0)-\gamma <{\frac {1}{2n}},
+\displaystyle (\mathbb {Z} /p\mathbb {Z} )^{\times }
+\displaystyle \gcd(a,b)=\gcd(a-b,b)\quad ,
+\displaystyle \forall k>0\;\exists n_{0}\;\forall n>n_{0}\;|f(n)|<k\cdot g(n)
+\displaystyle g=\gcd(m,n)
+\displaystyle O\left(n\,(\log n)^{2}\log \log n\right).
+\displaystyle {\frac {r}{2}}\pm i{\sqrt {1-{\frac {r^{2}}{4}}}},
+\displaystyle 2\lambda \geq 2^{m}+1
+\displaystyle \sum _{\delta \mid n}d(\delta ^{2})=d^{2}(n).
+\displaystyle \varphi (n)={\mathcal {F}}\{\mathbf {x} \}[1]=\sum \limits _{k=1}^{n}\gcd(k,n)e^{-2\pi i{\frac {k}{n}}}.
+\displaystyle (g\circ f)^{-1}=f^{-1}\circ g^{-1}.
+\displaystyle N_{n}={\frac {q^{n}}{n}}+O\left({\frac {q^{\frac {n}{2}}}{n}}\right).
+\displaystyle \forall \|(n,m)\|_{\infty }\geq M:|g(n,m)|\leq C|n+m|,
+\displaystyle R_{k}\to R_{j}\to R_{i}
+\displaystyle \vartheta _{3}(q)
+\displaystyle x_{j}=\sum _{k}X_{k}\cdot z^{k\cdot j}=X_{1}z^{1\cdot j}+\cdots +X_{n}\cdot z^{n\cdot j}
+\displaystyle \lambda (n)\mid \phi (n).
+\displaystyle RxR
+\displaystyle \prod _{d|12}f(d)=f(1)f(2)f(3)f(4)f(6)f(12).\ 
+\displaystyle {\overline {2}}+{\overline {3}}={\overline {1}}
+\displaystyle S=\operatorname {End} _{R}(U)
+\displaystyle {\sqrt[{n}]{1}}
+\displaystyle x={\frac {avn+bum}{g}}.
+\displaystyle \Phi _{n}(z)=\prod _{k=1}^{\varphi (n)}(z-z_{k})
+\displaystyle {\text{If }}f(x)=y,{\text{ then }}g(y)=x.
+\displaystyle \mathbb {Q} (\omega ).
+\displaystyle \lim _{x\to \infty }{\frac {\psi (x)}{x}}=1.
+\displaystyle \gamma _{\alpha }=\lim _{n\to \infty }\left(\sum _{k=1}^{n}{\frac {1}{k^{\alpha }}}-\int _{1}^{n}{\frac {1}{x^{\alpha }}}\,dx\right),
+\displaystyle \mu (s,s)=1{\text{ for }}s\in P,\qquad \mu (s,u)=-\sum _{s\leq t<u}\mu (s,t),\quad {\text{ for }}s<u{\text{ in }}P.
+\displaystyle {\Bigg (}{\frac {a}{n}}{\Bigg )}=\left({\frac {a}{p_{1}}}\right)^{a_{1}}\left({\frac {a}{p_{2}}}\right)^{a_{2}}\cdots \left({\frac {a}{p_{\omega (n)}}}\right)^{a_{\omega (n)}}.
+\displaystyle \zeta (s)=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}},
+\displaystyle t^{th}
+\displaystyle \Phi (z,s,q)=\sum _{k=0}^{\infty }{\frac {z^{k}}{(k+q)^{s}}}
+\displaystyle \alpha >-n
+\displaystyle {\mathbb {Z} }
+\displaystyle F_{n}=F_{n-1}^{2}-2(F_{n-2}-1)^{2}
+\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n)
+\displaystyle X_{k_{1},k_{2},\dots ,k_{d}}=X_{N_{1}-k_{1},N_{2}-k_{2},\dots ,N_{d}-k_{d}}^{*},
+\displaystyle m=2790^{413}{\bmod {3}}233=65
+\displaystyle {\begin{aligned}\zeta \left(s\right)&=\sum _{n=1}^{\infty }n^{-s}\sum _{w=0}^{v-1}{\frac {\left({\frac {n}{N}}\right)^{w}}{w!}}e^{-{\frac {n}{N}}}-{\frac {\Gamma \left(1-s+v\right)}{\left(1-s\right)\Gamma \left(v\right)}}N^{1-s}+\sum _{\mu =\pm 1}E_{\mu }\left(s\right)\\E_{\mu }\left(s\right)&=\left(2\pi \right)^{s-1}\Gamma \left(1-s\right)e^{i\mu {\frac {\pi }{2}}\left(1-s\right)}\sum _{m=1}^{\infty }\left[m^{s-1}-\sum _{w=0}^{v-1}{\binom {s-1}{w}}\left(m+{\frac {i\mu }{2\pi N}}\right)^{s-1-w}\left({\frac {-i\mu }{2\pi N}}\right)^{w}\right]\end{aligned}}
+\displaystyle \mathbb {Z} \to \mathbb {Q} 
+\displaystyle x=a_{1}m_{2}n_{2}+a_{2}m_{1}n_{1}.
+\displaystyle A_{4}=\{e,(12)(34),(13)(24),(14)(23),(123),(132),(124),(142),(134),(143),(234),(243)\}
+\displaystyle z^{a}=z^{b}
+\displaystyle \gcd(a,b)=af\left({\frac {b}{a}}\right),
+\displaystyle \sum _{p}f(p)\;
+\displaystyle \log \zeta (s)=\sum _{n=2}^{\infty }{\frac {\Lambda (n)}{\log(n)}}\,{\frac {1}{n^{s}}}
+\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}
+\displaystyle a={\frac {n}{\gcd(k,n)}},
+\displaystyle s_{n,k}^{(-1)}=\sum _{d|n}p(d-k)\mu \left({\frac {n}{d}}\right)
+\displaystyle n_{1}>n_{2}>\cdots >n_{k}.
+\displaystyle 5\cdot 2^{7}+1
+\displaystyle f(x)=\Omega _{+}(g(x))
+\displaystyle f(n)=\Theta (g(n))
+\displaystyle R\to R[S^{-1}]
+\displaystyle {\mathcal {F}}(\{x_{n-m}\})_{k}=X_{k}\cdot e^{-{\frac {i2\pi }{N}}km}
+\displaystyle \forall m\colon f(n,m)=O(n^{m}){\text{ as }}n\to \infty 
+\displaystyle f(n)=O\left(n^{n}\right)
+\displaystyle \sigma _{0}(n)=d(n)
+\displaystyle O((\log n)^{4+\varepsilon })
+\displaystyle D=\sum _{i=1}^{k}d_{i}.
+\displaystyle \mathrm {E} (\mathbb {Z} /n\mathbb {Z} )
+\displaystyle \operatorname {lcm} (m,n)=mn/g
+\displaystyle n\mathbb {Z} 
+\displaystyle t_{1},\ldots ,t_{n}
+\displaystyle \sum _{\delta \mid n}\varphi (\delta )=n.
+\displaystyle \varphi (n)=\sum \limits _{k=1}^{n}\gcd(k,n)\cos {2\pi {\frac {k}{n}}}.
+\displaystyle 1=e_{1}+\cdots +e_{n},\quad e_{i}\in {\mathfrak {a}}_{i}.
+\displaystyle \mathbf {x} 
+\displaystyle \varphi (\operatorname {lcm} (m,n))\cdot \varphi (\operatorname {gcd} (m,n))=\varphi (m)\cdot \varphi (n)
+\displaystyle F(m)={\frac {1}{\sqrt {N}}}\vartheta _{3}\left({\frac {\pi m}{N}},\exp \left(-{\frac {\pi }{N}}\right)\right)
+\displaystyle m(c)=c^{413}{\bmod {3}}233
+\displaystyle \prod _{k=0}^{n}(k+1)^{(-1)^{k+1}{n \choose k}}.
+\displaystyle \operatorname {Re} (s)>\sigma 
+\displaystyle \mathbf {k} /\mathbf {N} 
+\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times },
+\displaystyle N=4
+\displaystyle \operatorname {Re} (s)=0
+\displaystyle e^{\theta (x)}=\prod _{p\leq x}p.\;
+\displaystyle (\mathbb {Z} /2\mathbb {Z} )^{\times }\cong \mathrm {C} _{1}
+\displaystyle \cdot :R\times R\to R\,
+\displaystyle \sum _{n=1}^{\infty }{\bigl (}\zeta (2n)-1{\bigr )}={\frac {3}{4}}
+\displaystyle f(n,m)=n^{2}+m^{3}+g(n,m).
+\displaystyle \mu *g=\mu *({\mathit {1}}*f)=(\mu *{\mathit {1}})*f=\varepsilon *f=f
+\displaystyle a\equiv b{\pmod {n}}.
+\displaystyle N_{0}(T+H)-N_{0}(T)\geq c_{\varepsilon }H
+\displaystyle \sum _{n\geq 1}{\frac {a_{n}q^{n}}{1\pm q^{n}}}={\frac {1}{(\mp q;q)_{\infty }}}\sum _{n\geq 1}\left((s_{o}(n,k)\pm s_{e}(n,k))a_{k}\right)q^{n},
+\displaystyle z=e^{\frac {2\pi i}{n}}=\cos {\frac {2\pi }{n}}+i\sin {\frac {2\pi }{n}}
+\displaystyle (\log x)^{c}\leq \log Q_{L}(x)\leq (\log x)^{d}\ 
+\displaystyle {\begin{aligned}&{\partial \rho  \over \partial t}+\nabla \cdot (\rho \mathbf {u} )=0\\[1.2ex]&{\partial (\rho {\mathbf {u} }) \over \partial t}+\nabla \cdot (\mathbf {u} \otimes (\rho \mathbf {u} ))+\nabla p=\mathbf {0} \\[1.2ex]&{\partial E \over \partial t}+\nabla \cdot (\mathbf {u} (E+p))=0,\end{aligned}}
+\displaystyle f(x)=(2x+8)^{3}.
+\displaystyle m=\left\lceil N\right\rceil 
+\displaystyle 2^{3}\cdot 3\cdot 5\cdot 7
+\displaystyle r^{3}+r^{2}-2r-1,
+\displaystyle n={p_{1}}^{k_{1}}\cdots {p_{r}}^{k_{r}},
+\displaystyle \sum _{\stackrel {1\leq k\leq m}{\gcd(k,m)=1}}\gcd(k^{2}-1,m_{1})\gcd(k^{2}-1,m_{2})=\varphi (n)\sum _{\stackrel {d_{1}\mid m_{1}}{d_{2}\mid m_{2}}}\varphi (\gcd(d_{1},d_{2}))2^{\omega (\operatorname {lcm} (d_{1},d_{2}))},
+\displaystyle F(m)=\sum _{k\in \mathbb {Z} }\exp \left(-{\frac {\pi \cdot (m+N\cdot k)^{2}}{N}}\right)
+\displaystyle g(x)=\sum _{m=1}^{\infty }\alpha (m){\frac {f(mx)}{m^{s}}}\quad {\mbox{ for all }}x\geq 1\quad \Longleftrightarrow \quad f(x)=\sum _{m=1}^{\infty }\alpha ^{-1}(m){\frac {g(mx)}{m^{s}}}\quad {\mbox{ for all }}x\geq 1.
+\displaystyle \|{\vec {x}}\|_{\infty }
+\displaystyle \sum _{a=1}^{p-1}a^{p-1}\equiv (p-1)\cdot 1\equiv -1{\pmod {p}},
+\displaystyle {\frac {42}{56}}={\frac {3\cdot 14}{4\cdot 14}}={\frac {3}{4}}.
+\displaystyle c_{n}=\sum _{i=0}^{n}a_{i}b_{n-i}\;
+\displaystyle \mathbf {U} ^{4}=\mathbf {I} .
+\displaystyle \mathbf {c} =\mathbf {a} *\mathbf {b} 
+\displaystyle \gamma =\lim _{n\rightarrow \infty }\left(1+{\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{4}}+\cdots +{\frac {1}{n}}-\ln(n)\right).
+\displaystyle J(x)=\sum {\frac {\pi \left(x^{\frac {1}{n}}\right)}{n}}.
+\displaystyle \sum _{n=1}^{\infty }{\bigl (}\zeta (2n+1)-1{\bigr )}={\frac {1}{4}}
+\displaystyle \Re (s)>1+\alpha 
+\displaystyle \pi (x)=\operatorname {Li} (x)+O\left({\sqrt {x}}\log x\right).
+\displaystyle (a+b)(n)=a(n)+b(n)\ 
+\displaystyle \sum _{h=1}^{\infty }\left(\sum _{d|h}1*\varphi (d)\right){\frac {1}{h^{s}}}=\sum _{h=1}^{\infty }{\frac {h}{h^{s}}}
+\displaystyle s
+\displaystyle f^{-1}(\{y\})=\left\{x\in X:f(x)=y\right\}.
+\displaystyle \varphi =1/\varphi +1
+\displaystyle \Omega ,\Omega _{+},\Omega _{-}
+\displaystyle \left\{\mathbf {X_{k}} \right\}:=X_{0},X_{1},\ldots ,X_{N-1},
+\displaystyle \prod _{p}f(p)=f(2)f(3)f(5)\cdots .
+\displaystyle |A(n)-f(0)|<\varepsilon 
+\displaystyle Sym(\mathbb {Z} )
+\displaystyle \lim _{n\rightarrow \infty }\left(\gamma _{n+1}-\gamma _{n}\right)=0.
+\displaystyle \langle a\rangle =\{a^{k}:k\in \mathbb {Z} \}
+\displaystyle R/I_{i},
+\displaystyle R[t]\to S,\quad f\mapsto {\overline {f}}
+\displaystyle n=\prod _{p}p^{\nu _{p}(n)}.
+\displaystyle \mathbb {Z} [i]
+\displaystyle E_{-1}\left(s\right)
+\displaystyle \ln \zeta (s)=s\int _{0}^{\infty }{\frac {\pi (x)}{x(x^{s}-1)}}\,\mathrm {d} x,
+\displaystyle f_{1}=O(g_{1}){\text{ and }}f_{2}=O(g_{2})\,\Rightarrow f_{1}+f_{2}=O(max(g_{1},g_{2}))
+\displaystyle X_{k}=|X_{k}|e^{i\arg(X_{k})}=|X_{k}|\operatorname {cis} \arg(X_{k})
+\displaystyle {\frac {1}{24(n+1)^{2}}}<\gamma _{n}(1/2)-\gamma <{\frac {1}{24n^{2}}}.
+\displaystyle \operatorname {Re} (s)>0
+\displaystyle \varepsilon (n)={\begin{cases}1,&{\mbox{if }}n=1\\0,&{\mbox{if }}n>1\end{cases}}
+\displaystyle k(\!(G)\!)
+\displaystyle g(n)=\sum _{1\leq m\leq n}f\left(\left\lfloor {\frac {n}{m}}\right\rfloor \right)\quad {\mbox{ for all }}n\geq 1.
+\displaystyle F_{36}
+\displaystyle {\frac {1}{2}}(x_{n}+x_{N-n}^{*})
+\displaystyle k\times 2^{n+2}+1
+\displaystyle {\big |}\pi (x)-\operatorname {li} (x){\big |}<{\frac {{\sqrt {x}}\log x}{8\pi }}
+\displaystyle \omega _{N}
+\displaystyle \sum _{\stackrel {1\leq k\leq n}{\gcd(k,n)=1}}\!\!\!\!\gcd(k-1,n)=\varphi (n)d(n),
+\displaystyle \gamma =\lim _{n\to \infty }\left({\frac {1}{1}}+{\frac {1}{2}}+{\frac {1}{3}}+\ldots +{\frac {1}{n}}-\ln(n+\alpha )\right)\equiv \lim _{n\to \infty }\gamma _{n}(\alpha )
+\displaystyle 0\leq a_{i}<n_{i}
+\displaystyle p_{1},p_{2},\dots ,p_{n}
+\displaystyle F(s)=\sum _{n=1}^{\infty }{\frac {f(n)}{n^{s}}}
+\displaystyle a,b\in \mathbb {Z} ^{+}
+\displaystyle {\overline {x}}
+\displaystyle |\det(\mathbf {U} )|=1
+\displaystyle F(m)=\prod _{s=K+1}^{L}\left[\cos \left({\frac {2\pi }{N}}m\right)-\cos \left({\frac {2\pi }{N}}s\right)\right]
+\displaystyle \sum _{n=0}^{N-1}x_{n}y_{n}^{*}=\sum _{k=0}^{N-1}X_{k}Y_{k}^{*}
+\displaystyle {\frac {1}{z}}=z^{-1}=z^{n-1}={\bar {z}}.
+\displaystyle -\varphi =-1/\varphi -1
+\displaystyle 2^{3}\cdot 3^{3}\cdot 5\cdot 7\cdot 11
+\displaystyle {\overline {x}}\cdot {\overline {y}}
+\displaystyle [A][B]=[A\otimes _{k}B]
+\displaystyle O(n^{c}(\log n)^{k})
+\displaystyle {\frac {1}{1^{2}}}+{\frac {1}{2^{2}}}+{\frac {1}{3^{2}}}+\cdots +{\frac {1}{n^{2}}}
+\displaystyle \mathbf {c} ={\mathcal {F}}^{-1}({\mathcal {F}}(\mathbf {a} ){\mathcal {F}}(\mathbf {b} )).
+\displaystyle \operatorname {ord} (a)=\operatorname {ord} (\langle a\rangle ).
+\displaystyle \lceil \,\rceil 
+\displaystyle P_{i}(X).
+\displaystyle \mathbf {x} ={\begin{pmatrix}x_{0}\\x_{1}\\x_{2}\\x_{3}\end{pmatrix}}={\begin{pmatrix}1\\2-i\\-i\\-1+2i\end{pmatrix}}
+\displaystyle T(T(\mathbf {x} ))=\mathbf {x} 
+\displaystyle \mathbf {y_{N}} 
+\displaystyle 1x=x
+\displaystyle f_{1}=O(g_{1}){\text{ and }}f_{2}=O(g_{2})\,\Rightarrow f_{1}f_{2}=O(g_{1}g_{2})
+\displaystyle f(x)=o(g(x)){\text{ as }}x\to \infty 
+\displaystyle \mathbb {C} 
+\displaystyle 7\cdot 2^{14}+1
+\displaystyle \varphi (n)>{\frac {n}{e^{\gamma }\;\log \log n+{\frac {3}{\log \log n}}}}\quad {\text{for }}n>2
+\displaystyle \exp \left({\frac {2k\pi i}{n}}\right)=\cos {\frac {2k\pi }{n}}+i\sin {\frac {2k\pi }{n}},\quad \quad k=0,1,\dots ,n-1.
+\displaystyle X_{k}=\sum _{n=0}^{N-1}x_{n}e^{-{\frac {i2\pi }{N}}(k+b)(n+a)}\quad \quad k=0,\dots ,N-1.
+\displaystyle \sum _{i\in I}\alpha _{i}u_{i}=0
+\displaystyle {\overline {3}}+{\overline {3}}={\overline {2}}
+\displaystyle {\mathcal {F}}^{-1}\left\{\mathbf {X\cdot Y} \right\}_{n}\ =\sum _{l=0}^{N-1}x_{l}\cdot (y_{N})_{n-l}\ \ {\stackrel {\mathrm {def} }{=}}\ \ (\mathbf {x*y_{N}} )_{n}\ ,
+\displaystyle {\frac {\varepsilon {\sqrt {5}}-1}{4}}\pm i{\frac {\sqrt {10+2\varepsilon {\sqrt {5}}}}{4}},
+\displaystyle O(\log n)
+\displaystyle E_{1}\left(s\right)
+\displaystyle \mathrm {C} _{n}
+\displaystyle f_{n}={\begin{cases}\underbrace {\mu *\ldots *\mu } _{-n{\text{ factors}}}*\varphi &{\text{if }}n<0\\[8px]\varphi &{\text{if }}n=0\\[8px]\varphi *\underbrace {{\mathit {1}}*\ldots *{\mathit {1}}} _{n{\text{ factors}}}&{\text{if }}n>0\end{cases}}
+\displaystyle \vartheta (x)=\sum _{p\leq x}\log p,
+\displaystyle e^{\psi (x)}=\operatorname {lcm} [1,2,\dots ,\lfloor x\rfloor ].\;
+\displaystyle 2^{m}+1|2\lambda 
+\displaystyle \phi =-\sum _{k=1}^{\infty }{\frac {\varphi (k)}{k}}\log \left(1-{\frac {1}{\phi ^{k}}}\right)
+\displaystyle p-1\geq m(2^{m}+1)
+\displaystyle \operatorname {Li} (x)\sim {\frac {x}{\log x}}\sum _{k=0}^{\infty }{\frac {k!}{(\log x)^{k}}}={\frac {x}{\log x}}+{\frac {x}{(\log x)^{2}}}+{\frac {2x}{(\log x)^{3}}}+\cdots 
+\displaystyle (n+O(n^{1/2}))(n+O(\log n))^{2}=n^{3}+O(n^{5/2})
+\displaystyle n^{-s}\cdot m^{-s}=(nm)^{-s}.
+\displaystyle \sum _{n\geq 1}\tau (n)q^{n}=q\prod _{n\geq 1}(1-q^{n})^{24}.
+\displaystyle \sigma \leq \sigma _{0}
+\displaystyle {\overline {3}}\cdot {\overline {3}}={\overline {1}}
+\displaystyle c_{f}=\lim _{n\to \infty }\left(\sum _{k=1}^{n}f(k)-\int _{1}^{n}f(x)\,dx\right)
+\displaystyle \zeta ^{(\alpha )}(s)=e^{i\pi \alpha }\sum _{n=2}^{\infty }{\frac {\log ^{\alpha }n}{n^{s}}}\ .
+\displaystyle 2\pi ^{-{\frac {s}{2}}}\Gamma \left({\frac {s}{2}}\right)\zeta (s)=\int _{0}^{\infty }{\bigl (}\theta (it)-1{\bigr )}t^{{\frac {s}{2}}-1}\,\mathrm {d} t,
+\displaystyle \theta (\tau )=\sum _{n=-\infty }^{\infty }e^{\pi in^{2}\tau }.
+\displaystyle x_{n_{1},n_{2},\dots ,n_{d}}
+\displaystyle q_{\text{inv}}\left[\left(m_{1}+\left\lceil {\frac {q}{p}}\right\rceil p\right)-m_{2}\right]{\pmod {p}}
+\displaystyle ab=(ab)^{-1}=b^{-1}a^{-1}=ba
+\displaystyle \zeta (s)=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=\prod _{p{\text{ prime}}}{\frac {1}{1-p^{-s}}}.
+\displaystyle F(x)=\sum _{1\leq n\leq x}\mu (n)G\left({\frac {x}{n}}\right)\quad {\mbox{ for all }}x\geq 1.
+\displaystyle factor={ln[100*(phi**K1)/[tau**(1+K1)]]^{2}},K1=0.55
+\displaystyle s_{n,k}^{(-1)}(\gamma )=\sum _{d|n}[q^{d-k}]{\frac {1}{C(q)}}\gamma \left({\frac {n}{d}}\right),
+\displaystyle {\frac {1}{Q(X)}}=\sum _{i=1}^{k}{\frac {S_{i}(X)}{P_{i}(X)}},
+\displaystyle \arg(X_{k})=\operatorname {atan2} {\big (}\operatorname {Im} (X_{k}),\operatorname {Re} (X_{k}){\big )}=-i\cdot \operatorname {ln} \left({\frac {X_{k}}{|X_{k}|}}\right),
+\displaystyle {\begin{aligned}X_{k}&=\sum _{n=0}^{N-1}x_{n}\cdot e^{-{\frac {i2\pi }{N}}kn}\\&=\sum _{n=0}^{N-1}x_{n}\cdot [\cos(2\pi kn/N)-i\cdot \sin(2\pi kn/N)],\end{aligned}}
+\displaystyle \mathbb {Z} /(n)
+\displaystyle 2^{p}-1
+\displaystyle \sum _{\delta \mid n}2^{\omega (\delta )}=d(n^{2}).
+\displaystyle \left(f^{-1}\right)^{-1}=f.
+\displaystyle n^{O(1)}=O(e^{n}).
+\displaystyle 5\cdot 2^{75}+1
+\displaystyle \lambda (\mathrm {lcm} (a,b))=\mathrm {lcm} (\lambda (a),\lambda (b))
+\displaystyle \limsup _{n\to \infty }{\frac {\log d(n)\log \log n}{\log n}}=\log 2
+\displaystyle e^{\gamma }=\lim _{n\to \infty }{\frac {1}{\ln p_{n}}}\prod _{i=1}^{n}{\frac {p_{i}}{p_{i}-1}}.
+\displaystyle -{\frac {\zeta '(s)}{\zeta (s)}}=\sum _{n=1}^{\infty }\Lambda (n)n^{-s}.
+\displaystyle 1071\cdot 2^{8}+1
+\displaystyle F={\frac {\pi ^{2}EI}{(KL)^{2}}}
+\displaystyle \varinjlim R_{i}
+\displaystyle L/K
+\displaystyle R[S^{-1}]=\varinjlim R[f^{-1}]
+\displaystyle g(n)=\sum _{d\,\mid \,n}f(d)\quad {\text{for every integer }}n\geq 1
+\displaystyle 1784180997819127957596374417642156545110881094717\cdot 2^{16}+1
+\displaystyle P(x_{i})=A_{i},
+\displaystyle f_{ij}
+\displaystyle \displaystyle h(y)=x
+\displaystyle O(n^{c+\varepsilon })
+\displaystyle k\in [0,N-1]
+\displaystyle \sum _{n=1}^{\infty }(\zeta (2n)-1)\,t^{2n}={\frac {t^{2}}{t^{2}-1}}+{\frac {1}{2}}\left(1-\pi t\cot(t\pi )\right)
+\displaystyle f,g:P\to K
+\displaystyle \zeta (s,q)=\sum _{k=0}^{\infty }{\frac {1}{(k+q)^{s}}}
+\displaystyle |g|=q^{\deg(g)}
+\displaystyle a_{1},a_{1}+n_{1},a_{1}+2n_{1},\ldots 
+\displaystyle {\begin{aligned}\zeta (s)&={\mathfrak {D}}_{\operatorname {id} }^{\mathbb {N} }(s)=\prod _{p{\text{ prime}}}{\mathfrak {D}}_{\operatorname {id} }^{\{p^{n}:n\in \mathbb {N} \}}(s)=\prod _{p{\text{ prime}}}\sum _{n\in \mathbb {N} }{\mathfrak {D}}_{\operatorname {id} }^{\{p^{n}\}}(s)\\&=\prod _{p{\text{ prime}}}\sum _{n\in \mathbb {N} }{\frac {1}{(p^{n})^{s}}}=\prod _{p{\text{ prime}}}\sum _{n\in \mathbb {N} }\left({\frac {1}{p^{s}}}\right)^{n}=\prod _{p{\text{ prime}}}{\frac {1}{1-p^{-s}}}\end{aligned}},
+\displaystyle \psi (x)=\sum _{p^{k}\leq x}\log p.
+\displaystyle \sum _{i=1}^{k}A_{i}(X)S_{i}(X)Q_{i}(X)=A_{i}(X)+\sum _{j=1}^{k}(A_{j}(X)-A_{i}(X))S_{j}(X)Q_{j}(X)\equiv A_{i}(X){\pmod {P_{i}(X)}},
+\displaystyle g(x)=h(x)+O(f(x))
+\displaystyle \varphi (n)<e^{-\gamma }{\frac {n}{\log \log n}}
+\displaystyle {\frac {r}{2}},
+\displaystyle \sum _{i\in I}\alpha _{i}f_{i}=0
+\displaystyle \lambda (n)=n/(\ln n)^{\ln \ln \ln n+A+o(1)}\,
+\displaystyle L=\sum _{n=1}^{\infty }a_{n}
+\displaystyle \forall k>0\;\exists n_{0}\;\forall n>n_{0}\ |f(n)|>k\cdot |g(n)|
+\displaystyle \zeta (s)\sum _{f=1}^{\infty }{\frac {\varphi (f)}{f^{s}}}=\sum _{g=1}^{\infty }{\frac {1}{g^{s}}}*\sum _{f=1}^{\infty }{\frac {\varphi (f)}{f^{s}}}
+\displaystyle R_{i}
+\displaystyle F(s)=\sum _{n=1}^{\infty }f(n)n^{-s}
+\displaystyle \|X\|_{0}
+\displaystyle {\begin{aligned}\ln {\frac {4}{\pi }}&=\int _{0}^{1}\int _{0}^{1}{\frac {x-1}{(1+xy)\ln xy}}\,dx\,dy\\&=\sum _{n=1}^{\infty }\left((-1)^{n-1}\left({\frac {1}{n}}-\ln {\frac {n+1}{n}}\right)\right).\end{aligned}}
+\displaystyle {\Big \vert }\{n:\phi (n)\leq x\}{\Big \vert }={\frac {\zeta (2)\zeta (3)}{\zeta (6)}}\cdot x+R(x)
+\displaystyle q\gamma (a,q)={\frac {q}{d}}\gamma \left({\frac {a}{d}},{\frac {q}{d}}\right)-\ln d.
+\displaystyle {\begin{aligned}\zeta ^{2}(s)&=\sum _{n=1}^{\infty }{\frac {d(n)}{n^{s}}}\\[6pt]{\frac {\zeta ^{3}(s)}{\zeta (2s)}}&=\sum _{n=1}^{\infty }{\frac {d(n^{2})}{n^{s}}}\\[6pt]{\frac {\zeta ^{4}(s)}{\zeta (2s)}}&=\sum _{n=1}^{\infty }{\frac {d(n)^{2}}{n^{s}}}.\end{aligned}}
+\displaystyle f:\mathbb {N} \rightarrow \mathbb {R} ^{+}
+\displaystyle 2^{4}\cdot 3^{2}\cdot 5\cdot 7\cdot 11\cdot 13
+\displaystyle {\begin{aligned}\phi :k[M]/K&\to \prod _{i\in I}k[M]/\mathrm {Ker} F_{i}\\\phi (x+K)&=\left(x+\mathrm {Ker} F_{i}\right)_{i\in I}\end{aligned}}
+\displaystyle a^{n}\,
+\displaystyle +:R\times R\to R\,
+\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }{\frac {1}{\ln F_{n}}}&={\frac {1}{\ln 2}}\sum _{n=0}^{\infty }{\frac {1}{\log _{2}\left(2^{2^{n}}+1\right)}}\\&<{\frac {1}{\ln 2}}\sum _{n=0}^{\infty }2^{-n}\\&={\frac {2}{\ln 2}}.\end{aligned}}
+\displaystyle e^{i\varphi }=\cos \varphi +i\sin \varphi .
+\displaystyle \varphi (n)=n\prod _{p\mid n}\left(1-{\frac {1}{p}}\right)=n\left({\frac {p_{1}-1}{p_{1}}}\right)\left({\frac {p_{2}-1}{p_{2}}}\right)\cdots \left({\frac {p_{\omega (n)}-1}{p_{\omega (n)}}}\right).
+\displaystyle 5\cdot 2^{39}+1
+\displaystyle \sum _{n=1}^{\infty }q^{n}\sigma _{\alpha }(n)=\sum _{n=1}^{\infty }{\frac {n^{\alpha }q^{n}}{1-q^{n}}}
+\displaystyle {\begin{aligned}34866&=2\cdot 3\cdot 3\cdot 13\cdot 149\\&=2\cdot 3^{2}\cdot 13\cdot 149\end{aligned}}
+\displaystyle 2^{4}\cdot 6\cdot 2310
+\displaystyle {\mathfrak {a}}_{1},\cdots ,{\mathfrak {a}}_{n}
+\displaystyle \sigma >1
+\displaystyle n_{0}
+\displaystyle 262814145745\cdot 2^{8}+1
+\displaystyle {\begin{aligned}\int _{0}^{1}g(x)x^{s-1}dx&=\sum _{n=1}^{\infty }\int _{\frac {1}{n+1}}^{\frac {1}{n}}(x(n+1)-1)x^{s-1}\,dx\\[6pt]&=\sum _{n=1}^{\infty }{\frac {n^{-s}(s-1)+(n+1)^{-s-1}(n^{2}+2n+1)+n^{-s-1}s-n^{1-s}}{(s+1)s(n+1)}}\\[6pt]&={\frac {\zeta (s)}{s+1}}-{\frac {1}{s(s+1)}}\end{aligned}}
+\displaystyle O((\log n)^{c})
+\displaystyle f(n,m)=n^{2}+m^{3}+O(n+m){\text{ as }}n,m\to \infty 
+\displaystyle (2^{r}+1)\mid (2^{rs}+1),
+\displaystyle \lambda (n_{i})>(\ln n_{i})^{c\ln \ln \ln n_{i}}
+\displaystyle \scriptstyle \varphi 
+\displaystyle [q^{n}]\left(\sum _{i\geq t}{\frac {a_{i}q^{mi}}{(1-q^{i})^{k+1}}}\right)=\sum _{\begin{matrix}d|n\\t\leq d\leq \left\lfloor {\frac {n}{m}}\right\rfloor \end{matrix}}{\binom {{\frac {n}{d}}-m+k}{k}}a_{d}.
+\displaystyle {\begin{aligned}\psi :k[M]&\to \prod _{i\in I}k\\\psi (x)&=\left[F_{i}(x)\right]_{i\in I}\end{aligned}}
+\displaystyle k_{\ell }=0,1,\dots ,N_{\ell }-1
+\displaystyle 3^{(F_{n}-1)/2}\equiv -1{\pmod {F_{n}}}.
+\displaystyle [A]
+\displaystyle 2^{4}\cdot 3^{3}\cdot 5\cdot 7
+\displaystyle \lim _{x\to \infty }{\frac {\;\pi (x)\;}{\;\left[{\frac {x}{\log(x)}}\right]\;}}=1,
+\displaystyle \mathbf {Z} _{4}=\{{\overline {0}},{\overline {1}},{\overline {2}},{\overline {3}}\}
+\displaystyle \mathbf {X} ={\begin{pmatrix}X_{0}\\X_{1}\\X_{2}\\X_{3}\end{pmatrix}}={\begin{pmatrix}2\\-2-2i\\-2i\\4+4i\end{pmatrix}}
+\displaystyle \ln \zeta (s)=s\int _{0}^{\infty }J(x)x^{-s-1}\,\mathrm {d} x.
+\displaystyle {\frac {d}{dx}}x^{-1}=(-1)x^{(-1)-1}=-x^{-2}=-{\frac {1}{x^{2}}}.
+\displaystyle d_{Q}=d{\pmod {q-1}}
+\displaystyle n=\prod _{(q-1)|m{\text{ and }}q{\text{ is prime}}}q
+\displaystyle 2\cdot 6^{2}\cdot 2310
+\displaystyle \pi ^{-{s \over 2}}\Gamma \left({s \over 2}\right)\zeta (s)=\int _{0}^{1}x^{{s \over 2}-1}\psi (x)\,dx+\int _{1}^{\infty }x^{{s \over 2}-1}\psi (x)\,dx
+\displaystyle (m^{d})^{e}\equiv m{\pmod {n}}
+\displaystyle \prod _{i\in I}R_{i}
+\displaystyle \operatorname {SP} (n)=\mu (n),
+\displaystyle {\mathfrak {D}}_{w}^{A\times B}(s)={\mathfrak {D}}_{u}^{A}(s)\cdot {\mathfrak {D}}_{v}^{B}(s).
+\displaystyle k_{1}\cdot g(n)\leq f(n)\leq k_{2}\cdot g(n)
+\displaystyle \zeta (2n)={\frac {(-1)^{n+1}B_{2n}(2\pi )^{2n}}{2(2n)!}}
+\displaystyle g_{f}(n):=(f\ast 1)(n),
+\displaystyle P_{i}(X)=X-x_{i}.
+\displaystyle F_{n}=2^{2^{n}}+1
+\displaystyle (m^{e})^{d}\equiv m{\pmod {n}}
+\displaystyle H(x)=-\sum _{m=0}^{N-1}Q_{m}\ln Q_{m}~,
+\displaystyle 2x^{2}\neq o(x^{2}).
+\displaystyle \sum _{n=1}^{\infty }{\frac {a_{n}}{n^{s}}},
+\displaystyle \varphi (p)=p-1
+\displaystyle 2\psi (x)+1={1 \over {\sqrt {x}}}\left\{2\psi \left({1 \over x}\right)+1\right\}
+\displaystyle {\begin{aligned}d_{p}={}&d{\bmod {(}}p-1)=413{\bmod {(}}61-1)=53\\d_{q}={}&d{\bmod {(}}q-1)=413{\bmod {(}}53-1)=49\\q_{\text{inv}}={}&q^{-1}{\bmod {p}}=53^{-1}{\bmod {6}}1=38\\\Rightarrow {}&(q_{\text{inv}}\times q){\bmod {p}}=38\times 53{\bmod {6}}1=1\end{aligned}}
+\displaystyle \sigma \geq 1-{\frac {1}{57.54(\log {|t|})^{\frac {2}{3}}(\log {\log {|t|}})^{\frac {1}{3}}}}.
+\displaystyle 5\cdot 2^{25}+1
+\displaystyle c=65^{17}{\bmod {3}}233=2790
+\displaystyle \lambda (n)=\operatorname {lcm} {\big (}\lambda (p_{1}^{r_{1}}),\,\lambda (p_{2}^{r_{2}}),\,\ldots ,\,\lambda (p_{k}^{r_{k}}){\big )}.
+\displaystyle \pi ^{-{s \over 2}}\Gamma \left({s \over 2}\right)\zeta (s)=\pi ^{-{1 \over 2}+{s \over 2}}\Gamma \left({1 \over 2}-{s \over 2}\right)\zeta (1-s)
+\displaystyle R^{\times }
+\displaystyle R[S^{-1}]
+\displaystyle \sum _{\stackrel {1\leq k_{1},k_{2},\dots ,k_{s}\leq n}{\gcd(k_{1},n)=1}}\gcd(k_{1}-1,k_{2},\dots ,k_{s},n)=\varphi (n)\sigma _{s-1}(n).
+\displaystyle T\geq T_{0}(\varepsilon )\quad {\text{ and }}\quad H=T^{{\frac {1}{4}}+\varepsilon },
+\displaystyle \sum _{n=2}^{\infty }{\frac {\zeta (n)-1}{n}}=1-\gamma 
+\displaystyle b_{m}=(a*1)(m)=\sum _{d\mid m}a_{d}\,
+\displaystyle f(n,m)=O(n^{m}){\text{ as }}n,m\to \infty 
+\displaystyle \sum _{n=1}^{\infty }(\zeta (2n+1)-1)\,t^{2n}={\frac {t^{2}}{t^{2}-1}}+{\frac {1}{2}}\left(\psi ^{0}(t)+\psi ^{0}(-t)\right)-\gamma 
+\displaystyle -{1 \over 12}
+\displaystyle \int _{0}^{\infty }f(x)x^{s}\,{\frac {\mathrm {d} x}{x}}
+\displaystyle \scriptstyle \mathbb {R} _{0}^{+}\;\equiv \;\left[0,\,+\infty \right)
+\displaystyle a^{x}\equiv a^{y}{\pmod {n}}
+\displaystyle \left\{{\begin{matrix}1&{\mbox{if }}k=0\\{\frac {\sin \left({\frac {\pi Wk}{N}}\right)}{W\sin \left({\frac {\pi k}{N}}\right)}}&{\mbox{otherwise}}\end{matrix}}\right.
+\displaystyle X_{\mathbf {k} }=\sum _{\mathbf {n} =\mathbf {0} }^{\mathbf {N} -1}e^{-i2\pi \mathbf {k} \cdot (\mathbf {n} /\mathbf {N} )}x_{\mathbf {n} }\,,
+\displaystyle \lambda (n)=\operatorname {lcm} {\big (}\lambda (p_{1}^{r_{1}}),\,\lambda (p_{2}^{r_{2}}),\,\ldots ,\,\lambda (p_{k}^{r_{k}}){\big )}
+\displaystyle g(n)=(f\ast 1)(n)
+\displaystyle \varphi \left(n^{m}\right)=n^{m-1}\varphi (n)
+\displaystyle n=p_{1}^{c_{1}}\times p_{2}^{c_{2}}\times \cdots \times p_{k}^{c_{k}}\qquad (1)
+\displaystyle N-1
+\displaystyle {\begin{aligned}x&=a_{1}m_{2}n_{2}+a_{2}m_{1}n_{1}\\&=a_{1}(1-m_{1}n_{1})+a_{2}m_{1}n_{1}\\&=a_{1}+(a_{2}-a_{1})m_{1}n_{1},\end{aligned}}
+\displaystyle R\times R{\stackrel {m}{\to }}R
+\displaystyle \sum _{0}^{\infty }a_{i}t^{i},\quad a_{i}\in R
+\displaystyle f\circ f^{-1}=\operatorname {id} _{Y}.
+\displaystyle \left(\cos {\frac {2\pi }{n}}+i\sin {\frac {2\pi }{n}}\right)^{n}=\cos 2\pi +i\sin 2\pi =1,
+\displaystyle \sum _{j\in \mathbb {Z} }\exp \left(-{\frac {\pi }{cN}}\cdot (n+N\cdot j)^{2}\right)
+\displaystyle \left({\frac {a}{2}}\right)={\begin{cases}\;\;\,0&{\text{ if }}a{\text{ is even}}\\(-1)^{\frac {a^{2}-1}{8}}&{\text{ if }}a{\text{ is odd. }}\end{cases}}
+\displaystyle \varphi (p^{k})=p^{k-1}(p-1)=p^{k}\left(1-{\frac {1}{p}}\right).
+\displaystyle 2^{5}\cdot 3^{3}\cdot 5\cdot 7\cdot 11
+\displaystyle 13\cdot 2^{20}+1
+\displaystyle p_{1}<p_{2}<\cdots <p_{k}
+\displaystyle \mathbb {Z} /(p-1)\mathbb {Z} 
+\displaystyle P(X)\equiv P_{i}(X){\pmod {(X-x_{i})^{r_{i}}}}.
+\displaystyle T(\mathbf {x} )={\mathcal {F}}(\mathbf {x} ^{*})/{\sqrt {N}}
+\displaystyle 37\cdot 2^{16}+1
+\displaystyle f(x)=\Omega _{L}(g(x))\ (x\rightarrow \infty )\;\Leftrightarrow \;\liminf _{x\to \infty }{\frac {f(x)}{g(x)}}<0.
+\displaystyle \lfloor x\rfloor 
+\displaystyle (a*b)(n)=\sum _{k\mid n}a(k)b(n/k)\ 
+\displaystyle 2/3\equiv 3{\bmod {7}}
+\displaystyle \lambda ^{n}(x)={\binom {x}{n}}
+\displaystyle \operatorname {Li} _{s}(z)=\sum _{k=1}^{\infty }{\frac {z^{k}}{k^{s}}}
+\displaystyle \sum _{\stackrel {1\leq k\leq n}{\operatorname {gcd} (k,m)=1}}\!\!\!\!1=n{\frac {\varphi (m)}{m}}+O\left(2^{\omega (m)}\right)
+\displaystyle \sigma (n)\leq H_{n}+e^{H_{n}}\log H_{n}
+\displaystyle \gamma =-\ln(a+1)-\sum _{n=1}^{\infty }{\frac {(-1)^{n}\psi _{n}(a)}{n}},\qquad \Re (a)>-1
+\displaystyle R{\stackrel {i}{\to }}R
+\displaystyle 52347\cdot 2^{7}+1
+\displaystyle O(n!)
+\displaystyle f\prec g\iff f\in o(g);
+\displaystyle T\geq T_{0}(\varepsilon )\quad {\text{ and }}\quad H=T^{{\frac {1}{2}}+\varepsilon }.
+\displaystyle {\overline {2}}\cdot {\overline {3}}={\overline {2}}
+\displaystyle |q|_{p}=p^{-\nu _{p}(q)}
+\displaystyle 2^{2}\cdot 6
+\displaystyle \delta \leq 0.05
+\displaystyle \scriptstyle g\,\circ \,f
+\displaystyle f\cdot O(g)=O(fg)
+\displaystyle {\frac {1}{z}}={\frac {\bar {z}}{z{\bar {z}}}}={\frac {\bar {z}}{\|z\|^{2}}}={\frac {a-bi}{a^{2}+b^{2}}}={\frac {a}{a^{2}+b^{2}}}-{\frac {b}{a^{2}+b^{2}}}i.
+\displaystyle q^{s}\cdot D^{(s)}\left[{\frac {q^{i}}{1-q^{i}}}\right]=\sum _{r=0}^{s}\left[\sum _{m=0}^{s}\sum _{k=0}^{m}\left[{\begin{matrix}s\\m\end{matrix}}\right]\left\{{\begin{matrix}m\\k\end{matrix}}\right\}{\binom {s-k}{r}}{\frac {(-1)^{s-k-r}k!i^{m}}{(1-q^{i})^{k+1}}}\right]q^{(r+1)i},
+\displaystyle 2^{2}\cdot 6\cdot 2310
+\displaystyle a\equiv b{\pmod {n}}
+\displaystyle F_{c}(s)=F_{a}(s)F_{b}(s).\;
+\displaystyle \lim _{x\to \infty }{\frac {\vartheta (x)}{x}}=\lim _{x\to \infty }{\frac {\psi (x)}{x}}=1,
+\displaystyle \lim _{n\to \infty }\left|{\frac {f(n)}{g(n)}}\right|=\infty 
+\displaystyle {\begin{aligned}&s\sum _{n=1}^{\infty }A(n)n^{-s-1}\\={}&\underbrace {sf(0)\zeta (s+1)+s\sum _{n=1}^{N}(A(n)-f(0))n^{-s-1}} _{\textstyle ={\mathcal {O}}(1)}\\[6pt]&{}\quad +\quad \overbrace {s\sum _{n=N+1}^{\infty }(A(n)-f(0))n^{-s-1}} ^{\textstyle <\varepsilon |s|\int _{N}^{\infty }x^{-\operatorname {Re} (s)-1}\,dx}\end{aligned}}
+\displaystyle 0.2\leq c\leq d\leq 0.5
+\displaystyle f
+\displaystyle 2^{F_{n}-1}\equiv 1{\pmod {F_{n}}}
+\displaystyle 2^{4}\cdot 3\cdot 5
+\displaystyle x_{n}={\frac {1}{N}}\sum _{k=0}^{N-1}X_{k}\cdot e^{i2\pi kn/N}
+\displaystyle \sum _{n=1}^{\infty }{\frac {a_{n}}{n^{s}}}=\zeta (s)\sum _{n=1}^{\infty }{\frac {b_{n}}{n^{s}}}
+\displaystyle \exists k>0\;\exists n_{0}\;\forall n>n_{0}\;f(n)\geq k\cdot g(n)
+\displaystyle d(n)=(c_{1}+1)\times (c_{2}+1)\times \cdots \times (c_{k}+1).\qquad (2)
+\displaystyle \sum _{n=2}^{\infty }{\frac {\zeta (n)-1}{n}}\left(\left({\tfrac {3}{2}}\right)^{n-1}-1\right)={\frac {1}{3}}\ln \pi 
+\displaystyle \int _{0}^{\infty }{\frac {x^{n}e^{x}}{(e^{x}-1)^{k}}}\mathrm {d} x={\frac {n!}{(k-1)!}}\zeta ^{n}\prod _{j=0}^{k-2}\left(1-{\frac {j}{\zeta }}\right)
+\displaystyle \gamma =\sum _{n=1}^{\infty }{\frac {(-1)^{n+1}}{2n}}{\Big \{}\psi _{n}(a)+\psi _{n}{\Big (}-{\frac {a}{1+a}}{\Big )}{\Big \}},\quad a>-1
+\displaystyle {\begin{aligned}A\sum _{n=0}^{\infty }{\frac {\ln 2^{n+1}}{\ln F_{n}}}&=A\sum _{n=0}^{\infty }{\frac {\log _{2}2^{n+1}}{\log _{2}\left(2^{2^{n}}+1\right)}}\\&<A\sum _{n=0}^{\infty }(n+1)2^{-n}\\&=4A.\end{aligned}}
+\displaystyle \lambda _{m}(n)
+\displaystyle a={\frac {\operatorname {lcm} (k,n)}{k}}={\frac {kn}{k\gcd(k,n)}}={\frac {n}{\gcd(k,n)}}.
+\displaystyle {\frac {x}{\log _{q}x}},
+\displaystyle 2^{2}\cdot 30\cdot 210
+\displaystyle 2+{\sqrt {5}}
+\displaystyle {\begin{aligned}\gamma +\zeta (2)&=\sum _{k=2}^{\infty }\left({\frac {1}{\left\lfloor {\sqrt {k}}\right\rfloor ^{2}}}-{\frac {1}{k}}\right)\\[5pt]&=\sum _{k=2}^{\infty }{\frac {k-\left\lfloor {\sqrt {k}}\right\rfloor ^{2}}{k\left\lfloor {\sqrt {k}}\right\rfloor ^{2}}}\\[5pt]&={\frac {1}{2}}+{\frac {2}{3}}+{\frac {1}{2^{2}}}\sum _{k=1}^{2\cdot 2}{\frac {k}{k+2^{2}}}+{\frac {1}{3^{2}}}\sum _{k=1}^{3\cdot 2}{\frac {k}{k+3^{2}}}+\cdots \end{aligned}}
+\displaystyle S_{4}
+\displaystyle \pm i{\sqrt {1-{\frac {r}{2}}}}.
+\displaystyle \eta =1-{\frac {1+\log \log 2}{\log 2}}=0.08607
+\displaystyle 2^{2}\cdot 3^{2}\cdot 5
+\displaystyle N_{n}\sim {\frac {q^{n}}{n}}.
+\displaystyle aR=\lbrace ax_{1},ax_{2},\ldots ,ax_{\varphi (n)}\rbrace 
+\displaystyle 2^{3}\cdot 3\cdot 5
+\displaystyle R\to {\hat {R}}
+\displaystyle \operatorname {Br} (k)\to \operatorname {Br} (F)
+\displaystyle \zeta (s)={\frac {e^{\left(\log(2\pi )-1-{\frac {\gamma }{2}}\right)s}}{2(s-1)\Gamma \left(1+{\frac {s}{2}}\right)}}\prod _{\rho }\left(1-{\frac {s}{\rho }}\right)e^{\frac {s}{\rho }},
+\displaystyle c(m)=m^{17}{\bmod {3}}233
+\displaystyle S=R-{\mathfrak {p}}
+\displaystyle {\begin{aligned}f({\text{Allan}})&=2005,\quad &f({\text{Brad}})&=2007,\quad &f({\text{Cary}})&=2001\\f^{-1}(2005)&={\text{Allan}},\quad &f^{-1}(2007)&={\text{Brad}},\quad &f^{-1}(2001)&={\text{Cary}}\end{aligned}}
+\displaystyle 54\times 1=27\times 2=18\times 3=9\times 6.\,
+\displaystyle a_{0}a_{1}\cdots a_{n}
+\displaystyle {\frac {\varphi (n)}{n^{1-\delta }}}\rightarrow \infty .
+\displaystyle {\mathfrak {a}}_{i}+{\mathfrak {a}}_{j}=(1)
+\displaystyle \Gamma (s)\zeta (s)=\int _{0}^{\infty }{\frac {x^{s-1}}{e^{x}-1}}\,\mathrm {d} x,
+\displaystyle n=4\cdot 10^{18}
+\displaystyle v_{p}(n)
+\displaystyle {\frac {1}{2i}}(x_{n}-x_{N-n}^{*})
+\displaystyle 2\sin(\pi s)\Gamma (s)\zeta (s)=i\oint _{H}{\frac {(-x)^{s-1}}{e^{x}-1}}\,\mathrm {d} x
+\displaystyle d(n)=\sigma _{0}(n)
+\displaystyle \int _{0}^{\infty }{\frac {x^{n}e^{x}}{(e^{x}-1)^{4}}}\mathrm {d} x={\frac {n!}{6}}{\bigl (}\zeta ^{n-2}-3\zeta ^{n-1}+2\zeta ^{n}{\bigr )}=n!{\frac {\zeta (n-2)-3\zeta (n-1)+2\zeta (n)}{6}}.
+\displaystyle a,a+q,a+2q,a+3q,\dots 
+\displaystyle {\frac {d}{dx}}e^{x}=e^{x}
+\displaystyle {\frac {p_{n}}{n}}=\log n+\log \log n-1+{\frac {\log \log n-2}{\log n}}-{\frac {(\log \log n)^{2}-6\log \log n+11}{2(\log n)^{2}}}+o\left({\frac {1}{(\log n)^{2}}}\right).
+\displaystyle A_{4}
+\displaystyle |x|_{p}\leq 1
+\displaystyle \varphi (n)=\sum _{d\mid n}\mu \left(d\right)\cdot {\frac {n}{d}}=n\sum _{d\mid n}{\frac {\mu (d)}{d}},
+\displaystyle [q^{n}]\left(q^{t}\cdot D^{(t)}\left[\sum _{i\geq 1}{\frac {f(i)q^{i}}{1-q^{i}}}\right]\right)={\frac {n!}{(n-t)!}}\cdot (f\ast 1)(n).
+\displaystyle \operatorname {SP} (n)=\sum _{d\,|\,n}\mu (d)\operatorname {SR} \left({\frac {n}{d}}\right).
+\displaystyle 2^{5}\cdot 3^{2}\cdot 5^{2}\cdot 7\cdot 11
+\displaystyle R\to R,x\mapsto uxu^{-1}
+\displaystyle z^{n}-1=\prod _{d\,\mid \,n}\Phi _{d}(z).
+\displaystyle {\begin{aligned}x&\equiv a_{1}{\pmod {n_{1}}}\\x&\equiv a_{2}{\pmod {n_{2}}},\end{aligned}}
+\displaystyle {\frac {1}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {\mu (n)}{n^{s}}}
+\displaystyle (f(x+h)-f(x))/h
+\displaystyle \gamma =\lim _{n\to \infty }\left(\ln n-\sum _{p\leq n}{\frac {\ln p}{p-1}}\right).
+\displaystyle \operatorname {Spec} A
+\displaystyle \zeta _{A}(s)=\sum _{f{\text{ monic}}}|f|^{-s}.
+\displaystyle \varphi (n)=\sum _{\delta \mid n}\mu \left({\frac {n}{\delta }}\right)\delta =n\sum _{\delta \mid n}{\frac {\mu (\delta )}{\delta }}.
+\displaystyle {\mathfrak {p}}\mapsto {\mathfrak {p}}[S^{-1}]
+\displaystyle A={\begin{pmatrix}0&1\\1&0\end{pmatrix}}
+\displaystyle (\mathbf {y_{N}} )_{n}\ {\stackrel {\mathrm {def} }{=}}\ \sum _{p=-\infty }^{\infty }y_{(n-pN)}=y_{n({\text{mod }}N)}.\,
+\displaystyle \sum _{n=0}^{N-1}|x_{n}|^{2}=\sum _{k=0}^{N-1}|X_{k}|^{2}
+\displaystyle \exists k>0\;\forall n_{0}\;\exists n>n_{0}\;|f(n)|\geq k\cdot g(n)
+\displaystyle r_{\rm {max}}=1
+\displaystyle \prod _{p{\text{ prime}}}{\frac {1}{1-p^{-s}}}={\frac {1}{1-2^{-s}}}\cdot {\frac {1}{1-3^{-s}}}\cdot {\frac {1}{1-5^{-s}}}\cdot {\frac {1}{1-7^{-s}}}\cdot {\frac {1}{1-11^{-s}}}\cdots {\frac {1}{1-p^{-s}}}\cdots 
+\displaystyle \vartheta (x)\log(x)+\sum \limits _{p\leq x}{\log(p)}\ \vartheta \left({\frac {x}{p}}\right)=2x\log(x)+O(x)
+\displaystyle \gamma =\ln(2\pi )-2-2\sum _{n=1}^{\infty }{\frac {(-1)^{n}G_{n}(2)}{n}}=\ln(2\pi )-2+{\frac {2}{3}}+{\frac {1}{24}}+{\frac {7}{540}}+{\frac {17}{2880}}+{\frac {41}{12600}}+\ldots 
+\displaystyle 3\cdot 2^{41}+1
+\displaystyle (1+i)
+\displaystyle \sum _{n=1}^{\infty }{\frac {a_{n}}{e^{zn}-1}}=\sum _{m=1}^{\infty }b_{m}e^{-mz}
+\displaystyle [1,\infty )^{2}
+\displaystyle {\begin{aligned}\gamma &={\tfrac {3}{2}}-\ln 2-\sum _{m=2}^{\infty }(-1)^{m}\,{\frac {m-1}{m}}{\big (}\zeta (m)-1{\big )}\\&=\lim _{n\to \infty }\left({\frac {2n-1}{2n}}-\ln n+\sum _{k=2}^{n}\left({\frac {1}{k}}-{\frac {\zeta (1-k)}{n^{k}}}\right)\right)\\&=\lim _{n\to \infty }\left({\frac {2^{n}}{e^{2^{n}}}}\sum _{m=0}^{\infty }{\frac {2^{mn}}{(m+1)!}}\sum _{t=0}^{m}{\frac {1}{t+1}}-n\ln 2+O\left({\frac {1}{2^{n}\,e^{2^{n}}}}\right)\right).\end{aligned}}
+\displaystyle \gcd(a,b)=\gcd(b,a\,\mathrm {mod} \,b)
+\displaystyle k_{n}\otimes _{k}k_{m}\simeq k_{nm}
+\displaystyle \tau (u)\tau (v)=\sum _{\delta \mid \gcd(u,v)}\delta ^{11}\tau \left({\frac {uv}{\delta ^{2}}}\right),\;
+\displaystyle \{f_{n}z^{n}\}_{n\geq 0}
+\displaystyle R[f^{-1}]=R[t]/(tf-1).
+\displaystyle \prod _{p|n}(1-{\frac {1}{p}})=(1-{\frac {1}{1}})\times \cdots \times (1-{\frac {1}{n}})=0.\ 
+\displaystyle \zeta (k)={\frac {2^{k}}{2^{k}-1}}+\sum _{r=2}^{\infty }{\frac {(p_{r-1}\#)^{k}}{J_{k}(p_{r}\#)}}\qquad k=2,3,\ldots .
+\displaystyle k[x,y]\to k[t],\,f\mapsto f(t^{2},t^{3}).
+\displaystyle \ T(n)=O(n^{2})
+\displaystyle (\mathbb {Z} /16\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{4}.
+\displaystyle \lim \sup {\frac {\varphi (n)}{n}}=1,
+\displaystyle \xi (s)=\xi (1-s).\!
+\displaystyle \not \equiv 
+\displaystyle 2^{5}\cdot 3^{2}\cdot 5^{2}\cdot 7
+\displaystyle f(n)=9\log n+5(\log n)^{3}+3n^{2}+2n^{3}=O(n^{3})\,,\qquad {\text{as }}n\to \infty \,\!.
+\displaystyle N=1+p_{1}\cdot p_{2}\cdots p_{n}.
+\displaystyle 2^{2}\cdot 6^{2}\cdot 2310
+\displaystyle r_{k}(n)=|\{(a_{1},a_{2},\dots ,a_{k}):n=a_{1}^{2}+a_{2}^{2}+\cdots +a_{k}^{2}\}|
+\displaystyle f(n)=\sum _{1\leq m\leq n}\mu (m)g\left(\left\lfloor {\frac {n}{m}}\right\rfloor \right)\quad {\mbox{ for all }}n\geq 1.
+\displaystyle \operatorname {End} _{R}(U)
+\displaystyle N\leq \|x\|_{0}\cdot \|X\|_{0}.
+\displaystyle e=\prod _{k=1}^{\infty }\left(1-{\frac {1}{\phi ^{k}}}\right)^{\frac {\mu (k)-\varphi (k)}{k}}.
+\displaystyle 1+{\big (}2\cdot 3\cdot 5\cdot 7\cdot 11\cdot 13{\big )}=30031=59\cdot 509,
+\displaystyle (g\circ f)(x)=3x+5.
+\displaystyle 2\equiv 9{\bmod {7}}
+\displaystyle \zeta {\bigl (}{\tfrac {3}{2}}{\bigr )}\approx 2.61237534868548834335;
+\displaystyle \mathbb {Z} _{n}\mapsto \mathbb {C} 
+\displaystyle {\frac {1}{2i}}(X_{k}-X_{N-k}^{*})
+\displaystyle N=1.11\left(1+{\frac {{\frac {1}{2}}+\tau }{v}}\right)^{\frac {1}{2}}
+\displaystyle \Lambda (n)={\begin{cases}\log p&{\text{if }}n=p^{k}{\text{ for some prime }}p{\text{ and integer }}k\geq 1,\\0&{\text{otherwise.}}\end{cases}}
+\displaystyle \gamma \sim H_{n}-{\frac {\ln n+\ln(n+1)}{2}}-{\frac {1}{6n(n+1)}}+{\frac {1}{30n^{2}(n+1)^{2}}}-\cdots 
+\displaystyle \varphi ^{i}(n)=\left\{{\begin{matrix}\varphi (n)&{\mbox{ if }}i=1\\\varphi (\varphi ^{i-1}(n))&{\mbox{ otherwise}}\end{matrix}}\right.
+\displaystyle \mathbf {Z} /m{\mathbf {Z} }\otimes \mathbf {Z} /n{\mathbf {Z} }
+\displaystyle \textstyle B(N)=\sum _{n=1}^{N}{\frac {a_{n}}{n^{s_{0}}}}=\ell +o(1)
+\displaystyle (m^{e})^{d}\equiv m{\pmod {pq}}.
+\displaystyle \sum _{d\mid n}{\frac {\mu ^{2}(d)}{\varphi (d)}}={\frac {n}{\varphi (n)}}
+\displaystyle \left\{{\begin{matrix}N&{\mbox{if }}a=e^{i2\pi k/N}\\{\frac {1-a^{N}}{1-a\,e^{-i2\pi k/N}}}&{\mbox{otherwise}}\end{matrix}}\right.
+\displaystyle {\tfrac {n}{\log n}}
+\displaystyle \zeta (s)={\frac {1}{s-1}}+{\frac {1}{2}}+2\!\int _{0}^{\infty }\!\!\!{\frac {\sin(s\arctan t)}{\left(1+t^{2}\right)^{\frac {s}{2}}\left(e^{2\pi t}-1\right)}}\,\mathrm {d} t
+\displaystyle \zeta (s)={\frac {1}{1-{2^{1-s}}}}\sum _{n=1}^{\infty }{\frac {(-1)^{n+1}}{n^{s}}},
+\displaystyle m<(\ln A)^{c\ln \ln \ln A}
+\displaystyle \mathbf {Z} [(1+{\sqrt {d}})/2]
+\displaystyle \zeta (4)=1+{\frac {1}{2^{4}}}+{\frac {1}{3^{4}}}+\cdots ={\frac {\pi ^{4}}{90}}\approx 1.08232323371113819152;
+\displaystyle \mathbb {Q} (\omega )
+\displaystyle u_{k}=\left[e^{{\frac {i2\pi }{N}}kn}\;|\;n=0,1,\ldots ,N-1\right]^{T}
+\displaystyle A\otimes _{k}k_{n}\approx B\otimes _{k}k_{m}
+\displaystyle H\geq T^{{\frac {27}{82}}+\varepsilon }
+\displaystyle {\begin{aligned}Q(X)&=\prod _{i=1}^{k}P_{i}(X)\\Q_{i}(X)&={\frac {Q(X)}{P_{i}(X)}}.\end{aligned}}
+\displaystyle F'(s)=-\sum _{n=1}^{\infty }{\frac {f(n)\log(n)}{n^{s}}}
+\displaystyle \sum _{n\geq 1}{\frac {\lambda _{m}(n)q^{n}}{1-q^{n}}}=\sum _{n\geq 1}q^{n^{m}},\ {\text{ for }}m\geq 2.
+\displaystyle K=\prod _{i\in I}\mathrm {Ker} F_{i}=\bigcap _{i\in I}\mathrm {Ker} F_{i}.
+\displaystyle G(s)=\sum _{n=1}^{\infty }g(n)n^{-s}.
+\displaystyle n\cdot 1=1+1+\ldots +1
+\displaystyle \tau >{\frac {5}{3}}\left({\frac {3}{2}}+\ln {\frac {8}{\delta }}\right)
+\displaystyle {\mathcal {F}}
+\displaystyle \mathrm {U} (\mathbb {Z} /n\mathbb {Z} ),
+\displaystyle n_{1}<n_{2}<n_{3}<\cdots 
+\displaystyle 2\cdot 6
+\displaystyle S=\sum _{p\leq P}\exp(2\pi if(p)).
+\displaystyle O(k(\log n)^{2+\varepsilon })
+\displaystyle f^{-1}(y)=\pm {\sqrt {y}}.
+\displaystyle f(t)=\sum _{s\leq t}g(s)\mu (s,t)\qquad {\text{ for all }}t\in P.
+\displaystyle \phi (p^{k})=\phi (2p^{k})=p^{k}-p^{k-1}.
+\displaystyle \lfloor \alpha \rfloor >0
+\displaystyle \varphi (p^{r})=p^{r-1}(p-1).\;
+\displaystyle \nu _{p}(m)-\nu _{p}(n)
+\displaystyle \mathbf {F} ={\begin{bmatrix}\omega _{N}^{0\cdot 0}&\omega _{N}^{0\cdot 1}&\ldots &\omega _{N}^{0\cdot (N-1)}\\\omega _{N}^{1\cdot 0}&\omega _{N}^{1\cdot 1}&\ldots &\omega _{N}^{1\cdot (N-1)}\\\vdots &\vdots &\ddots &\vdots \\\omega _{N}^{(N-1)\cdot 0}&\omega _{N}^{(N-1)\cdot 1}&\ldots &\omega _{N}^{(N-1)\cdot (N-1)}\\\end{bmatrix}}
+\displaystyle f(n)=\Omega (g(n))
+\displaystyle 2^{4}\cdot 3^{4}\cdot 5\cdot 7
+\displaystyle \chi _{m}(n)
+\displaystyle b=1/2
+\displaystyle L=0
+\displaystyle \sum _{i=1}^{\phi (n)-1}(a_{i+1}-a_{i})^{2}<Cn^{2}/\phi (n)
+\displaystyle {\frac {6}{\pi ^{2}}}<{\frac {\varphi (n)\sigma (n)}{n^{2}}}<1,
+\displaystyle {\begin{aligned}y&=(2x+8)^{3}\\{\sqrt[{3}]{y}}&=2x+8\\{\sqrt[{3}]{y}}-8&=2x\\{\dfrac {{\sqrt[{3}]{y}}-8}{2}}&=x.\end{aligned}}
+\displaystyle \mathbb {Z} _{n}^{*}
+\displaystyle \operatorname {Br} (\mathbb {R} )
+\displaystyle {\mathcal {F}}(\{x_{n}^{*}\})_{k}=X_{N-k}^{*}
+\displaystyle \hom(\mathbf {Z} /m{\mathbf {Z} },\mathbf {Z} /n{\mathbf {Z} })
+\displaystyle {\frac {6n^{2}}{\pi ^{2}}}<\varphi (n)\sigma (n)
+\displaystyle \lim \inf {\frac {\varphi (n)}{n}}=0.
+\displaystyle 1,2,3,4,6,8,12,24.\,
+\displaystyle 2^{4}\cdot 3^{3}\cdot 5\cdot 7\cdot 11
+\displaystyle {\mathfrak {D}}_{w}^{A}(s)=\sum _{a\in A}{\frac {1}{w(a)^{s}}}=\sum _{n=1}^{\infty }{\frac {a_{n}}{n^{s}}}
+\displaystyle O\left(T(n)\log n\right).
+\displaystyle g_{f}(n+1)=\sum _{b=\pm 1}\sum _{k=1}^{\left\lfloor {\frac {{\sqrt {24n+1}}-b}{6}}\right\rfloor }(-1)^{k+1}g_{f}\left(n+1-{\frac {k(3k+b)}{2}}\right)+\sum _{k=1}^{n+1}s_{n+1,k}f(k),
+\displaystyle a\equiv b{\pmod {g}}
+\displaystyle r_{4}(n)=8\sum _{{d\mid n}}d=8(2+(-1)^{n})\sum _{{d\mid n}}d={\begin{cases}8\sigma (n)&{\text{if }}n{\text{ is odd }}\\24\sigma \left({\frac {n}{2^{\nu }}}\right)&{\text{if }}n{\text{ is even }}\end{cases}},
+\displaystyle \zeta (s)={\frac {1}{s-1}}+\sum _{n=0}^{\infty }{\frac {(-1)^{n}\gamma _{n}}{n!}}(s-1)^{n}.
+\displaystyle {\begin{aligned}H_{n}&=\gamma +\ln n+{\frac {1}{2n}}-\sum _{k=2}^{\infty }{\frac {(k-1)!|G_{k}|}{n(n+1)\cdots (n+k-1)}},&&n=1,2,\ldots ,\\&=\gamma +\ln n+{\frac {1}{2n}}-{\frac {1}{12n(n+1)}}-{\frac {1}{12n(n+1)(n+2)}}-{\frac {19}{120n(n+1)(n+2)(n+3)}}-\cdots &&\end{aligned}}
+\displaystyle e^{-{\frac {i2\pi }{N}}}
+\displaystyle -{\overline {3}}={\overline {-3}}={\overline {1}}.
+\displaystyle \scriptstyle O(N\log N)
+\displaystyle \psi (x)=\!\!\!\!\sum _{\stackrel {p^{k}\leq x,}{p{\text{ is prime}}}}\!\!\!\!\log p.
+\displaystyle \operatorname {End} _{R}(\oplus _{1}^{n}U)\to \operatorname {M} _{n}(S),\quad f\mapsto (f_{ij}).
+\displaystyle \operatorname {pt} {\stackrel {0}{\to }}R
+\displaystyle R_{i},1\leq i\leq n
+\displaystyle P_{i}(X)=\sum _{j=0}^{r_{i}-1}{\frac {a_{i,j}}{j!}}(X-x_{i})^{j}.
+\displaystyle \left|G\right|=\left[G:H\right]\cdot \left|H\right|{\mbox{,}}
+\displaystyle x_{\mathbf {n} }={\frac {1}{\prod _{\ell =1}^{d}N_{\ell }}}\sum _{\mathbf {k} =\mathbf {0} }^{\mathbf {N} -1}e^{i2\pi \mathbf {n} \cdot (\mathbf {k} /\mathbf {N} )}X_{\mathbf {k} }\,.
+\displaystyle \gcd(a,b)=\gcd(a,b-a)\quad ,
+\displaystyle c_{q}(n)=\sum _{\stackrel {1\leq a\leq q}{\gcd(a,q)=1}}e^{2\pi i{\tfrac {a}{q}}n}.
+\displaystyle 0\leq r<\lambda (n)
+\displaystyle 3^{(F_{n}-1)/2}
+\displaystyle a_{0}^{14}a_{1}^{9}a_{2}^{6}a_{3}^{4}a_{4}^{4}a_{5}^{3}a_{6}^{3}a_{7}^{3}a_{8}^{2}a_{9}^{2}a_{10}^{2}a_{11}^{2}a_{12}^{2}a_{13}^{2}a_{14}^{2}a_{15}^{2}a_{16}^{2}a_{17}^{2}a_{18}^{2}a_{19}a_{20}a_{21}\cdots a_{229},
+\displaystyle |f(x)|\leq \;Mg(x){\text{ when }}0<|x-a|<\delta .
+\displaystyle n^{-s}-(n+1)^{-s}=sn^{-s-1}+O(n^{-s-2})
+\displaystyle \{\pm 1,\pm 7\}\cong \mathrm {C} _{2}\times \mathrm {C} _{2},
+\displaystyle J_{k}(n)=\sum _{\delta \mid n}\mu \left({\frac {n}{\delta }}\right)\delta ^{k}=n^{k}\sum _{\delta \mid n}{\frac {\mu (\delta )}{\delta ^{k}}}.
+\displaystyle \varphi (20)=8
+\displaystyle \sum _{d\,|\,n}\varphi (d)=n.
+\displaystyle 2^{2}\cdot 6\cdot 210
+\displaystyle |x|^{2}
+\displaystyle S_{1}(t)=\int _{0}^{t}S(u)\mathrm {d} u
+\displaystyle \omega _{N}=e^{-i2\pi /N}\,
+\displaystyle |m/n|_{p}=|m|_{p}/|n|_{p}
+\displaystyle B=e^{-\gamma }\prod _{p}\left({1-{\frac {1}{(p-1)^{2}(p+1)}}}\right)\approx 0.34537\ .
+\displaystyle m=k\;\lambda (n)+r
+\displaystyle \sum _{d\mid n}f(d)\;
+\displaystyle H{\sqrt[{3}]{\ln T}}e^{-c{\sqrt {\ln \ln T}}}
+\displaystyle V-E+F=2
+\displaystyle \limsup _{n\to \infty }\left|{\frac {f(n)}{g(n)}}\right|>0
+\displaystyle 3+4\cos \phi +\cos 2\phi =2(1+\cos \phi )^{2}\geq 0,
+\displaystyle \sum _{k=1}^{n}{\overline {U_{j,k}}}\cdot U_{k,j'}=\delta _{j,j'},
+\displaystyle R[t_{i}]
+\displaystyle \log n+\log \log n-1<{\frac {p_{n}}{n}}<\log n+\log \log n\quad {\text{for }}n\geq 6.
+\displaystyle \Gamma (s)=\int _{0}^{\infty }e^{-x}\,x^{s-1}\,\mathrm {d} x
+\displaystyle F_{5}=2^{2^{5}}+1=2^{32}+1=4294967297=641\times 6700417.
+\displaystyle G=\left\{0,2,4,6,1,3,5,7\right\}
+\displaystyle F_{a}F_{b}\dots F_{s},a>b>\dots >s>1
+\displaystyle \left({\frac {a}{N}}\right)=-1
+\displaystyle r_{3}(|D|)=12\left(1-\left({\frac {D}{2}}\right)\right)h(D).
+\displaystyle 1.13862<\liminf {\frac {\log Q(x)}{\log \log x}}\leq 1.44\ 
+\displaystyle (f\ast g)(ab)=\sum _{d|ab}f(d)g\left({\frac {ab}{d}}\right)=\sum _{d_{1}|a}\sum _{d_{2}|b}f(d_{1}d_{2})g\left({\frac {ab}{d_{1}d_{2}}}\right)=\sum _{d_{1}|a}f(d_{1})g\left({\frac {a}{d_{1}}}\right)\times \sum _{d_{2}|b}f(d_{2})g\left({\frac {b}{d_{2}}}\right)=(f\ast g)(a)\cdot (f\ast g)(b).
+\displaystyle {\begin{aligned}A_{t}(n)&=[q^{n}]\left(q^{t}\cdot D^{(t)}\left[\sum _{i\geq t}{\frac {a_{i}q^{i}}{1-q^{i}}}\right]\right)\\&=[q^{n}]\left(\sum _{n\geq 1}{\frac {(A_{t}\ast \mu )(n)q^{n}}{1-q^{n}}}\right).\end{aligned}}
+\displaystyle \sum _{k=1}^{n}{\frac {1}{\varphi (k)}}={\frac {315\,\zeta (3)}{2\pi ^{4}}}\left(\log n+\gamma -\sum _{p{\text{ prime}}}{\frac {\log p}{p^{2}-p+1}}\right)+O\left({\frac {(\log n)^{\frac {2}{3}}}{n}}\right)
+\displaystyle f^{-1}(S)=\left\{x\in X:f(x)\in S\right\}.
+\displaystyle F(T;H)\geq T^{-c_{1}},\qquad G(s_{0};\Delta )\geq T^{-c_{2}},
+\displaystyle d=413
+\displaystyle \sigma _{3}(n)={\frac {1}{5}}\left\{6n\sigma _{1}(n)-\sigma _{1}(n)+12\sum _{0<k<n}\sigma _{1}(k)\sigma _{1}(n-k)\right\}.\;
+\displaystyle {\frac {F^{\prime }(s)}{F(s)}}=-\sum _{n=1}^{\infty }{\frac {f(n)\Lambda (n)}{n^{s}}}
+\displaystyle \ell =1,2,\ldots ,d
+\displaystyle \sum _{n=1}^{\infty }a_{n}x^{n}=\sum _{n=1}^{\infty }b_{n}{\frac {x^{n}}{1-x^{n}}}
+\displaystyle \sum _{n=1}^{\infty }a_{n}n^{-s}
+\displaystyle \zeta (-1)=-{\tfrac {1}{12}}
+\displaystyle {\vec {F}}=m{\vec {a}}
+\displaystyle z^{n}=1\quad {\text{and}}\quad z^{k}\neq 1{\text{ for }}k=1,2,3,\ldots ,n-1.
+\displaystyle \sum _{n=2}^{\infty }{\frac {\zeta (n)-1}{n}}\operatorname {Im} {\bigl (}(1+i)^{n}-(1+i^{n}){\bigr )}={\frac {\pi }{4}}
+\displaystyle {\big |}\psi (x)-x{\big |}<{\frac {{\sqrt {x}}(\log x)^{2}}{8\pi }}
+\displaystyle \varphi (2m)={\begin{cases}2\varphi (m)&{\text{ if }}m{\text{ is even}}\\\varphi (m)&{\text{ if }}m{\text{ is odd}}\end{cases}}
+\displaystyle N_{n}={\frac {1}{n}}\sum _{d\mid n}\mu \left({\frac {n}{d}}\right)q^{d},
+\displaystyle g=(123),v=(12)(34),g^{-1}=(132),gv=(134),gvg^{-1}=(14)(23)
+\displaystyle \int _{0}^{\infty }{\frac {x^{n}e^{x}}{(e^{x}-1)^{2}}}\mathrm {d} x={n!}\zeta (n),
+\displaystyle 2^{4}\cdot 3^{2}\cdot 5^{2}\cdot 7
+\displaystyle \limsup {\frac {\log Q(x)}{\log \log x}}\leq 1.71\ .
+\displaystyle 2\cdot 6\cdot 210
+\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{m}}\right)=(-1)^{(m-1)(n-1)/4}.
+\displaystyle T(n)\in O(n^{2})
+\displaystyle R/{\textstyle \bigcap _{i=1}^{n}{{\mathfrak {a}}_{i}}}\simeq \prod _{i=1}^{n}{R/{\mathfrak {a}}_{i}},\qquad x\;\operatorname {mod} \;{\textstyle \bigcap _{i=1}^{n}{{\mathfrak {a}}_{i}}}\mapsto (x\;\operatorname {mod} \;{\mathfrak {a}}_{1},\ldots ,x\;\operatorname {mod} \;{\mathfrak {a}}_{n})
+\displaystyle \sum _{n\geq 1}{\frac {a_{n}q^{n}}{1-q^{n}}}={\frac {1}{C(q)}}\sum _{n\geq 1}\left(\sum _{k=1}^{n}s_{n,k}(\gamma ){\widetilde {a}}_{k}(\gamma )\right)q^{n},
+\displaystyle C=f^{-1}(F)={\tfrac {5}{9}}(F-32),
+\displaystyle \lim _{s\to k}E_{\mu }\left(s\right)
+\displaystyle \displaystyle \{U_{n}\}
+\displaystyle {\begin{aligned}\gamma &=\sum _{n=1}^{\infty }{\frac {N_{1}(n)+N_{0}(n)}{2n(2n+1)}}\\\ln {\frac {4}{\pi }}&=\sum _{n=1}^{\infty }{\frac {N_{1}(n)-N_{0}(n)}{2n(2n+1)}},\end{aligned}}
+\displaystyle 2^{3}\cdot 3^{2}\cdot 5\cdot 7
+\displaystyle F(x)=\sum _{1\leq n\leq x}\alpha ^{-1}(n)G\left({\frac {x}{n}}\right)\quad {\mbox{ for all }}x\geq 1.
+\displaystyle a+b{\sqrt {-5}}
+\displaystyle 2^{2}\cdot 6\cdot 30
+\displaystyle \operatorname {SR} (n)={\begin{cases}1,&n=1\\0,&n>1.\end{cases}}
+\displaystyle \exists M\,\exists C>0{\text{ such that for all }}{\vec {x}}{\text{ with }}x_{i}\geq M{\text{ for some }}i,|f({\vec {x}})|\leq C|g({\vec {x}})|.
+\displaystyle \sum _{p^{k}}f(p^{k})=\sum _{p}\sum _{k>0}f(p^{k})=f(2)+f(3)+f(4)+f(5)+f(7)+f(8)+f(9)+\cdots 
+\displaystyle x_{i},
+\displaystyle {\begin{aligned}-\gamma &=\lim _{z\to 0}\left(\Gamma (z)-{\frac {1}{z}}\right)\\&=\lim _{z\to 0}\left(\Psi (z)+{\frac {1}{z}}\right).\end{aligned}}
+\displaystyle O((s_{1}+s_{2})^{2}),
+\displaystyle \sigma (n)<e^{\gamma }n\log \log n\,
+\displaystyle rx
+\displaystyle f(x+h)
+\displaystyle \forall m\,\exists C\,\exists M\,\forall n\dots 
+\displaystyle {\overline {\phi }}:R[t]\to S
+\displaystyle \mathbf {Z} [(1+{\sqrt {-3}})/2]
+\displaystyle 0\leq \sigma \leq 2
+\displaystyle z{\bar {z}}=\|z\|^{2}
+\displaystyle \scriptstyle c>1
+\displaystyle \mathbb {Z} /n\mathbb {Z} \cong \mathbb {Z} /{p_{1}^{k_{1}}}\mathbb {Z} \;\times \;\mathbb {Z} /{p_{2}^{k_{2}}}\mathbb {Z} \;\times \;\mathbb {Z} /{p_{3}^{k_{3}}}\mathbb {Z} \dots \;\;
+\displaystyle x_{n}\in \mathbb {R} \quad \forall n\in \{0,\ldots ,N-1\}\implies X_{k}=X_{-k\mod N}^{*}\quad \forall k\in \{0,\ldots ,N-1\}
+\displaystyle \{0,1,2,\dots ,n-1\}
+\displaystyle \zeta (s)=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}
+\displaystyle \sum _{i\in I}\alpha _{i}F_{i}=0
+\displaystyle N=n_{1}n_{2}\cdots n_{k}.
+\displaystyle {\begin{aligned}{\frac {e^{1+{\frac {\gamma }{2}}}}{\sqrt {2\pi }}}&=\prod _{n=1}^{\infty }e^{-1+{\frac {1}{2n}}}\left(1+{\frac {1}{n}}\right)^{n}\\{\frac {e^{3+2\gamma }}{2\pi }}&=\prod _{n=1}^{\infty }e^{-2+{\frac {2}{n}}}\left(1+{\frac {2}{n}}\right)^{n}.\end{aligned}}
+\displaystyle S(q)=\sum _{n=1}^{\infty }a_{n}\sum _{k=1}^{\infty }q^{nk}=\sum _{m=1}^{\infty }b_{m}q^{m}
+\displaystyle \int _{0}^{\infty }x^{{1 \over 2}{s}-1}e^{-n^{2}\pi x}\,dx={\Gamma ({s \over 2}) \over {n^{s}\pi ^{s \over 2}}}
+\displaystyle \prod _{d\mid n}f(d)\;
+\displaystyle (e^{i2\pi kn/N})
+\displaystyle \zeta (n){\Gamma (n)}=\int _{0}^{\infty }{\frac {x^{n-1}}{e^{x}-1}}\mathrm {d} x,
+\displaystyle M_{i}
+\displaystyle x=\sum _{i=1}^{k}a_{i}M_{i}N_{i}.
+\displaystyle e^{2\pi i{\frac {k}{n}}}\qquad 0\leq k<n.
+\displaystyle R_{i}\to R=\prod R_{i}
+\displaystyle {\frac {1+i{\sqrt {3}}}{2}},{\frac {1-i{\sqrt {3}}}{2}}.
+\displaystyle \zeta _{A}(s)=\prod _{P}(1-|P|^{-s})^{-1}.
+\displaystyle \zeta (s)={\frac {1}{1-2^{1-s}}}\sum _{n=0}^{\infty }{\frac {1}{2^{n+1}}}\sum _{k=0}^{n}{\binom {n}{k}}{\frac {(-1)^{k}}{(k+1)^{s}}}.
+\displaystyle {\begin{aligned}R/I&\to R/I_{1}\times \cdots \times R/I_{k}\\x\ \operatorname {mod} I&\mapsto (x\ \operatorname {mod} I_{1},\,\ldots ,\,x\ \operatorname {mod} I_{k}),\end{aligned}}
+\displaystyle \sum _{\delta \mid n}\delta ^{s}J_{r}(\delta )J_{s}\left({\frac {n}{\delta }}\right)=J_{r+s}(n)
+\displaystyle {\begin{aligned}\sum _{k=1}^{\infty }{\frac {\varphi (k)}{k}}\left(-\log \left(1-x^{k}\right)\right)&={\frac {x}{1-x}}\\{\text{and}}\;\sum _{k=1}^{\infty }{\frac {\mu (k)}{k}}\left(-\log \left(1-x^{k}\right)\right)&=x,\qquad \quad {\text{for }}0<x<1.\end{aligned}}
+\displaystyle \varepsilon (n)=\delta _{n,1}
+\displaystyle f(\sigma +it)=o\left({\frac {1}{\sigma }}\right)
+\displaystyle m_{1}=c^{d_{P}}{\pmod {p}}
+\displaystyle 12\left(\sum _{n=1}^{\infty }n^{2}\,\mathrm {Li} _{-1}(q^{n})\right)^{\!2}=\sum _{n=1}^{\infty }n^{2}\,\mathrm {Li} _{-5}(q^{n})-\sum _{n=1}^{\infty }n^{4}\,\mathrm {Li} _{-3}(q^{n}),
+\displaystyle a_{n}=\sum _{d\mid n}b_{d}
+\displaystyle (g\circ f)^{-1}(x)={\tfrac {1}{3}}(x-5).
+\displaystyle |K|=\{e\}
+\displaystyle \pi (n)\sim \operatorname {Li} (n)=\int _{2}^{n}{\frac {dt}{\log t}}.
+\displaystyle 2^{2}\cdot 3^{2}
+\displaystyle {\begin{aligned}&A(N)=\sum _{n=1}^{N}{\frac {a_{n}}{n^{s_{0}}}}n^{s_{0}}=B(N)N^{s_{0}}+\sum _{n=1}^{N-1}B(n)(n^{s_{0}}-(n+1)^{s_{0}})\\={}&(B(N)-L)N^{s_{0}}+\sum _{n=1}^{N-1}(B(n)-L)(n^{s_{0}}-(n+1)^{s_{0}})\\={}&o(N^{s_{0}})+\sum _{n=1}^{N-1}{\mathcal {o}}(n^{s_{0}-1})=o(N^{s_{0}})\end{aligned}}
+\displaystyle \sum _{p}f(p)=f(2)+f(3)+f(5)+\cdots 
+\displaystyle [H:A_{4}]=|A_{4}|/|H|
+\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n).
+\displaystyle 1,2,3,6.\,
+\displaystyle \prod _{d\mid 12}f(d)=f(1)f(2)f(3)f(4)f(6)f(12).\ 
+\displaystyle \Im {(x_{n})}
+\displaystyle f(x)=\Omega (g(x))\ (x\rightarrow \infty )\;\Leftrightarrow \;\limsup _{x\to \infty }\left|{\frac {f(x)}{g(x)}}\right|>0.
+\displaystyle R/I
+\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }
+\displaystyle s_{n,k}:=s_{e}(n,k)-s_{o}(n,k)=[q^{n}](q;q)_{\infty }{\frac {q^{k}}{1-q^{k}}}
+\displaystyle H(X)=-\sum _{n=0}^{N-1}P_{n}\ln P_{n}
+\displaystyle g(m)=(f\ast 1)(m)
+\displaystyle {\frac {\sigma _{1-s}(m)}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {c_{n}(m)}{n^{s}}}.
+\displaystyle {\frac {\varphi (n)}{n}}={\frac {\varphi (\operatorname {rad} (n))}{\operatorname {rad} (n)}}
+\displaystyle f(x)=y\,\,\Leftrightarrow \,\,g(y)=x.
+\displaystyle \left({\frac {a}{1}}\right)=1.
+\displaystyle (q;q)_{\infty }
+\displaystyle x_{n_{1},n_{2}}
+\displaystyle {\sqrt {cN}}\cdot \sum _{j\in \mathbb {Z} }\exp \left(-{\frac {\pi c}{N}}\cdot (k+N\cdot j)^{2}\right)
+\displaystyle \{x_{n}\}\,
+\displaystyle \pi (x)=\sum _{p\leq x}1
+\displaystyle {\frac {160}{11}}=14{\mbox{ remainder }}6=14+{\frac {6}{11}}
+\displaystyle H\geq T^{{\frac {1}{2}}+\varepsilon }.
+\displaystyle \Lambda (n)={\begin{cases}\log p&{\text{if }}n=2,3,4,5,7,8,9,11,13,16,\ldots =p^{k}{\text{ is a prime power}}\\0&{\text{if }}n=1,6,10,12,14,15,18,20,21,\dots \;\;\;\;{\text{ is not a prime power}}.\end{cases}}
+\displaystyle |G|=|Z(G)|+\sum _{i}d_{i}\;
+\displaystyle \mathbb {Z} /8\mathbb {Z} 
+\displaystyle \cos {\frac {2\pi }{n}}+i\sin {\frac {2\pi }{n}}
+\displaystyle x_{0},x_{1},\ldots ,x_{N-1}
+\displaystyle \;\;n=p_{1}^{k_{1}}p_{2}^{k_{2}}p_{3}^{k_{3}}\dots ,\;
+\displaystyle \|{\vec {x}}\|_{\infty }\geq M
+\displaystyle \sum _{n=1}^{\infty }{\frac {1}{2n\,x^{2n}}}=-{\frac {1}{2}}\log \left(1-{\frac {1}{x^{2}}}\right),
+\displaystyle 2^{2}\cdot 6\cdot 30030
+\displaystyle {\begin{aligned}\int _{0}^{\infty }e^{-x^{2}}\ln x\,dx&=-{\frac {(\gamma +2\ln 2){\sqrt {\pi }}}{4}}\\\int _{0}^{\infty }e^{-x}\ln ^{2}x\,dx&=\gamma ^{2}+{\frac {\pi ^{2}}{6}}.\end{aligned}}
+\displaystyle \sum _{p^{k}}f(p^{k})\;
+\displaystyle {\begin{aligned}c_{q}(n)&={\frac {\mu \left({\frac {q}{\gcd(q,n)}}\right)}{\phi \left({\frac {q}{\gcd(q,n)}}\right)}}\phi (q)\\&=\sum _{\delta \mid \gcd(q,n)}\mu \left({\frac {q}{\delta }}\right)\delta .\end{aligned}}
+\displaystyle \mathbb {Z} /2\mathbb {Z} 
+\displaystyle \lim _{x\to \infty }{\frac {f(x)}{g(x)}}=0
+\displaystyle \gamma =\ln \pi -4\ln \left(\Gamma ({\tfrac {3}{4}})\right)+{\frac {4}{\pi }}\sum _{k=1}^{\infty }(-1)^{k+1}{\frac {\ln(2k+1)}{2k+1}}.
+\displaystyle \sum _{n=1}^{\infty }{\frac {\xi ^{n}\,\mathrm {Li} _{u}(\alpha q^{n})}{n^{s}}}=\sum _{n=1}^{\infty }{\frac {\alpha ^{n}\,\mathrm {Li} _{s}(\xi q^{n})}{n^{u}}}
+\displaystyle x\equiv a_{1}{\pmod {n_{1}}}.
+\displaystyle \vartheta (x)=\sum \limits _{p\leq x}{\log(p)}
+\displaystyle A=-1+\sum _{p}{\frac {\log p}{(p-1)^{2}}}\approx 0.2269688\ .
+\displaystyle \sum _{n=1}^{\infty }{\frac {\zeta (2n)-1}{n}}\,t^{2n}=\log \left({\dfrac {1-t^{2}}{\operatorname {sinc} (\pi \,t)}}\right)
+\displaystyle {\begin{aligned}\zeta (s)&={\frac {1}{s-1}}\sum _{n=0}^{\infty }H_{n+1}\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+2)^{1-s}\\[6pt]\zeta (s)&={\frac {1}{s-1}}\left\{-1+\sum _{n=0}^{\infty }H_{n+2}\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+2)^{-s}\right\}\\[6pt]\zeta (s)&={\frac {k!}{(s-k)_{k}}}\sum _{n=0}^{\infty }{\frac {1}{(n+k)!}}\left[{n+k \atop n}\right]\sum _{\ell =0}^{n+k-1}\!(-1)^{\ell }{\binom {n+k-1}{\ell }}(\ell +1)^{k-s},\quad k=1,2,3,\ldots \\[6pt]\zeta (s)&={\frac {1}{s-1}}+\sum _{n=0}^{\infty }|G_{n+1}|\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+1)^{-s}\\[6pt]\zeta (s)&={\frac {1}{s-1}}+1-\sum _{n=0}^{\infty }C_{n+1}\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+2)^{-s}\\[6pt]\zeta (s)&={\frac {2(s-2)}{s-1}}\zeta (s-1)+2\sum _{n=0}^{\infty }(-1)^{n}G_{n+2}\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+1)^{-s}\\[6pt]\zeta (s)&=-\sum _{l=1}^{k-1}{\frac {(k-l+1)_{l}}{(s-l)_{l}}}\zeta (s-l)+{\frac {k}{s-k}}+k\sum _{n=0}^{\infty }(-1)^{n}G_{n+1}^{(k)}\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+1)^{-s}\\[6pt]\zeta (s)&={\frac {(a+1)^{1-s}}{s-1}}+\sum _{n=0}^{\infty }(-1)^{n}\psi _{n+1}(a)\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+1)^{-s},\quad \Re (a)>-1\\[6pt]\zeta (s)&=1+{\frac {(a+2)^{1-s}}{s-1}}+\sum _{n=0}^{\infty }(-1)^{n}\psi _{n+1}(a)\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+2)^{-s},\quad \Re (a)>-1\\[6pt]\zeta (s)&={\frac {1}{a+{\tfrac {1}{2}}}}\left\{-{\frac {\zeta (s-1,1+a)}{s-1}}+\zeta (s-1)+\sum _{n=0}^{\infty }(-1)^{n}\psi _{n+2}(a)\sum _{k=0}^{n}(-1)^{k}{\binom {n}{k}}(k+1)^{-s}\right\},\quad \Re (a)>-1\end{aligned}}
+\displaystyle X_{k}=\sum _{n=0}^{N-1}U_{kn}x_{n}
+\displaystyle \left(1+2^{2^{n-1}}\right)^{2}\equiv 2^{1+2^{n-1}}{\pmod {p}}.
+\displaystyle s2^{n+2}+1
+\displaystyle (z^{k})^{n}=z^{kn}=(z^{n})^{k}=1^{k}=1.
+\displaystyle e^{\gamma }={\sqrt {\frac {2}{1}}}\cdot {\sqrt[{3}]{\frac {2^{2}}{1\cdot 3}}}\cdot {\sqrt[{4}]{\frac {2^{3}\cdot 4}{1\cdot 3^{3}}}}\cdot {\sqrt[{5}]{\frac {2^{4}\cdot 4^{4}}{1\cdot 3^{6}\cdot 5}}}\cdots 
+\displaystyle a^{r}=1^{k}\cdot a^{r}\equiv (a^{\lambda (n)})^{k}\cdot a^{r}=a^{k\;\lambda (n)+r}=a^{m}\equiv 1{\pmod {n}}
+\displaystyle E=\{xy-yx\mid x,y\in X\}
+\displaystyle -\gamma =\Gamma '(1)=\Psi (1).
+\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}.
+\displaystyle \{0,1,\ldots ,N_{1}-1\}\times \cdots \times \{0,1,\ldots ,N_{d}-1\}\to \mathbb {C} .
+\displaystyle \mathbf {Z} [c]
+\displaystyle \exists k_{1}>0\;\exists k_{2}>0\;\exists n_{0}\;\forall n>n_{0}
+\displaystyle \sum _{\stackrel {1\leq k\leq n}{\gcd(k,n)=1}}f(\gcd(k-1,n))=\varphi (n)\sum _{d\mid n}{\frac {(\mu *f)(d)}{\varphi (d)}},
+\displaystyle (q;q)_{\infty }=\sum _{n\geq 0}(-1)^{\left\lceil {\frac {n}{2}}\right\rceil }q^{G_{n}}.
+\displaystyle D_{0}(x)
+\displaystyle \left|\alpha -{\frac {p}{q}}\right|<{\frac {f(q)}{q}}
+\displaystyle \lfloor {}\cdot {}\rfloor 
+\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong (\mathbb {Z} /{p_{1}^{k_{1}}}\mathbb {Z} )^{\times }\times (\mathbb {Z} /{p_{2}^{k_{2}}}\mathbb {Z} )^{\times }\times (\mathbb {Z} /{p_{3}^{k_{3}}}\mathbb {Z} )^{\times }\dots \;.
+\displaystyle {\mathcal {F}}(\mathbf {c} )={\mathcal {F}}(\mathbf {a} ){\mathcal {F}}(\mathbf {b} )
+\displaystyle 2^{14}\times 3^{9}\times 5^{6}\times \cdots \times 1451
+\displaystyle d\times e=1{\bmod {\lambda }}(n)
+\displaystyle {\mathbb {Z} }/n_{i}{\mathbb {Z} }
+\displaystyle \gamma =\lim _{a\to 1}\left(\zeta (a)-{\frac {1}{a-1}}\right)
+\displaystyle |6x^{4}-2x^{3}+5|\leq 13\,x^{4}.
+\displaystyle H^{2}(\operatorname {Gal} (F/k),k^{*})
+\displaystyle a^{\lambda (n)}\equiv 1{\pmod {n}}
+\displaystyle q_{n}(a)={\frac {a^{\varphi (n)}-1}{n}}
+\displaystyle \limsup _{x\to a}\left|{\frac {f(x)}{g(x)}}\right|<\infty .
+\displaystyle \zeta {\bigl (}{\tfrac {1}{2}}{\bigr )}\approx -1.46035450880958681289
+\displaystyle g(x)-h(x)=O(f(x))\,.
+\displaystyle q_{\text{inv}}=q^{-1}{\pmod {p}}
+\displaystyle {\tfrac {1}{20}},\,{\tfrac {2}{20}},\,{\tfrac {3}{20}},\,{\tfrac {4}{20}},\,{\tfrac {5}{20}},\,{\tfrac {6}{20}},\,{\tfrac {7}{20}},\,{\tfrac {8}{20}},\,{\tfrac {9}{20}},\,{\tfrac {10}{20}},\,{\tfrac {11}{20}},\,{\tfrac {12}{20}},\,{\tfrac {13}{20}},\,{\tfrac {14}{20}},\,{\tfrac {15}{20}},\,{\tfrac {16}{20}},\,{\tfrac {17}{20}},\,{\tfrac {18}{20}},\,{\tfrac {19}{20}},\,{\tfrac {20}{20}}
+\displaystyle \mathbf {Z} [1/n]
+\displaystyle (n)
+\displaystyle {\begin{aligned}\gamma &=-\int _{0}^{\infty }e^{-x}\ln x\,dx\\&=-\int _{0}^{1}\ln \left(\ln {\frac {1}{x}}\right)dx\\&=\int _{0}^{\infty }\left({\frac {1}{e^{x}-1}}-{\frac {1}{x\cdot e^{x}}}\right)dx\\&=\int _{0}^{1}\left({\frac {1}{\ln x}}+{\frac {1}{1-x}}\right)dx\\&=\int _{0}^{\infty }\left({\frac {1}{1+x^{k}}}-e^{-x}\right){\frac {dx}{x}},\quad k>0\\&=\int _{0}^{1}H_{x}\,dx,\end{aligned}}
+\displaystyle R_{j}\to R_{i},j\geq i
+\displaystyle 413\times 17=1{\bmod {7}}80
+\displaystyle \gamma =\sum _{k=1}^{\infty }\left({\frac {1}{k}}-\ln \left(1+{\frac {1}{k}}\right)\right).
+\displaystyle (a-b)\mid (a^{m}-b^{m})
+\displaystyle \gamma =1-\sum _{k=2}^{\infty }(-1)^{k}{\frac {\left\lfloor \log _{2}k\right\rfloor }{k+1}}.
+\displaystyle {\frac {\zeta ^{\prime }(s)}{\zeta (s)}}=-\sum _{n=1}^{\infty }{\frac {\Lambda (n)}{n^{s}}}.
+\displaystyle \sum _{\delta \mid n}d\left({\frac {n}{\delta }}\right)2^{\omega (\delta )}=d^{2}(n).
+\displaystyle X_{k}=X_{N-k}^{*}\,
+\displaystyle 21=3\cdot 7=(1+2{\sqrt {-5}})(1-2{\sqrt {-5}})
+\displaystyle \mathbf {U} 
+\displaystyle B=N/A
+\displaystyle \sin x+1=\Omega _{+}(1)\ (x\rightarrow \infty );
+\displaystyle a_{i}
+\displaystyle x\mapsto |x|
+\displaystyle {\begin{aligned}\gamma &=\lim _{s\to 1^{+}}\sum _{n=1}^{\infty }\left({\frac {1}{n^{s}}}-{\frac {1}{s^{n}}}\right)\\&=\lim _{s\to 1}\left(\zeta (s)-{\frac {1}{s-1}}\right)\\&=\lim _{s\to 0}{\frac {\zeta (1+s)+\zeta (1-s)}{2}}\end{aligned}}
+\displaystyle p_{n}\sim n\log(n),
+\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }.
+\displaystyle 6
+\displaystyle {\overline {\phi }}
+\displaystyle {\frac {(z+1)^{n}-1}{(z+1)-1}},
+\displaystyle f(1/e)
+\displaystyle \tau (n)=d(n)=(1+a_{1})(1+a_{2})\cdots (1+a_{\omega (n)}).
+\displaystyle a^{\varphi (n)}\equiv 1\mod n.
+\displaystyle \sum _{n=1}^{\infty }\lambda (n)\,{\frac {q^{n}}{1-q^{n}}}=\sum _{n=1}^{\infty }q^{n^{2}}
+\displaystyle |n|_{p}=p^{-v_{p}(n)}
+\displaystyle H(X)+H(x)\geq \ln(N)~.
+\displaystyle O(n^{2}).
+\displaystyle =160
+\displaystyle r_{6}(n)=16\sum _{d\mid n}\chi \left({\frac {n}{d}}\right)d^{2}-4\sum _{d\mid n}\chi (d)d^{2}.
+\displaystyle {\mbox{if }}F(n)=\prod _{d|n}f(d),{\mbox{ then }}f(n)=\prod _{d|n}F\left({\frac {n}{d}}\right)^{\mu (d)}.
+\displaystyle {\frac {1}{Q(X)}}=\sum _{i=1}^{k}{\frac {1}{Q_{i}(x_{i})(X-X_{i})}}.
+\displaystyle 2^{2}\cdot 3^{2}\cdot 5\cdot 7
+\displaystyle O(\log a+\log b)
+\displaystyle {\mathcal {F}}(\{ax_{n}+by_{n}\})_{k}=aX_{k}+bY_{k}
+\displaystyle a^{\varphi (n)}=a^{kM}=(a^{k})^{M}\equiv 1^{M}=1\equiv 1{\pmod {n}}.
+\displaystyle f(n)=\omega (g(n))
+\displaystyle F_{k}=2^{2^{k}}+1,
+\displaystyle {\bar {z}}=a-bi
+\displaystyle {\mathfrak {a}}_{i}=Re_{i}
+\displaystyle \lim \inf {\frac {\varphi (n)}{n}}\log \log n=e^{-\gamma }.
+\displaystyle U_{j,k}=n^{-{\frac {1}{2}}}\cdot z^{j\cdot k}
+\displaystyle L^{2}(\mathbb {R} ^{n}),\ell ^{2}(\mathbb {Z} )
+\displaystyle \phi (p^{k})=p^{k}-p^{k-1}
+\displaystyle x_{0}
+\displaystyle {\big |}\zeta (x+iy){\big |}=\exp \left(\sum _{n,p}{\frac {\cos ny\log p}{np^{nx}}}\right).
+\displaystyle \sum _{n=1}^{\infty }{\frac {\varphi (n)q^{n}}{1-q^{n}}}={\frac {q}{(1-q)^{2}}}
+\displaystyle 39\cdot 2^{13}+1
+\displaystyle p(n)={\frac {1}{n}}\sum _{1\leq k\leq n}\sigma (k)p(n-k).
+\displaystyle \pm {\frac {\sqrt {2}}{2}}\pm i{\frac {\sqrt {2}}{2}}.
+\displaystyle {\frac {x}{(\log x)^{\eta +o(1)}}}\ ,
+\displaystyle X_{k}=\sum _{n=0}^{N-1}x_{n}e^{-i2\pi kn/N}
+\displaystyle \zeta (s_{1},s_{2},\ldots ,s_{n})=\sum _{k_{1}>k_{2}>\cdots >k_{n}>0}{k_{1}}^{-s_{1}}{k_{2}}^{-s_{2}}\cdots {k_{n}}^{-s_{n}}.
+\displaystyle \sum _{n=0}^{N-1}|x_{n}|^{2}={\frac {1}{N}}\sum _{k=0}^{N-1}|X_{k}|^{2}.
+\displaystyle \lambda (n)\leq ne^{-\Delta }
+\displaystyle d_{i}=\deg P_{i}
+\displaystyle \sin x+1=\Omega (1)\ (x\rightarrow \infty ),
+\displaystyle {\overline {\mathbf {F} }}_{p}=\varinjlim \mathbf {F} _{p^{m}}.
+\displaystyle 5\times 5+(-2)\times 12=1.
+\displaystyle A(x):=\sum _{n\leq x}a(n).
+\displaystyle {\begin{aligned}\gamma &=\lim _{n\to \infty }\left({\frac {\Gamma \left({\frac {1}{n}}\right)\Gamma (n+1)\,n^{1+{\frac {1}{n}}}}{\Gamma \left(2+n+{\frac {1}{n}}\right)}}-{\frac {n^{2}}{n+1}}\right)\\&=\lim \limits _{m\to \infty }\sum _{k=1}^{m}{m \choose k}{\frac {(-1)^{k}}{k}}\ln {\big (}\Gamma (k+1){\big )}.\end{aligned}}
+\displaystyle G
+\displaystyle {\begin{aligned}m_{1}&=c^{d_{p}}{\bmod {p}}=2790^{53}{\bmod {6}}1=4\\m_{2}&=c^{d_{q}}{\bmod {q}}=2790^{49}{\bmod {5}}3=12\\h&=(q_{\text{inv}}\times (m_{1}-m_{2})){\bmod {p}}=(38\times -8){\bmod {6}}1=1\\m&=m_{2}+h\times q=12+1\times 53=65\end{aligned}}
+\displaystyle k[t]/(p_{i}^{k_{j}})
+\displaystyle k-\phi (k)=n
+\displaystyle {\frac {1}{2T}}\int _{-T}^{T}\,F(a+it)G(b-it)\,dt=\sum _{n=1}^{\infty }f(n)g(n)n^{-a-b}{\text{ as }}T\sim \infty .
+\displaystyle \sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=\prod _{p{\text{ prime}}}{\frac {1}{1-p^{-s}}},
+\displaystyle m_{2}=c^{d_{Q}}{\pmod {q}}
+\displaystyle p(t)={\frac {1}{N}}\left[X_{0}+X_{1}e^{i2\pi t}+\cdots +X_{\lfloor N/2\rfloor }e^{i\lfloor N/2\rfloor 2\pi t}+X_{\lfloor N/2\rfloor +1}e^{-i\lfloor N/2\rfloor 2\pi t}+\cdots +X_{N-1}e^{-i2\pi t}\right]
+\displaystyle \zeta (s)={\overline {\zeta ({\overline {s}})}}
+\displaystyle \scriptstyle (g\,\circ \,f)^{-1}\;=\;(f^{-1})\,\circ \,(g^{-1})
+\displaystyle \mathbb {Z} _{n}
+\displaystyle 2^{4}\cdot 3^{2}\cdot 5\cdot 7
+\displaystyle P(X)=P_{i}(X)+o(X-x_{i})^{r_{i}-1}
+\displaystyle \zeta (2)=1+{\frac {1}{2^{2}}}+{\frac {1}{3^{2}}}+\cdots ={\frac {\pi ^{2}}{6}}\approx 1.64493406684822643647;\!
+\displaystyle \varphi (10)=4
+\displaystyle {\mathcal {F}}(\{x_{n}\})_{k}=X_{k}
+\displaystyle \textstyle \operatorname {Re} (s)>\sigma 
+\displaystyle \varphi (n)<{\frac {n}{e^{\gamma }\log \log n}}\quad {\text{for infinitely many }}n.
+\displaystyle x_{1},\ldots ,x_{k}
+\displaystyle \sum _{n=1}^{\infty }\left({\frac {f(n)}{n}}\right)^{1+\epsilon }\varphi (n)=\infty 
+\displaystyle f(x)=O(g(x)){\text{ as }}x\to \infty 
+\displaystyle 2+8{\sqrt {1+\ln {\frac {8}{\delta }}+\max \left({\frac {1-\sigma }{2}},0\right)\ln \left(2\tau \right)}}~{\sqrt {\tau }}
+\displaystyle n!+2,n!+3,\dots ,n!+n
+\displaystyle y_{n_{1},k_{2}}
+\displaystyle \eta (s)=\sum _{n=1}^{\infty }{\frac {(-1)^{n+1}}{n^{s}}}=\left(1-{2^{1-s}}\right)\zeta (s).
+\displaystyle q^{n}/(1-q^{n})=\mathrm {Li} _{0}(q^{n})
+\displaystyle \left({\frac {a}{p}}\right)={\begin{cases}\;\;\,0{\text{ if }}a\equiv 0{\pmod {p}}\\+1{\text{ if }}a\not \equiv 0{\pmod {p}}{\text{ and for some integer }}x,\;a\equiv x^{2}{\pmod {p}}\\-1{\text{ if there is no such }}x.\end{cases}}
+\displaystyle [-(N-1)/2,(N-1)/2]
+\displaystyle \zeta (3)=1+{\frac {1}{2^{3}}}+{\frac {1}{3^{3}}}+\cdots \approx 1.20205690315959428540;
+\displaystyle {\begin{aligned}\gamma &=\lim _{n\to \infty }\left(-\ln n+\sum _{k=1}^{n}{\frac {1}{k}}\right)\\[5px]&=\int _{1}^{\infty }\left(-{\frac {1}{x}}+{\frac {1}{\lfloor x\rfloor }}\right)\,dx.\end{aligned}}
+\displaystyle z=1
+\displaystyle P(x_{i}).
+\displaystyle \sum _{n\geq 1}{\frac {\varphi (n)}{n^{s}}}={\frac {\zeta (s-1)}{\zeta (s)}}
+\displaystyle \sum _{m=0}^{N-1}U_{km}U_{mn}^{*}=\delta _{kn}
+\displaystyle f(x)=\Omega _{-}(g(x))
+\displaystyle \mathbb {Q} _{p}
+\displaystyle \scriptstyle O(N^{2})
+\displaystyle IJ\subseteq P
+\displaystyle {\frac {a^{2^{n}}+b^{2^{n}}}{\gcd(a+b,2)}}(=F_{n}(a,b))
+\displaystyle {\mathcal {F}}^{-1}(\{x_{n}\})={\mathcal {F}}(\{x_{N-n}\})/N
+\displaystyle \zeta (s)={\pi ^{s \over 2} \over \Gamma ({s \over 2})}\int \limits _{0}^{\infty }x^{{1 \over 2}{s}-1}\psi (x)\,dx
+\displaystyle R={\mathfrak {a}}_{1}\oplus \cdots \oplus {\mathfrak {a}}_{n},\quad {\mathfrak {a}}_{i}{\mathfrak {a}}_{j}=0,i\neq j,\quad {\mathfrak {a}}_{i}^{2}\subseteq {\mathfrak {a}}_{i}
+\displaystyle \sum _{n=-\infty }^{\infty }{e^{-n^{2}\pi x}}={1 \over {\sqrt {x}}}\sum _{n=-\infty }^{\infty }{e^{-n^{2}\pi  \over x}}
+\displaystyle \sum _{d\mid n}\varphi (d)=n,
+\displaystyle \prod _{p\mid n}f(p)\;
+\displaystyle x_{n}={\frac {1}{N}}\sum _{k=0}^{N-1}X_{k}\cdot e^{i2\pi kn/N},\quad n\in \mathbb {Z} ,\,
+\displaystyle |X_{k}|/N={\sqrt {\operatorname {Re} (X_{k})^{2}+\operatorname {Im} (X_{k})^{2}}}/N
+\displaystyle \left(f^{-1}\right)^{\prime }(y)={\frac {1}{f'\left(x\right)}}.
+\displaystyle \sum _{n=1}^{\infty }\varphi (n)\,{\frac {q^{n}}{1-q^{n}}}={\frac {q}{(1-q)^{2}}}.
+\displaystyle ={\frac {1}{N}}(\mathbf {X*Y_{N}} )_{k},\,
+\displaystyle (x\otimes u)(y\otimes v)=xy\otimes uv
+\displaystyle \chi _{m}(n):=(1\ast \lambda _{m})(n)
+\displaystyle F_{73}
+\displaystyle \sigma _{k}(u)\sigma _{k}(v)=\sum _{\delta \mid \gcd(u,v)}\delta ^{k}\sigma _{k}\left({\frac {uv}{\delta ^{2}}}\right).\;
+\displaystyle {\overline {-x}}
+\displaystyle \varphi (91)=72
+\displaystyle \Phi 
+\displaystyle {\hat {R}}=\varprojlim R/I^{n}
+\displaystyle \prod _{p\mid n}\left(1-{\frac {1}{p}}\right)
+\displaystyle M[S^{-1}]=R[S^{-1}]\otimes _{R}M
+\displaystyle c_{q}(q)=\phi (q).\;
+\displaystyle 123=1\cdot 10^{2}+2\cdot 10^{1}+3\cdot 10^{0}
+\displaystyle \sum _{n=1}^{\infty }{\bigl (}\zeta (4n)-1{\bigr )}={\frac {7}{8}}-{\frac {\pi }{4}}\left({\frac {e^{2\pi }+1}{e^{2\pi }-1}}\right).
+\displaystyle h_{R}=\operatorname {Hom} (-,R):C^{\operatorname {op} }\to \mathbf {Sets} 
+\displaystyle 2{\sqrt {N}}\leq \|x\|_{0}+\|X\|_{0}
+\displaystyle 1<2^{r}+1<2^{k}+1
+\displaystyle \prod _{p{\text{ prime}}}\left(1-{\frac {1}{p^{s}}}\right)=\left(\prod _{p{\text{ prime}}}{\frac {1}{1-p^{-s}}}\right)^{-1}={\frac {1}{\zeta (s)}}.
+\displaystyle {\begin{aligned}C\sum _{n=0}^{\infty }{\frac {2^{n+1}}{\ln F_{n}}}&={\frac {C}{\ln 2}}\sum _{n=0}^{\infty }{\frac {2^{n+1}}{\log _{2}\left(2^{2^{n}}+1\right)}}\\&>{\frac {C}{\ln 2}}\sum _{n=0}^{\infty }1\\&=\infty ,\end{aligned}}
+\displaystyle {\begin{aligned}f(s)&=\lim _{N\to \infty }\sum _{n=1}^{N}a_{n}n^{-s}\\&=\lim _{N\to \infty }A(N)N^{-s}+\sum _{n=1}^{N-1}A(n)(n^{-s}-(n+1)^{-s})\\&=s\sum _{n=1}^{\infty }A(n)n^{-s-1}+\underbrace {{\mathcal {O}}\left(\sum _{n=1}^{\infty }A(n)n^{-s-2}\right)} _{={\mathcal {O}}(1)}\end{aligned}}
+\displaystyle r_{24}(n)={\frac {16}{691}}\sigma _{11}^{*}(n)+{\frac {128}{691}}\left\{(-1)^{n-1}259\tau (n)-512\tau \left({\frac {n}{2}}\right)\right\}
+\displaystyle S(q)=\sum _{n=1}^{\infty }{\frac {q^{n}}{1-q^{n}}}
+\displaystyle \zeta (s)={\frac {1}{s-1}}\sum _{n=0}^{\infty }{\frac {1}{n+1}}\sum _{k=0}^{n}{\binom {n}{k}}{\frac {(-1)^{k}}{(k+1)^{s-1}}}
+\displaystyle \lim _{n\to \infty }{\frac {d(1)+d(2)+\cdots +d(n)}{\log(1)+\log(2)+\cdots +\log(n)}}=1.
+\displaystyle a-1,b=2,c=3,d=4
+\displaystyle x_{n}e^{i2\pi n\ell /N}\,
+\displaystyle f\mapsto f(x)
+\displaystyle x\mapsto (x\operatorname {mod} n_{1},\ldots ,x\operatorname {mod} n_{k})
+\displaystyle x-\max \left({\frac {1-\sigma }{2}},0\right)\ln \left({\frac {1}{2}}+x+\tau \right)=\ln {\frac {8}{\delta }}
+\displaystyle \zeta (s)={\frac {1}{s-1}}\sum _{n=1}^{\infty }{\frac {n(n+1)}{2}}\left({\frac {2n+3+s}{(n+1)^{s+2}}}-{\frac {2n-1-s}{n^{s+2}}}\right)
+\displaystyle \sum _{\delta \mid n}\mu (\delta )=\sum _{\delta \mid n}\lambda \left({\frac {n}{\delta }}\right)|\mu (\delta )|={\begin{cases}&1{\text{ if }}n=1\\&0{\text{ if }}n\neq 1.\end{cases}}
+\displaystyle e_{i}e_{j}=0,i\neq j
+\displaystyle h=q_{\text{inv}}(m_{1}-m_{2}){\pmod {p}}
+\displaystyle \textstyle A(N)=\sum _{n=1}^{N}a_{n}=o(N^{s_{0}})
+\displaystyle d(n^{2})=\sum _{\delta \mid n}\mu \left({\frac {n}{\delta }}\right)d^{2}(\delta ).
+\displaystyle |f(x)|\leq \;Mg(x){\text{ for all }}x\geq x_{0}.
+\displaystyle \mathbf {U} _{m,n}={\frac {1}{\sqrt {N}}}\omega _{N}^{(m-1)(n-1)}={\frac {1}{\sqrt {N}}}e^{-{\frac {i2\pi }{N}}(m-1)(n-1)}.
+\displaystyle (m^{e})^{d}\equiv m{\pmod {pq}}
+\displaystyle f(n)=\sum _{k=1}^{n}\sum _{d|n}p(d-k)\mu (n/d)\times \sum _{j:k-G_{j}>0}(-1)^{\left\lceil {\frac {j}{2}}\right\rceil }b(k-G_{j}).
+\displaystyle \sum _{n=0}^{N-1}x_{n}y_{n}^{*}={\frac {1}{N}}\sum _{k=0}^{N-1}X_{k}Y_{k}^{*}
+\displaystyle D_{h}(s)=\prod _{P}\left(\sum _{n\mathop {=} 0}^{\infty }h(P^{n})|P|^{-sn}\right),
+\displaystyle \sum _{h=1}^{\infty }{\frac {h}{h^{s}}}=\zeta (s-1)
+\displaystyle {\begin{aligned}(f*g)(m)&=\sum _{d\mid m}f(d)g\left({\frac {m}{d}}\right)\\&=\sum _{ab=m}f(a)g(b),\end{aligned}}
+\displaystyle x\equiv y{\pmod {\varphi (n)}}
+\displaystyle n_{\ell }=0,1,\dots ,N_{\ell }-1
+\displaystyle f\sim g\iff (f-g)\in o(g)
+\displaystyle \sum _{i=1}^{k}{\frac {1}{Q_{i}(x_{i})(X-X_{i})}}={\frac {1}{Q(X)}}\sum _{i=1}^{k}{\frac {Q_{i}(X)}{Q_{i}(x_{i})}},
+\displaystyle n=2^{r}3^{s}p_{1}p_{2}\cdots p_{k},
+\displaystyle {\begin{aligned}x&\equiv 0{\pmod {3}}\\x&\equiv 3{\pmod {4}}\\x&\equiv 4{\pmod {5}}.\\\end{aligned}}
+\displaystyle \alpha \in \mathbb {Z} ^{+}
+\displaystyle \operatorname {Br} (k)=\mathbb {Q} /\mathbb {Z} 
+\displaystyle (n+1)^{2}=n^{2}+O(n)
+\displaystyle f(n)=O(g(n))\ (n\rightarrow \infty ).
+\displaystyle L_{n}[\alpha ,c]=e^{(c+o(1))(\ln n)^{\alpha }(\ln \ln n)^{1-\alpha }}
+\displaystyle f(x)=\Omega (g(x))\ (x\rightarrow a),
+\displaystyle \sum _{q=1}^{\infty }f(q){\frac {\varphi (q)}{q}}=\infty .
+\displaystyle \{f_{n}\}_{n\geq 0}
+\displaystyle \displaystyle \varphi (3^{k})=\varphi (2\times 3^{k})=2\times 3^{k-1}.
+\displaystyle \sum _{\delta \mid n}\varphi (\delta )d\left({\frac {n}{\delta }}\right)=\sigma (n).
+\displaystyle R_{\mathfrak {p}}
+\displaystyle O(n\log n)=O(\log n!)
+\displaystyle (\mathbb {Z} /2^{k}\mathbb {Z} )^{\times }
+\displaystyle a|b\Rightarrow \lambda (a)|\lambda (b)
+\displaystyle \left(\cos x+i\sin x\right)^{n}=\cos nx+i\sin nx.
+\displaystyle gvg^{-1}\in H\cap V=K
+\displaystyle \zeta (s)={\frac {1}{\Gamma (s)}}\int _{0}^{\infty }{\frac {x^{s-1}}{e^{x}-1}}\,\mathrm {d} x
+\displaystyle \sum _{g=1}^{\infty }{\frac {1}{g^{s}}}*\sum _{f=1}^{\infty }{\frac {\varphi (f)}{f^{s}}}=\sum _{h=1}^{\infty }\left(\sum _{f*g=h}1*\varphi (g)\right){\frac {1}{h^{s}}}
+\displaystyle s_{e/o}(n,k)
+\displaystyle D_{0}(X)D_{0}(x)\geq {\frac {1}{16\pi ^{2}}}
+\displaystyle a=2^{r},b=-1
+\displaystyle \lambda (n)={\begin{cases}\;\;\phi (n)&{\text{if }}n=2,3,4,5,7,9,11,13,17,19,23,25,27,\dots \\{\tfrac {1}{2}}\phi (n)&{\text{if }}n=8,16,32,64,\dots \end{cases}}
+\displaystyle \gamma =\int _{0}^{1}\left({\frac {1}{1+x}}\sum _{n=1}^{\infty }x^{2^{n}-1}\right)\,dx.
+\displaystyle {\frac {\zeta ^{2}(s)}{\zeta (2s)}}=\sum _{n=1}^{\infty }{\frac {2^{\omega (n)}}{n^{s}}}\equiv \sum _{n=1}^{\infty }{\frac {\mu ^{2}(n)}{n^{s}}}.
+\displaystyle f=o(h).
+\displaystyle \varphi (1)+\varphi (2)+\cdots +\varphi (n)={\frac {3n^{2}}{\pi ^{2}}}+O\left(n(\log n)^{\frac {2}{3}}(\log \log n)^{\frac {4}{3}}\right)\quad {\text{as }}n\rightarrow \infty ,
+\displaystyle -{\frac {1}{2}}
+\displaystyle \mathbf {Z} [i]
+\displaystyle \varprojlim R_{i}
+\displaystyle {\begin{aligned}(a-b)\sum _{k=0}^{n-1}a^{k}b^{n-1-k}&=\sum _{k=0}^{n-1}a^{k+1}b^{n-1-k}-\sum _{k=0}^{n-1}a^{k}b^{n-k}\\&=a^{n}+\sum _{k=1}^{n-1}a^{k}b^{n-k}-\sum _{k=1}^{n-1}a^{k}b^{n-k}-b^{n}\\&=a^{n}-b^{n}\end{aligned}}
+\displaystyle F_{9}
+\displaystyle c_{q}(1)=\mu (q).\;
+\displaystyle O(n^{c})
+\displaystyle {\begin{aligned}\varphi (n)&=\varphi \left(p_{1}^{k_{1}}\right)\varphi \left(p_{2}^{k_{2}}\right)\cdots \varphi \left(p_{r}^{k_{r}}\right)\\&=p_{1}^{k_{1}}\left(1-{\frac {1}{p_{1}}}\right)p_{2}^{k_{2}}\left(1-{\frac {1}{p_{2}}}\right)\cdots p_{r}^{k_{r}}\left(1-{\frac {1}{p_{r}}}\right)\\&=p_{1}^{k_{1}}p_{2}^{k_{2}}\cdots p_{r}^{k_{r}}\left(1-{\frac {1}{p_{1}}}\right)\left(1-{\frac {1}{p_{2}}}\right)\cdots \left(1-{\frac {1}{p_{r}}}\right)\\&=n\left(1-{\frac {1}{p_{1}}}\right)\left(1-{\frac {1}{p_{2}}}\right)\cdots \left(1-{\frac {1}{p_{r}}}\right).\end{aligned}}
+\displaystyle m_{1}n_{1}+m_{2}n_{2}=1.
+\displaystyle 0\to M'\to M\to M''\to 0
+\displaystyle \lim _{s\to 1}(s-1)\zeta (s)=1.
+\displaystyle {\frac {dx}{dy}}={\frac {1}{dy/dx}}.
+\displaystyle \operatorname {R} (n)=\bigcup _{d\,|\,n}\operatorname {P} (d),
+\displaystyle \sum _{k=1}^{n}{\frac {k}{\varphi (k)}}={\frac {315\,\zeta (3)}{2\pi ^{4}}}n-{\frac {\log n}{2}}+O\left((\log n)^{\frac {2}{3}}\right)
+\displaystyle |f(x)|\leq \;Mx^{4}
+\displaystyle p_{i}(t)=t-\lambda _{i}
+\displaystyle 1+{\tfrac {1}{2}}+{\tfrac {1}{3}}+\dots 
+\displaystyle \mu (n)={\begin{cases}(-1)^{\omega (n)}=(-1)^{\Omega (n)}&{\text{if }}\;\omega (n)=\Omega (n)\\0&{\text{if }}\;\omega (n)\neq \Omega (n).\end{cases}}
+\displaystyle R=\mathbb {Z} \left[{\sqrt {-3}}\,\,\right],\quad a=4=2\cdot 2=\left(1+{\sqrt {-3}}\,\,\right)\left(1-{\sqrt {-3}}\,\,\right),\quad b=\left(1+{\sqrt {-3}}\,\,\right)\cdot 2.
+\displaystyle K=H\cap V
+\displaystyle 2^{4}\cdot 3^{1}\cdot 5\cdot 7
+\displaystyle {\begin{aligned}&\zeta (s)\zeta (s-a)=\sum _{n=1}^{\infty }{\frac {\sigma _{a}(n)}{n^{s}}}\\[6pt]&{\frac {\zeta (s)\zeta (s-a)\zeta (s-2a)}{\zeta (2s-2a)}}=\sum _{n=1}^{\infty }{\frac {\sigma _{a}(n^{2})}{n^{s}}}\\[6pt]&{\frac {\zeta (s)\zeta (s-a)\zeta (s-b)\zeta (s-a-b)}{\zeta (2s-a-b)}}=\sum _{n=1}^{\infty }{\frac {\sigma _{a}(n)\sigma _{b}(n)}{n^{s}}}\end{aligned}}
+\displaystyle \omega _{N_{\ell }}=\exp(-i2\pi /N_{\ell })
+\displaystyle \mathbf {x*y} .
+\displaystyle 2^{3}\cdot 6\cdot 210
+\displaystyle F(z):=\sum _{n\geq 0}f_{n}z^{n}
+\displaystyle A_{0}(m):={\frac {1}{2}}\left(\sum _{n<m}a(n)+\sum _{n\leq m}a(n)\right)=A(m)-{\frac {1}{2}}a(m).
+\displaystyle b_{0}^{5}b_{1}^{3}b_{2}^{2}b_{4}b_{7}b_{18}b_{229},
+\displaystyle \limsup _{n\to \infty }{\frac {\left|f(n)\right|}{g(n)}}<\infty 
+\displaystyle \prod _{i=1}^{\varphi (n)}x_{i}\equiv \prod _{i=1}^{\varphi (n)}ax_{i}=a^{\varphi (n)}\prod _{i=1}^{\varphi (n)}x_{i}{\pmod {n}},
+\displaystyle \scriptstyle {\sqrt {1/N}}
+\displaystyle \sin x=\Omega _{\pm }(1)\ (x\rightarrow \infty ).
+\displaystyle 579\cdot 2^{21}+1
+\displaystyle {\begin{aligned}ax&=ay&\quad \Rightarrow &\quad ax-ay=0\\&&\quad \Rightarrow &\quad a(x-y)=0\\&&\quad \Rightarrow &\quad x-y=0\\&&\quad \Rightarrow &\quad x=y.\end{aligned}}
+\displaystyle (\mathbb {Z} /{2^{k}}\mathbb {Z} )^{\times }
+\displaystyle O((\log a+\log b)^{2})
+\displaystyle r\geq r_{\rm {max}}
+\displaystyle f^{-1}\circ f=\operatorname {id} _{X}
+\displaystyle \lambda (3233)=\operatorname {lcm} (60,52)=780
+\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{*},
+\displaystyle p^{2}|2^{2m\lambda }-1
+\displaystyle (\log x)^{a}\leq Q(x)\leq (\log x)^{b}\,.
+\displaystyle {\frac {\zeta (s-1)}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {\varphi (n)}{n^{s}}}
+\displaystyle \gamma _{n}(1/2)
+\displaystyle S(q)=\sum _{n=1}^{\infty }a_{n}{\frac {q^{n}}{1-q^{n}}}.
+\displaystyle H_{n}=\ln(n)+\gamma +{\frac {1}{2n}}-{\frac {1}{12n^{2}}}+{\frac {1}{120n^{4}}}-\varepsilon ,
+\displaystyle R/{\mathfrak {p}}
+\displaystyle F_{11}
+\displaystyle \zeta (s)\sum _{n=1}^{\infty }{\frac {\varphi (n)}{n^{s}}}=\sum _{n=1}^{\infty }\left(\sum _{d|n}\varphi (d)\right){\frac {1}{n^{s}}}=\sum _{n=1}^{\infty }{\frac {n}{n^{s}}}=\zeta (s-1),
+\displaystyle \sum _{n=0}^{N-1}|X_{n}|^{2}=1~,
+\displaystyle \phi (n)=card\{k\in \mathbb {N} /k<netpgcd(k,n)=1\}
+\displaystyle n>A
+\displaystyle e^{inx}
+\displaystyle H=gHg^{-1},gvg^{-1}\in H
+\displaystyle \gcd(a,b)=\log _{2}\prod _{k=0}^{a-1}(1+e^{-2i\pi kb/a})
+\displaystyle \xi (s)={\frac {1}{2}}\pi ^{-{\frac {s}{2}}}s(s-1)\Gamma \left({\frac {s}{2}}\right)\zeta (s),\!
+\displaystyle \lambda _{m}(n)=\sum _{d^{m}|n}\mu \left({\frac {n}{d^{m}}}\right)
+\displaystyle \operatorname {lcm} (m,n)\cdot \operatorname {gcd} (m,n)=m\cdot n
+\displaystyle {\mathcal {F}}^{-1}\left\{\mathbf {X^{*}\cdot Y} \right\}_{n}=\sum _{l=0}^{N-1}x_{l}^{*}\cdot (y_{N})_{n+l}\ \ {\stackrel {\mathrm {def} }{=}}\ \ (\mathbf {x\star y_{N}} )_{n}\ .
+\displaystyle \Sigma _{f}(x+1)=\sum _{b=\pm 1}\sum _{k=1}^{\left\lfloor {\frac {{\sqrt {24n+1}}-b}{6}}\right\rfloor }(-1)^{k+1}\Sigma _{f}\left(n+1-{\frac {k(3k+b)}{2}}\right)+\sum _{n=0}^{x}\sum _{k=1}^{n+1}s_{n+1,k}f(k).
+\displaystyle \left(1+e^{-i2\pi k/N}\right)^{N-1}\,
+\displaystyle {\begin{aligned}\sum _{d|n}\mu (\alpha d)=\sum _{d|{\frac {n}{(n,\alpha )}}}\mu (d)=\varepsilon \left({\frac {n}{(n,\alpha )}}\right)=1\iff n=(n,\alpha )\iff n=\alpha ^{k},\ {\text{ for some }}k\geq 1,\end{aligned}}
+\displaystyle k[t_{1},\ldots ,t_{n}]
+\displaystyle {\frac {\zeta (s-k)}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {J_{k}(n)}{n^{s}}}
+\displaystyle {\frac {\Gamma \left({\frac {s}{2}}\right)\zeta (s)}{\pi ^{s/2}}}=\sum _{n=1}^{\infty }\int \limits _{0}^{\infty }x^{{s \over 2}-1}e^{-n^{2}\pi x}\,dx=\int _{0}^{\infty }x^{{s \over 2}-1}\sum _{n=1}^{\infty }e^{-n^{2}\pi x}\,dx.
+\displaystyle {\widetilde {a}}_{k}(\gamma )=\sum _{d|k}\sum _{r|{\frac {k}{d}}}a_{d}\gamma (r).
+\displaystyle n=\left\lceil 3.151\cdot vN\right\rceil 
+\displaystyle 2^{4}\cdot 3^{2}\cdot 5^{2}\cdot 7\cdot 11
+\displaystyle D_{h}D_{g}=D_{h*g}
+\displaystyle \gamma =\sum _{k=1}^{n}{\frac {1}{k}}-\ln n-\sum _{m=2}^{\infty }{\frac {\zeta (m,n+1)}{m}},
+\displaystyle \Sigma _{f}(x):=\sum _{1\leq n\leq x}g_{f}(n).
+\displaystyle \zeta (s)={\frac {1}{s-1}}\sum _{n=1}^{\infty }\left({\frac {n}{(n+1)^{s}}}-{\frac {n-s}{n^{s}}}\right)
+\displaystyle \left[{\cdot  \atop \cdot }\right]
+\displaystyle x\equiv a_{1,2}{\pmod {n_{1}n_{2}}}.
+\displaystyle {\frac {1}{2}}(X_{k}+X_{N-k}^{*})
+\displaystyle {\mathcal {F}}^{-1}(\mathbf {x} )={\mathcal {F}}(\mathbf {x} ^{*})^{*}/N
+\displaystyle \sum _{d\mid n}J_{k}(d)=n^{k}.\,
+\displaystyle A_{1},\ldots ,A_{k}
+\displaystyle \chi _{0}(a)={\begin{cases}1&{\text{if }}\gcd(a,n)=1,\\0&{\text{if }}\gcd(a,n)\neq 1.\end{cases}}
+\displaystyle x_{j}=\sum _{k}A_{k}\cos {\frac {2\pi jk}{n}}+\sum _{k}B_{k}\sin {\frac {2\pi jk}{n}}.
+\displaystyle \operatorname {pt} {\stackrel {1}{\to }}R
+\displaystyle 0\to M'_{\mathfrak {m}}\to M_{\mathfrak {m}}\to M''_{\mathfrak {m}}\to 0
+\displaystyle \sum _{i\in I}\alpha _{i}F_{i}=0.
+\displaystyle \lambda (n)\mu (n)=|\mu (n)|=\mu ^{2}(n).
+\displaystyle \left(\mathbb {Z} /n\mathbb {Z} \right)^{*}
+\displaystyle \gcd(1,x)=y,
+\displaystyle g=(abc)\in A_{4}
+\displaystyle \psi (x)\geq \!\!\!\!\sum _{x^{1-\varepsilon }\leq p\leq x}\!\!\!\!\log p\geq \!\!\!\!\sum _{x^{1-\varepsilon }\leq p\leq x}\!\!\!\!(1-\varepsilon )\log x=(1-\varepsilon )\left(\pi (x)+O\left(x^{1-\varepsilon }\right)\right)\log x.
+\displaystyle 2^{6}\cdot 3^{2}\cdot 5\cdot 7\cdot 11
+\displaystyle \left(u_{i}\right)_{i\in I}\in \prod _{i\in I}k.
+\displaystyle n\mid \varphi (a^{n}-1)\quad {\text{for }}a,n>1
+\displaystyle \gamma \sim H_{n}-\ln n-{\frac {1}{2n}}+{\frac {1}{12n^{2}}}-{\frac {1}{120n^{4}}}+\cdots 
+\displaystyle 1+{\tfrac {1}{4}}+{\tfrac {1}{9}}+{\tfrac {1}{16}}+\dots ,
+\displaystyle \varinjlim k[U]
+\displaystyle \log ^{*}(n)={\begin{cases}0,&{\text{if }}n\leq 1\\1+\log ^{*}(\log n),&{\text{if }}n>1\end{cases}}
+\displaystyle 0\cdot 8+3\cdot 7+7\cdot 6+8\cdot 5+5\cdot 4+9\cdot 3+5\cdot 2
+\displaystyle \exp \left(O\left({\sqrt {n\log n}}\right)\right)
+\displaystyle f^{-1}\circ f=\operatorname {id} _{X},
+\displaystyle \sum _{n=1}^{\infty }{1 \over n^{2}}=\lim _{n\to \infty }\left({\frac {1}{1^{2}}}+{\frac {1}{2^{2}}}+{\frac {1}{3^{2}}}+\cdots +{\frac {1}{n^{2}}}\right)={\frac {\pi ^{2}}{6}}.
+\displaystyle \omega \mapsto \omega ^{k}
+\displaystyle {\overline {A}}=A\cup \{\lim _{n}a_{n}:\forall n\geq 0,\ a_{n}\in A\}
+\displaystyle (f,g)=(\mu ,\varepsilon ),(\varphi ,\operatorname {Id} _{1}),(\lambda ,\chi _{\operatorname {sq} }),(\Lambda ,\log ),(|\mu |,2^{\omega }),(J_{t},\operatorname {Id} _{t}),(d^{3},(d\ast 1)^{2}),
+\displaystyle p_{n}\sim n\log n.
+\displaystyle {\operatorname {id} _{X}}^{-1}=\operatorname {id} _{X}.
+\displaystyle R=\lbrace x_{1},x_{2},\ldots ,x_{\varphi (n)}\rbrace 
+\displaystyle {\frac {X_{N/2}}{N}}\cos(N\pi t)
+\displaystyle \mathbf {k} =(k_{1},k_{2},\dots ,k_{d})
+\displaystyle \lim _{n\to \infty }{\frac {f(n)}{g(n)}}=0
+\displaystyle d_{P}=d{\pmod {p-1}}
+\displaystyle \zeta (s)={\frac {s}{s-1}}-\sum _{n=1}^{\infty }{\bigl (}\zeta (s+n)-1{\bigr )}{\frac {s(s+1)\cdots (s+n-1)}{(n+1)!}}.
+\displaystyle 2\not \equiv 4{\pmod {4}}.
+\displaystyle \zeta (s)\,\sum _{n=1}^{\infty }{\frac {\mu (n)}{n^{s}}}=1,\;\;{\mathfrak {R}}\,s>0.
+\displaystyle x_{0},\ldots ,x_{N-1}
+\displaystyle h=hash(m);(h^{e})^{d}=h^{ed}=h^{de}=(h^{d})^{e}\equiv h{\pmod {n}}
+\displaystyle \left\{{\frac {\varphi (n)}{n}},\;\;n=1,2,\cdots \right\}
+\displaystyle \prod _{d|n}f(d)\;
+\displaystyle \left|\zeta (x)^{3}\zeta (x+iy)^{4}\zeta (x+2iy)\right|=\exp \left(\sum _{n,p}{\frac {3+4\cos(ny\log p)+\cos(2ny\log p)}{np^{nx}}}\right)\geq 1
+\displaystyle {\mathcal {M}}_{2}(\mathbb {R} )=\left\{\left.{\begin{pmatrix}a&b\\c&d\end{pmatrix}}\right|\ a,b,c,d\in \mathbb {R} \right\}.
+\displaystyle 2^{2}\cdot 30\cdot 2310
+\displaystyle f^{-1}(y)={\sqrt {y}}.
+\displaystyle n=k^{m}\in \mathbb {Z} ^{+}
+\displaystyle \Delta \geq (\ln \ln N)^{3}
+\displaystyle {\frac {6}{\pi ^{2}}}<{\frac {\phi (n)\sigma (n)}{n^{2}}}<1.\;
+\displaystyle ({\tfrac {a}{p}})
+\displaystyle \langle \phi |\psi \rangle 
+\displaystyle 2^{3}\cdot 3^{2}\cdot 5\cdot 7\cdot 11
+\displaystyle \zeta (s)=\sum _{n=1}^{\infty }n^{-s}={\frac {1}{1^{s}}}+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+\cdots \qquad \sigma =\operatorname {Re} (s)>1.
+\displaystyle \zeta (s)=\sum _{n=0}^{\infty }B_{n,\geq 2}^{(s)}{\frac {(W_{k}(-1))^{n}}{n!}},
+\displaystyle m_{2}
+\displaystyle V_{j+1}=\left(A\times V_{j}\right){\bmod {P}}
+\displaystyle x_{n-\ell }\,
+\displaystyle 1=\sum _{i=1}^{k}S_{i}(X)Q_{i}(X).
+\displaystyle \gamma ={\frac {3}{4}}-{\frac {11}{96}}-{\frac {1}{72}}-{\frac {311}{46080}}-{\frac {5}{1152}}-{\frac {7291}{2322432}}-{\frac {243}{100352}}-\ldots 
+\displaystyle f\circ h=\operatorname {id} _{Y}.
+\displaystyle B={\begin{pmatrix}0&1\\0&0\end{pmatrix}}
+\displaystyle \lambda ^{4}=1.
+\displaystyle \sum _{h=1}^{\infty }\left(\sum _{f*g=h}1*\varphi (g)\right){\frac {1}{h^{s}}}=\sum _{h=1}^{\infty }\left(\sum _{d|h}1*\varphi (d)\right){\frac {1}{h^{s}}}
+\displaystyle f(n)=\sum _{d\,\mid \,n}\mu (d)g\left({\frac {n}{d}}\right)\quad {\text{for every integer }}n\geq 1
+\displaystyle f=O(g)\Rightarrow kf=O(g).
+\displaystyle (\mathbb {Z} /20\mathbb {Z} )^{\times }
+\displaystyle (\mathbb {Z} /16\mathbb {Z} )^{\times }
+\displaystyle f^{-1}(y)=\sum _{n=1}^{\infty }{\frac {y^{n/3}}{n!}}\lim _{\theta \to 0}\left({\frac {\mathrm {d} ^{\,n-1}}{\mathrm {d} \theta ^{\,n-1}}}\left({\frac {\theta }{\sqrt[{3}]{\theta -\sin(\theta )}}}\right)^{n}\right).
+\displaystyle {\frac {x}{\log x+2}}<\pi (x)<{\frac {x}{\log x-4}}.
+\displaystyle {\overline {A}}=X
+\displaystyle {N-1 \choose n}\,
+\displaystyle (\mathbb {Z} /2^{k}\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{2^{k-2}}.
+\displaystyle \sum _{p\mid 18}f(p)=f(2)+f(3),\ 
+\displaystyle {\frac {\zeta (2s)}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {\lambda (n)}{n^{s}}}.
+\displaystyle \sigma _{k}^{*}(n)=(-1)^{n}\sum _{d\mid n}(-1)^{d}d^{k}={\begin{cases}\sum _{d\mid n}d^{k}=\sigma _{k}(n)&{\text{if }}n{\text{ is odd }}\\\sum _{{d\mid n}}d^{k}-\sum _{{d\mid n}}d^{k}&{\text{if }}n{\text{ is even}}.\end{cases}}
+\displaystyle 0\equiv {\frac {2^{2m\lambda }-1}{2^{m}+1}}=(2^{m}-1)\left(1+2^{2m}+2^{4m}+\cdots +2^{2(\lambda -1)m}\right)\equiv -2\lambda {\pmod {2^{m}+1}}.
+\displaystyle f(ab)=f(a)f(b).
+\displaystyle f(n)=c/n
+\displaystyle 2^{5}\cdot 3^{2}\cdot 5\cdot 7
+\displaystyle \forall \varepsilon >0\;\exists n_{0}\;\forall n>n_{0}\;\left|{f(n) \over g(n)}-1\right|<\varepsilon 
+\displaystyle F_{n}=F_{0}\cdots F_{n-1}+2
+\displaystyle {\overline {f}}:R/I\to S
+\displaystyle \sum _{k=1}^{n}{\overline {z^{j\cdot k}}}\cdot z^{j'\cdot k}=n\cdot \delta _{j,j'}
+\displaystyle f(x)=(2x+8)^{3}
+\displaystyle \sum _{p\mid n}f(p)\;
+\displaystyle \sin x=\Omega (1)\ (x\rightarrow \infty ),
+\displaystyle b_{n}=\sum _{d\mid n}\mu \left({\frac {n}{d}}\right)a_{d}
+\displaystyle 0\to M'[S^{-1}]\to M[S^{-1}]\to M''[S^{-1}]\to 0
+\displaystyle \pi _{4,1}(x)-\pi _{4,3}(x),
+\displaystyle x_{n}\in \mathbb {R} 
+\displaystyle \lambda (n)<(\ln A)^{c\ln \ln \ln A}
+\displaystyle u
+\displaystyle \mathbb {Z} /n\mathbb {Z} 
+\displaystyle \zeta (2)=\pi ^{2}/6
+\displaystyle 2^{3}\cdot 6^{2}\cdot 2310
+\displaystyle \mathbf {X} ={\mathcal {F}}\left\{\mathbf {x} \right\}
+\displaystyle a^{2^{\overset {n}{}}}+b^{2^{\overset {n}{}}}
+\displaystyle {\begin{aligned}\sum _{n\geq 1}{\frac {\mu (n)q^{n}}{1+q^{n}}}&=q-2q^{2}\\\sum _{n\geq 1}{\frac {\mu (\alpha n)q^{n}}{1-q^{n}}}&=-\sum _{n\geq 0}q^{\alpha ^{n}}.\end{aligned}}
+\displaystyle {\begin{aligned}\gamma (0,q)&={\frac {\gamma -\ln q}{q}},\\\sum _{a=0}^{q-1}\gamma (a,q)&=\gamma ,\\q\gamma (a,q)&=\gamma -\sum _{j=1}^{q-1}e^{-{\frac {2\pi aij}{q}}}\ln \left(1-e^{\frac {2\pi ij}{q}}\right),\end{aligned}}
+\displaystyle \int {\frac {1}{x}}\,dx=\ln x+C.
+\displaystyle \sum _{\delta \mid n}d^{\;3}(\delta )=\left(\sum _{\delta \mid n}d(\delta )\right)^{2}.\;
+\displaystyle 2^{6}\cdot 3^{2}\cdot 5\cdot 7
+\displaystyle \sigma _{k}(n)=\prod _{i=1}^{\omega (n)}{\frac {p_{i}^{(a_{i}+1)k}-1}{p_{i}^{k}-1}}=\prod _{i=1}^{\omega (n)}\left(1+p_{i}^{k}+p_{i}^{2k}+\cdots +p_{i}^{a_{i}k}\right).
+\displaystyle \sum _{\delta \mid n}|\mu (\delta )|=2^{\omega (n)}.
+\displaystyle \sum _{\stackrel {1\leq k\leq n}{\gcd(k,n)=1}}\gcd(k-1,n)=\varphi (n)d(n).
+\displaystyle \zeta (-n)=(-1)^{n}{\frac {B_{n+1}}{n+1}}
+\displaystyle R[t_{1},\ldots ,t_{n}]
+\displaystyle {\frac {x}{\log x-(1-\varepsilon )}}<\pi (x)<{\frac {x}{\log x-(1+\varepsilon )}}.
+\displaystyle 2\cdot 6^{2}\cdot 210
+\displaystyle \mathbf {n} /\mathbf {N} =(n_{1}/N_{1},\dots ,n_{d}/N_{d})
+\displaystyle \gamma \sim H_{n}-\ln \left({n+{\frac {1}{2}}+{\frac {1}{24n}}-{\frac {1}{48n^{3}}}+\cdots }\right)
+\displaystyle 397\cdot 2^{16}+1
+\displaystyle (1,1)
+\displaystyle \mathbf {Z} /n{\mathbf {Z} }
+\displaystyle \sum _{n=1}^{\infty }a_{n}
+\displaystyle (\mathbb {Z} /{p^{k}}\mathbb {Z} )^{\times }
+\displaystyle \mathbf {n} /\mathbf {N} 
+\displaystyle p_{1}^{d_{1}}\times p_{2}^{d_{2}}\times \cdots \times p_{k}^{d_{k}},0\leq d_{i}\leq c_{i},0<i\leq k
+\displaystyle \varphi (36)=\varphi \left(2^{2}3^{2}\right)=36\left(1-{\tfrac {1}{2}}\right)\left(1-{\tfrac {1}{3}}\right)=36\cdot {\tfrac {1}{2}}\cdot {\tfrac {2}{3}}=12.
+\displaystyle \pi (x)=\operatorname {Li} (x)+O\left(xe^{-a{\sqrt {\log x}}}\right)\quad {\text{as }}x\to \infty 
+\displaystyle \sigma \to 0^{+}
+\displaystyle {\begin{aligned}x&\equiv a{\pmod {m}}\\x&\equiv b{\pmod {n}},\end{aligned}}
+\displaystyle \mathbf {U} =\mathbf {F} /{\sqrt {N}}
+\displaystyle {\mathbb {Z} }/N{\mathbb {Z} }\cong {\mathbb {Z} }/n_{1}{\mathbb {Z} }\times \cdots \times {\mathbb {Z} }/n_{k}{\mathbb {Z} }
+\displaystyle (f*g)(x)=\int _{-\infty }^{\infty }f(y)g(x-y)dy.
+\displaystyle f_{1}=O(g){\text{ and }}f_{2}=O(g)\Rightarrow f_{1}+f_{2}\in O(g)
+\displaystyle X_{k}e^{-i2\pi k\ell /N}\,
+\displaystyle aR
+\displaystyle \left\{{\frac {\varphi (n+1)}{\varphi (n)}},\;\;n=1,2,\cdots \right\}
+\displaystyle D(a,s)\cdot D(b,s)=\sum _{n=1}^{\infty }(a*b)(n)n^{-s}\ 
+\displaystyle 2^{3}\cdot 3^{3}\cdot 5\cdot 7
+\displaystyle r_{2}(n)=4\sum _{d\mid n}\chi (d),\;
+\displaystyle \Omega _{R}
+\displaystyle R\times R{\stackrel {a}{\to }}R
+\displaystyle |f(x)|\leq \varepsilon g(x)\qquad {\text{for all }}x\geq N~.
+\displaystyle (\mathbb {Z} /p\mathbb {Z} )^{*}
+\displaystyle k({\mathfrak {p}})
+\displaystyle 1\times 4+(-1)\times 3=1.
+\displaystyle 7^{4}\equiv 1{\pmod {10}}
+\displaystyle F_{0}\cdots F_{j-1}
+\displaystyle \mathbb {R} ^{n}
+\displaystyle a_{i,0},a_{i,1},\ldots ,a_{i,r_{i}-1}
+\displaystyle \int _{1}^{a}{\frac {1}{x}}\,dx=\ln a,
+\displaystyle 1,2,3,6,9,18,27,54.\,
+\displaystyle \tau (n)={\frac {65}{756}}\sigma _{11}(n)+{\frac {691}{756}}\sigma _{5}(n)-{\frac {691}{3}}\sum _{0<k<n}\sigma _{5}(k)\sigma _{5}(n-k),\;
+\displaystyle R/\operatorname {ker} f
+\displaystyle 2^{5}\cdot 3^{2}\cdot 5\cdot 7\cdot 11
+\displaystyle w(a,b)=u(a)v(b),
+\displaystyle a^{b}{\bmod {c}}
+\displaystyle \sigma \geq \operatorname {Re} (s)
+\displaystyle 6^{3}\cdot 2310
+\displaystyle \pi ^{-{\frac {s}{2}}}\Gamma \left({\frac {s}{2}}\right)\zeta (s)={\frac {1}{s-1}}-{\frac {1}{s}}+{\frac {1}{2}}\int _{0}^{1}\left(\theta (it)-t^{-{\frac {1}{2}}}\right)t^{{\frac {s}{2}}-1}\,\mathrm {d} t+{\frac {1}{2}}\int _{1}^{\infty }{\bigl (}\theta (it)-1{\bigr )}t^{{\frac {s}{2}}-1}\,\mathrm {d} t.
+\displaystyle \exists k>0\;\exists n_{0}\;\forall n>n_{0}\;|f(n)|\leq k\cdot g(n)
+\displaystyle \mathbf {N} -1=(N_{1}-1,N_{2}-1,\dots ,N_{d}-1)
+\displaystyle \int \limits _{0}^{1}x^{{s \over 2}-1}\left\{{1 \over {\sqrt {x}}}\psi \left({1 \over x}\right)+{1 \over 2{\sqrt {x}}}-{1 \over 2}\right\}\,dx+\int \limits _{1}^{\infty }x^{{s \over 2}-1}\psi (x)\,dx
+\displaystyle r=z+{\frac {1}{z}}
+\displaystyle 2^{\omega (n)}\leq d(n)\leq 2^{\Omega (n)}.\;
+\displaystyle N-k
+\displaystyle \{\dots ,-11,-7,-5,-3,-2,2,3,5,7,11,\dots \}\,.
+\displaystyle \textstyle (n+1)^{s}-n^{s}=\int _{n}^{n+1}sx^{s-1}\,dx={\mathcal {O}}(n^{s-1})
+\displaystyle 2^{\omega (n)}=\sum _{\delta \mid n}\mu \left({\frac {n}{\delta }}\right)d(\delta ^{2}).
+\displaystyle k\mapsto \left(\omega \mapsto \omega ^{k}\right)
+\displaystyle j=0,\ldots ,r_{j}.
+\displaystyle \sum _{i\in I}\alpha _{i}f_{i}=0,
+\displaystyle 7^{222}\equiv 7^{4\times 55+2}\equiv (7^{4})^{55}\times 7^{2}\equiv 1^{55}\times 7^{2}\equiv 49\equiv 9{\pmod {10}}
+\displaystyle s_{o}(n,k)\pm s_{e}(n,k)=[q^{n}](\mp q;q)_{\infty }{\frac {q^{k}}{1\pm q^{k}}}
+\displaystyle \operatorname {Br} (F/k)
+\displaystyle f({\vec {x}}){\text{ is }}O(g({\vec {x}})){\text{ as }}{\vec {x}}\to \infty 
+\displaystyle 2^{4}\cdot 3^{4}\cdot 5\cdot 7\cdot 11
+\displaystyle S(t)={\frac {1}{\pi }}\arg {\zeta \left({\tfrac {1}{2}}+it\right)}
+\displaystyle \psi (x):=\sum _{n=1}^{\infty }e^{-n^{2}\pi x}
+\displaystyle n=61\times 53=3233
+\displaystyle \Lambda (n)=\sum _{\delta \mid n}\mu \left({\frac {n}{\delta }}\right)\log(\delta ).
+\displaystyle r_{8}(n)=16\sigma _{3}^{*}(n).\;
+\displaystyle f\ll g\iff f\in O(g),
+\displaystyle x
+\displaystyle \phi (q)=\sum _{\delta \mid q}\mu \left({\frac {q}{\delta }}\right)\delta .
+\displaystyle G_{j}:={\frac {1}{2}}\left\lceil {\frac {j}{2}}\right\rceil \left\lceil {\frac {3j+1}{2}}\right\rceil 
+\displaystyle \left\{{\begin{matrix}{\frac {1}{W}}&{\mbox{if }}2n<W{\mbox{ or }}2(N-n)<W\\0&{\mbox{otherwise}}\end{matrix}}\right.
+\displaystyle r_{1}x_{1}+\cdots +r_{n}x_{n},\quad r_{i}\in R,\quad x_{i}\in I,
+\displaystyle {\frac {x}{\log x}}e^{{\big (}C+o(1){\big )}(\log \log \log x)^{2}}
+\displaystyle 25\times 3-24\times 4=-21.
+\displaystyle {\begin{aligned}\lim _{z\to 0}{\frac {1}{z}}\left({\frac {1}{\Gamma (1+z)}}-{\frac {1}{\Gamma (1-z)}}\right)&=2\gamma \\\lim _{z\to 0}{\frac {1}{z}}\left({\frac {1}{\Psi (1-z)}}-{\frac {1}{\Psi (1+z)}}\right)&={\frac {\pi ^{2}}{3\gamma ^{2}}}.\end{aligned}}
+\displaystyle \sum _{n=2}^{\infty }{\bigl (}\zeta (n)-1{\bigr )}=1
+\displaystyle {\begin{aligned}e^{x}&=1+x+{\frac {x^{2}}{2!}}+{\frac {x^{3}}{3!}}+{\frac {x^{4}}{4!}}+\dotsb &{\text{for all }}x\\&=1+x+{\frac {x^{2}}{2}}+O(x^{3})&{\text{as }}x\to 0\\&=1+x+O(x^{2})&{\text{as }}x\to 0\\\end{aligned}}
+\displaystyle H(\mathbf {x} )
+\displaystyle \scriptstyle \mathbb {R} ^{+}\;\equiv \;\left(0,\,+\infty \right)
+\displaystyle F_{23}
+\displaystyle {\frac {dy}{dx}}=y\quad \Rightarrow \quad {\frac {dy}{y}}=dx\quad \Rightarrow \quad \int {\frac {1}{y}}\,dy=\int 1\,dx\quad \Rightarrow \quad \int {\frac {1}{y}}\,dy=x+C=\ln y+C.
+\displaystyle \sum _{i=1}^{k}A_{i}(X)S_{i}(X)Q_{i}(X).
+\displaystyle x\ \operatorname {mod} N\;\mapsto \;(x\ \operatorname {mod} n_{1},\,\ldots ,\,x\ \operatorname {mod} n_{k})
+\displaystyle F(T;H)=\max _{|t-T|\leq H}\left|\zeta \left({\tfrac {1}{2}}+it\right)\right|,\qquad G(s_{0};\Delta )=\max _{|s-s_{0}|\leq \Delta }|\zeta (s)|.
+\displaystyle \mathbf {n} =(n_{1},n_{2},\dots ,n_{d})
+\displaystyle \operatorname {Li} (n)
+\displaystyle H_{i}(X,\mathbb {Z} )
+\displaystyle F=f(C)={\tfrac {9}{5}}C+32;
+\displaystyle {\mathcal {F}}\mathbf {x} 
+\displaystyle {\mathbb {Z} }/N{\mathbb {Z} },
+\displaystyle a^{(p-1)/2}\pm 1
+\displaystyle O((\log n)^{6+\varepsilon })
+\displaystyle x_{n}={\frac {1}{N}}\sum _{k=0}^{N-1}X_{k}e^{i2\pi kn/N}
+\displaystyle ed-1=h(p-1)=k(q-1)
+\displaystyle f(n)=\sum _{d\mid n}\mu \left({\frac {n}{d}}\right)g(d).
+\displaystyle f^{-1}(y)=ab^{-1}y{\mbox{.}}
+\displaystyle \pi (n)\sim {\frac {n}{\log n}},
+\displaystyle {\frac {x}{\log x}}\left(1+{\frac {1}{\log x}}\right)<\pi (x)<{\frac {x}{\log x}}\left(1+{\frac {1}{\log x}}+{\frac {2.51}{(\log x)^{2}}}\right).
+\displaystyle f={\overline {f}}\circ p
+\displaystyle b_{m}=(a*1)(m)=\sum _{n\mid m}a_{n}.\,
+\displaystyle [0,\infty )^{2}
+\displaystyle \pi (x)\sim {\frac {x}{\log x}}.
+\displaystyle m^{ed}=m^{ed-1}m=m^{k(q-1)}m=(m^{q-1})^{k}m\equiv 1^{k}m\equiv m{\pmod {q}}.
+\displaystyle \det(\lambda I-\mathbf {U} )=(\lambda -1)^{\left\lfloor {\tfrac {N+4}{4}}\right\rfloor }(\lambda +1)^{\left\lfloor {\tfrac {N+2}{4}}\right\rfloor }(\lambda +i)^{\left\lfloor {\tfrac {N+1}{4}}\right\rfloor }(\lambda -i)^{\left\lfloor {\tfrac {N-1}{4}}\right\rfloor }.
+\displaystyle {\begin{aligned}\gamma &=\int _{0}^{1}\int _{0}^{1}{\frac {x-1}{(1-xy)\ln xy}}\,dx\,dy\\&=\sum _{n=1}^{\infty }\left({\frac {1}{n}}-\ln {\frac {n+1}{n}}\right).\end{aligned}}
+\displaystyle (1-\varepsilon ){\frac {x}{\log x}}<\pi (x)<(1+\varepsilon ){\frac {x}{\log x}}.
+\displaystyle p(t)={\frac {1}{N}}\left[X_{0}+X_{1}e^{i2\pi t}+\cdots +X_{N/2-1}e^{i(N/2-1)2\pi t}+X_{N/2}\cos(N\pi t)+X_{N/2+1}e^{i(-N/2+1)2\pi t}+\cdots +X_{N-1}e^{-i2\pi t}\right]
+\displaystyle [\cdot ]_{\delta }
+\displaystyle \operatorname {Z} (R)
+\displaystyle \displaystyle \bigcap _{n=1}^{\infty }U_{n}
+\displaystyle {\overline {x}}+{\overline {y}}
+\displaystyle \exists C\,\exists M\,\forall n\,\forall m\dots 
+\displaystyle \lambda (fg)=\lambda (f)\lambda (g)
+\displaystyle c_{n}(s)=\sum _{a=1 \atop \gcd(a,n)=1}^{n}e^{2\pi i{\frac {a}{n}}s}.
+\displaystyle f(x)=\Omega (g(x))\Leftrightarrow g(x)=O(f(x))
+\displaystyle 2^{2^{0}}+1
+\displaystyle \sum _{d|n}f(d)\;
+\displaystyle \sin(x+2\pi )=\sin(x)
+\displaystyle 2^{4}\cdot 3^{2}\cdot 5
+\displaystyle {\begin{aligned}x&\equiv a_{1}{\pmod {n_{1}}}\\&\vdots \\x&\equiv a_{k}{\pmod {n_{k}}},\\\end{aligned}}
+\displaystyle D(a,s)=\sum _{n=1}^{\infty }a(n)n^{-s}\ 
+\displaystyle n=\sum _{i=1}^{c+1}\varphi ^{i}(n),
+\displaystyle \textstyle s_{0}\in \mathbb {C} ,\operatorname {Re} (s_{0})>0
+\displaystyle L_{f}(q):=\sum _{n\geq 1}{\frac {f(n)q^{n}}{1-q^{n}}}={\frac {1}{(q;q)_{\infty }}}\sum _{n\geq 1}\left(s_{n,k}f(k)\right)q^{n},
+\displaystyle \sum _{k=1}^{n}\varphi (k)={\tfrac {1}{2}}\left(1+\sum _{k=1}^{n}\mu (k)\left\lfloor {\frac {n}{k}}\right\rfloor ^{2}\right)={\frac {3}{\pi ^{2}}}n^{2}+O\left(n(\log n)^{\frac {2}{3}}(\log \log n)^{\frac {4}{3}}\right)
+\displaystyle \mathbf {F} ^{-1}={\frac {1}{N}}\mathbf {F} ^{*}
+\displaystyle 2^{4}\cdot 3^{2}\cdot 5\cdot 7\cdot 11
+\displaystyle X_{2}=e^{-i2\pi 2\cdot 0/4}\cdot 1+e^{-i2\pi 2\cdot 1/4}\cdot (2-i)+e^{-i2\pi 2\cdot 2/4}\cdot (-i)+e^{-i2\pi 2\cdot 3/4}\cdot (-1+2i)=-2i
+\displaystyle x_{2},x_{2}+n_{1}n_{2},x_{2}+2n_{1}n_{2},\ldots 
+\displaystyle G(x)=\sum _{1\leq n\leq x}\alpha (n)F\left({\frac {x}{n}}\right)\quad {\mbox{ for all }}x\geq 1
+\displaystyle H(H(\mathbf {x} ))
+\displaystyle C\left(\epsilon \right)\left|\tau \right|^{{\frac {1}{2}}+\epsilon }
+\displaystyle \gamma =\lim _{n\to \infty }\left(\sum _{k=1}^{n}{\frac {1}{k}}-\ln {\sqrt {\sum _{k=1}^{n}k}}\,\right)-{\frac {\ln 2}{2}}.
+\displaystyle 1\leq i\leq k.
+\displaystyle \sum _{1\leq k\leq n \atop (k,n)=1}\!\!k={\tfrac {1}{2}}n\varphi (n)\quad {\text{for }}n>1
+\displaystyle 2/3\equiv x{\bmod {6}}
+\displaystyle 1+{\frac {\alpha \beta }{\gamma .1}}+{\mbox{etc.}}
+\displaystyle xy=yx
+\displaystyle c(n):=\sum _{ij=n}a(i)b(j)=\sum _{i\mid n}a(i)b\left({\frac {n}{i}}\right),
+\displaystyle \sum _{n\geq 0}{\frac {f_{n}z^{n}}{(n+1)^{s}}}={\frac {(-1)^{s-1}}{(s-1)!}}\int _{0}^{1}\log ^{s-1}(t)F(tz)dt,\ s\geq 1.
+\displaystyle a^{2^{\overset {n}{}}}+1
+\displaystyle f^{-1}(\left\{1,4,9,16\right\})=\left\{-4,-3,-2,-1,1,2,3,4\right\}
+\displaystyle \operatorname {SR} (n)=\sum _{d\,|\,n}\operatorname {SP} (d).
+\displaystyle f:\oplus _{1}^{n}U\to \oplus _{1}^{n}U
+\displaystyle \sum _{n\geq 1}{\frac {2^{\omega (n)}}{n^{s}}}={\frac {\zeta (s)^{2}}{\zeta (2s)}}
+\displaystyle \gcd(a,b)=\sum \limits _{k=1}^{a}\exp(2\pi ikb/a)\cdot \sum \limits _{d\left|a\right.}{\frac {c_{d}(k)}{d}}
+\displaystyle {\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{5}}+{\tfrac {1}{7}}+{\tfrac {1}{11}}+\cdots 
+\displaystyle (f\,*\,g)(n)=\sum _{d|n}f(d)\,g\left({\frac {n}{d}}\right)
+\displaystyle (\mathbb {Z} /4\mathbb {Z} )^{\times }\cong \mathrm {C} _{2},
+\displaystyle \sum _{n\geq 1}{\frac {\mu (n)}{n^{s}}}={\frac {1}{\zeta (s)}}
+\displaystyle g(t)=\sum _{s\leq t}f(s)\qquad {\text{ for all }}t\in P
+\displaystyle \zeta (s)=\pi ^{\frac {s}{2}}{\frac {\prod _{\rho }\left(1-{\frac {s}{\rho }}\right)}{2(s-1)\Gamma \left(1+{\frac {s}{2}}\right)}}.
+\displaystyle X_{0}=e^{-i2\pi 0\cdot 0/4}\cdot 1+e^{-i2\pi 0\cdot 1/4}\cdot (2-i)+e^{-i2\pi 0\cdot 2/4}\cdot (-i)+e^{-i2\pi 0\cdot 3/4}\cdot (-1+2i)=2
+\displaystyle {\mathcal {F}}\{\mathbf {x} \}[m]=\sum \limits _{k=1}^{n}x_{k}\cdot e^{{-2\pi i}{\frac {mk}{n}}}
+\displaystyle 2^{3}\cdot 6\cdot 2310
+\displaystyle 6^{2}\cdot 2310
+\displaystyle \sum _{n=1}^{\infty }{\frac {\varphi (n)}{n^{s}}}={\frac {\zeta (s-1)}{\zeta (s)}}.
+\displaystyle p=61
+\displaystyle \lambda (n)=(-1)^{\Omega (n)}.\;
+\displaystyle \Pi (x)=\sum _{n\leq x}{\frac {\Lambda (n)}{\log n}}.\;
+\displaystyle P(X)=\sum _{i=1}^{k}B_{i}(X)Q_{i}(X).
+\displaystyle {\frac {z(1+z)^{s}}{\ln(1+z)}}=\sum _{n=0}^{\infty }z^{n}\psi _{n}(s),\qquad |z|<1,
+\displaystyle 2n^{2}+3n+1=2n^{2}+O(n).
+\displaystyle \gcd(54,24)=6.\,
+\displaystyle X_{k_{1},k_{2},\dots ,k_{d}}=\sum _{n_{1}=0}^{N_{1}-1}\left(\omega _{N_{1}}^{~k_{1}n_{1}}\sum _{n_{2}=0}^{N_{2}-1}\left(\omega _{N_{2}}^{~k_{2}n_{2}}\cdots \sum _{n_{d}=0}^{N_{d}-1}\omega _{N_{d}}^{~k_{d}n_{d}}\cdot x_{n_{1},n_{2},\dots ,n_{d}}\right)\right)\,,
+\displaystyle \mathbf {U} ^{-1}=\mathbf {U} ^{*}
+\displaystyle f(s)=\sum _{n=1}^{\infty }{\frac {a_{n}}{n^{s}}}
+\displaystyle a^{m}\equiv 1{\pmod {n}}
+\displaystyle |g|=0
+\displaystyle f^{-1}\left(\,f(x)\,\right)=x
+\displaystyle \lim _{n\to \infty }{f(n) \over g(n)}=1
+\displaystyle 2^{4}\cdot 6\cdot 210
+\displaystyle g\circ f=\operatorname {id} _{X}.
+\displaystyle {\text{If }}k\geq 4,\;\;\;r_{k}(n)>0.
+\displaystyle -\zeta ^{\prime }(s)=\sum _{n=2}^{\infty }{\frac {\log(n)}{n^{s}}},\ \Re (s)>1.
+\displaystyle n=0,\ldots ,N-1
+\displaystyle {\begin{aligned}\sum _{n\geq 1}{\frac {f(n)q^{n}}{1+q^{n}}}&=\sum _{n\geq 1}{\frac {f(2n-1)q^{2n-1}}{1-q^{2n-1}}}-\sum _{n\geq 1}{\frac {2f(n)q^{2n}}{1-q^{2n}}}\\&={\frac {1}{2}}\left(L_{f}(q)-L_{f}(-q)\right)-2\cdot L_{f}(q^{2}).\end{aligned}}
+\displaystyle {\frac {1}{L(\chi ,s)}}=\sum _{n=1}^{\infty }{\frac {\mu (n)\chi (n)}{n^{s}}}
+\displaystyle g(y)={\frac {y+7}{5}}.
+\displaystyle x\operatorname {mod} I
+\displaystyle {\begin{aligned}&\sum _{n=1}^{\infty }a_{n}x^{n}\\={}&x+{m \choose 1}\sum _{a=2}^{\infty }x^{a}+{m \choose 2}\sum _{a=2}^{\infty }\sum _{b=2}^{\infty }x^{ab}\\&{}+{m \choose 3}\sum _{a=2}^{\infty }\sum \limits _{b=2}^{\infty }\sum _{c=2}^{\infty }x^{abc}+{m \choose 4}\sum _{a=2}^{\infty }\sum _{b=2}^{\infty }\sum \limits _{c=2}^{\infty }\sum _{d=2}^{\infty }x^{abcd}+\cdots \end{aligned}}
+\displaystyle X_{3}=e^{-i2\pi 3\cdot 0/4}\cdot 1+e^{-i2\pi 3\cdot 1/4}\cdot (2-i)+e^{-i2\pi 3\cdot 2/4}\cdot (-i)+e^{-i2\pi 3\cdot 3/4}\cdot (-1+2i)=4+4i
+\displaystyle \lambda (p_{1}^{a_{1}}p_{2}^{a_{2}}\dots p_{\omega (n)}^{a_{\omega (n)}})=\operatorname {lcm} [\lambda (p_{1}^{a_{1}}),\;\lambda (p_{2}^{a_{2}}),\dots ,\lambda (p_{\omega (n)}^{a_{\omega (n)}})].
+\displaystyle c_{n}=\sum _{m=0}^{d-1}a_{m}b_{n-m\ \mathrm {mod} \ d}\qquad \qquad \qquad n=0,1\dots ,d-1
+\displaystyle {\mathcal {F}}(\{x_{n}\cdot e^{{\frac {i2\pi }{N}}nm}\})_{k}=X_{k-m}
+\displaystyle f(x)=\Omega _{\pm }(g(x))
+\displaystyle {\mathfrak {p}}R_{\mathfrak {p}}
+\displaystyle (0,n_{1}n_{2}-1)
+\displaystyle \sigma _{5}(n)={\frac {1}{21}}\left\{10(3n-1)\sigma _{3}(n)+\sigma _{1}(n)+240\sum _{0<k<n}\sigma _{1}(k)\sigma _{3}(n-k)\right\}.\;
+\displaystyle BA={\begin{pmatrix}1&0\\0&0\end{pmatrix}}
+\displaystyle 2^{3}\cdot 30\cdot 2310
+\displaystyle \{\pm 1,2^{k-1}\pm 1\}\cong \mathrm {C} _{2}\times \mathrm {C} _{2},
+\displaystyle \sum _{k=1}^{n}{\frac {\varphi (k)}{k}}=\sum _{k=1}^{n}{\frac {\mu (k)}{k}}\left\lfloor {\frac {n}{k}}\right\rfloor ={\frac {6}{\pi ^{2}}}n+O\left((\log n)^{\frac {2}{3}}(\log \log n)^{\frac {4}{3}}\right)
+\displaystyle H^{*}(X,\mathbb {Z} )=\bigoplus _{i=0}^{\infty }H^{i}(X,\mathbb {Z} ),
+\displaystyle A_{i}(X)S_{i}(X)
+\displaystyle \left(\cos {\frac {2\pi }{n}}+i\sin {\frac {2\pi }{n}}\right)^{k}=\cos {\frac {2k\pi }{n}}+i\sin {\frac {2k\pi }{n}}\neq 1
+\displaystyle f_{n}(x)={\frac {(\ln x)^{n}}{x}}
+\displaystyle \ O(|k|g)=O(g)
+\displaystyle {\begin{aligned}&{1 \over {s-1}}-{1 \over s}+\int \limits _{0}^{1}x^{{{s} \over 2}-{3 \over 2}}\psi \left({1 \over x}\right)\,dx+\int \limits _{1}^{\infty }x^{{{s} \over 2}-1}\psi (x)\,dx\\[5pt]={}&{1 \over {s({s-1})}}+\int \limits _{1}^{\infty }\left({x^{-{{s} \over 2}-{1 \over 2}}+x^{{{s} \over 2}-1}}\right)\psi (x)\,dx\end{aligned}}
+\displaystyle \zeta (s)=2^{s}\pi ^{s-1}\ \sin \left({\frac {\pi s}{2}}\right)\ \Gamma (1-s)\ \zeta (1-s),
+\displaystyle \deg A_{i}<d_{i}
+\displaystyle q=p_{1}^{e_{1}}...p_{s}^{e_{s}}.
+\displaystyle {\begin{aligned}h(D)&={\frac {1}{D}}\sum _{r=1}^{|D|}r\left({\frac {D}{r}}\right)\\&={\frac {1}{2-\left({\tfrac {D}{2}}\right)}}\sum _{r=1}^{|D|/2}\left({\frac {D}{r}}\right).\end{aligned}}
+\displaystyle \sum _{\delta \mid n}\lambda (\delta )={\begin{cases}&1{\text{ if }}n{\text{ is a square }}\\&0{\text{ if }}n{\text{ is not  square.}}\end{cases}}
+\displaystyle \sum _{n\geq 1}{\frac {d(n)^{2}}{n^{s}}}={\frac {\zeta (s)^{4}}{\zeta (2s)}}
+\displaystyle \varphi (mn)=\varphi (m)\varphi (n)\cdot {\frac {d}{\varphi (d)}}\quad {\text{where }}d=\operatorname {gcd} (m,n)
+\displaystyle g=f*{\mathit {1}}
+\displaystyle [G:H]={|G| \over |H|}
+\displaystyle R[t_{1},t_{2},\cdots ]=\varinjlim R[t_{1},t_{2},\cdots ,t_{m}].
+\displaystyle \ell ^{2}(\mathbb {Z} /N\mathbb {Z} )
+\displaystyle {\frac {1}{x}}\sum _{n\leq x}\lambda (n)={\frac {x}{\ln x}}e^{B(1+o(1))\ln \ln x/(\ln \ln \ln x)}
+\displaystyle G(x)=\sum _{1\leq n\leq x}F\left({\frac {x}{n}}\right)\quad {\mbox{ for all }}x\geq 1
+\displaystyle m^{ed}=m^{1+h\varphi (n)}=m(m^{\varphi (n)})^{h}\equiv m(1)^{h}\equiv m{\pmod {n}}
+\displaystyle \forall \varepsilon >0
+\displaystyle \pi _{n,a}(x)\sim {\frac {1}{\varphi (n)}}\operatorname {Li} (x),
+\displaystyle \gamma 
+\displaystyle \psi (x)=\sum _{p\leq x}\log p\left\lfloor {\frac {\log x}{\log p}}\right\rfloor \leq \sum _{p\leq x}\log x=\pi (x)\log x
+\displaystyle \Pi (x)=\sum _{p^{k}\leq x}{\frac {1}{k}}.
+\displaystyle {\frac {1}{z}}={\frac {1}{r}}\left(\cos(-\varphi )+i\sin(-\varphi )\right).
+\displaystyle {\mathcal {F}}(\{y_{n}\})_{k}=Y_{k}
+\displaystyle \zeta (s)=\prod _{p}{\frac {1}{1-p^{-s}}}
+\displaystyle \psi (x)=\sum _{n\leq x}\Lambda (n),
+\displaystyle \varphi (n)=n\prod _{p\mid n}\left(1-{\frac {1}{p}}\right),
+\displaystyle \gamma =1-\sum _{n=1}^{\infty }{\frac {C_{n}}{n\,(n+1)!}}=1-{\frac {1}{4}}-{\frac {5}{72}}-{\frac {1}{32}}-{\frac {251}{14400}}-{\frac {19}{1728}}-\ldots 
+\displaystyle {\begin{aligned}\Phi :k[M]&\to \prod _{i\in I}k[M]/\mathrm {Ker} F_{i}\\\Phi (x)&=\left(x+\mathrm {Ker} F_{i}\right)_{i\in I}\end{aligned}}
+\displaystyle {\begin{aligned}\gamma &=\sum _{m=2}^{\infty }(-1)^{m}{\frac {\zeta (m)}{m}}\\&=\ln {\frac {4}{\pi }}+\sum _{m=2}^{\infty }(-1)^{m}{\frac {\zeta (m)}{2^{m-1}m}}.\end{aligned}}
+\displaystyle \left\lfloor A^{3^{n}}\right\rfloor {\text{ and }}\left\lfloor 2^{\cdots ^{2^{2^{\mu }}}}\right\rfloor 
+\displaystyle \phi (\phi (n))
+\displaystyle \mathbf {N} -1
+\displaystyle S\mapsto {\text{the free ring generated by the set }}S
+\displaystyle 2^{6}\cdot 3^{3}\cdot 5\cdot 7\cdot 11
+\displaystyle {\widetilde {a}}_{k}(\gamma )=\sum _{k=1}^{n}s_{n,k}^{(-1)}(\gamma )\times [q^{k}]\left(\sum _{d=1}^{k}{\frac {a_{d}q^{d}}{1-q^{d}}}C(q)\right).
+\displaystyle 2\cdot 6\cdot 2310
+\displaystyle \zeta _{A}(s)=\sum _{f}|f|^{-s}=\sum _{n}\sum _{\deg(f)=n}q^{-sn}=\sum _{n}(q^{n-sn})=(1-q^{1-s})^{-1}.
+\displaystyle \Phi _{p}(z)={\frac {z^{p}-1}{z-1}}=\sum _{k=0}^{p-1}z^{k}.
+\displaystyle f^{-1}(y)={\frac {{\sqrt[{3}]{y}}-8}{2}}.
+\displaystyle (1-{\frac {1}{n}})
+\displaystyle \prod _{p^{k}\mid 24}f(p^{k})=f(2)f(3)f(4)f(8).\ 
+\displaystyle {{\text{d}}{\big (}e^{inx}{\big )}}/{\text{d}}x=ine^{inx}
+\displaystyle \psi (x)=x-\sum _{\rho }{\frac {x^{\rho }}{\rho }}-\log(2\pi )
+\displaystyle \sum _{p}\nu _{p}(n)=\Omega (n).\;
+\displaystyle AB={\begin{pmatrix}0&0\\0&1\end{pmatrix}}
+\displaystyle {\frac {1}{\phi }}=-\sum _{k=1}^{\infty }{\frac {\mu (k)}{k}}\log \left(1-{\frac {1}{\phi ^{k}}}\right).
+\displaystyle f(x)=O(g(x)){\text{ as }}x\to a
+\displaystyle \sigma =\lim \sup _{N\to \infty }{\frac {\ln |A(N)-L|}{\ln N}}=\inf \left\{\sigma ,A(N)-L={\mathcal {O}}(N^{\sigma })\right\}
+\displaystyle P(X)\equiv A_{i}(X){\pmod {P_{i}(X)}},
+\displaystyle {\begin{aligned}\sigma _{7}(n)&={\frac {1}{20}}\left\{21(2n-1)\sigma _{5}(n)-\sigma _{1}(n)+504\sum _{0<k<n}\sigma _{1}(k)\sigma _{5}(n-k)\right\}\\&=\sigma _{3}(n)+120\sum _{0<k<n}\sigma _{3}(k)\sigma _{3}(n-k).\end{aligned}}
+\displaystyle gvg^{-1}=(ad)(bc)
+\displaystyle m^{ed}=m^{ed-1}m=m^{h(p-1)}m=(m^{p-1})^{h}m\equiv 1^{h}m\equiv m{\pmod {p}},
+\displaystyle 2^{3}\cdot 30\cdot 210
+\displaystyle f(n)=O(g(n))
+\displaystyle x\equiv a_{i}M_{i}N_{i}\equiv a_{i}(1-m_{i}n_{i})\equiv a_{i}{\pmod {n_{i}}},
+\displaystyle {\begin{aligned}x&\equiv a_{1}{\pmod {n_{1}}}\\&\vdots \\x&\equiv a_{k}{\pmod {n_{k}}},\end{aligned}}
+\displaystyle \sum _{\delta \mid n}\Lambda (\delta )=\log n.
+\displaystyle g(n)=\sum _{d\mid n}f(d).\;
+\displaystyle s_{n,k}=[q^{n}](q;q)_{\infty }{\frac {q^{k}}{1-q^{k}}},
+\displaystyle {\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{5}}+{\frac {1}{7}}+\cdots +{\frac {1}{p}}.
+\displaystyle \prec \!\!\prec 
+\displaystyle \liminf _{n\to \infty }d(n)=2
+\displaystyle X_{1}=e^{-i2\pi 1\cdot 0/4}\cdot 1+e^{-i2\pi 1\cdot 1/4}\cdot (2-i)+e^{-i2\pi 1\cdot 2/4}\cdot (-i)+e^{-i2\pi 1\cdot 3/4}\cdot (-1+2i)=-2-2i
+\displaystyle \int {\frac {1}{x}}\,dx={\frac {x^{0}}{0}}\ +C
+\displaystyle \mathbf {Z} /\gcd(m,n){\mathbf {Z} }
+\displaystyle \scriptstyle 0<\alpha <1
+\displaystyle {\begin{pmatrix}1&0\\0&1\end{pmatrix}}
+\displaystyle {\frac {-1+i{\sqrt {3}}}{2}},{\frac {-1-i{\sqrt {3}}}{2}}.
+\displaystyle P_{n}=|X_{n}|^{2}
+\displaystyle d(uv)=\sum _{\delta \mid \gcd(u,v)}\mu (\delta )d\left({\frac {u}{\delta }}\right)d\left({\frac {v}{\delta }}\right).\;
+\displaystyle {\mathfrak {p}}
+\displaystyle xR
+\displaystyle {\begin{aligned}f^{-1}(f(C))={}&f^{-1}\left({\tfrac {9}{5}}C+32\right)={\tfrac {5}{9}}\left(({\tfrac {9}{5}}C+32)-32\right)=C,\\&{\text{for every value of }}C,{\text{ and }}\\[6pt]f\left(f^{-1}(F)\right)={}&f\left({\tfrac {5}{9}}(F-32)\right)={\tfrac {9}{5}}\left({\tfrac {5}{9}}(F-32)\right)+32=F,\\&{\text{for every value of }}F.\end{aligned}}
+\displaystyle \Phi _{n}(z)=\prod _{d\,\mid n}\left(z^{\frac {n}{d}}-1\right)^{\mu (d)}=\prod _{d\,\mid n}\left(z^{d}-1\right)^{\mu \left({\frac {n}{d}}\right)},
+\displaystyle F_{n}=2^{2^{n}}+1,
+\displaystyle =0+21+42+40+20+27+10
+\displaystyle {\overline {f}}
+\displaystyle e^{{\frac {i2\pi }{N}}nm}
+\displaystyle 0<c<1/\ln 2
+\displaystyle 0\times 4+(-3)\times 3=-9
+\displaystyle \displaystyle a^{n}=e{\mbox{.}}
+\displaystyle \gcd(a,b)={\frac {|a\cdot b|}{\operatorname {lcm} (a,b)}}
+\displaystyle f_{a}(x)=x^{-a}
+\displaystyle \pi (x)=\operatorname {Li} (x)+O\left(x\exp \left(-{\frac {A(\log x)^{\frac {3}{5}}}{(\log \log x)^{\frac {1}{5}}}}\right)\right).
+\displaystyle F_{a}(s)F_{b}(s)=\left(\sum _{m=1}^{\infty }{\frac {a(m)}{m^{s}}}\right)\left(\sum _{n=1}^{\infty }{\frac {b(n)}{n^{s}}}\right).
+\displaystyle \varphi (n)=\sum \limits _{k=1}^{n}{\operatorname {gcd} (k,n)\cdot \exp \left({\frac {-2\pi ik}{n}}\right)}.
+\displaystyle \sum _{k=1}^{\infty }{\frac {\mu (k)-\varphi (k)}{k}}\log \left(1-{\frac {1}{\phi ^{k}}}\right)=1.
+\displaystyle n=p_{1}^{a_{1}}\cdots p_{k}^{a_{k}}
+\displaystyle a_{1,2}
+\displaystyle I\subseteq P
+\displaystyle \sum _{p^{k}\mid n}f(p^{k})\;
+\displaystyle \displaystyle {\overline {A}}
+\displaystyle \sum _{\stackrel {1\leq k_{1},k_{2},\dots ,k_{s}\leq n}{\gcd(k_{1},k_{2},\dots ,k_{s},n)=1}}\gcd(k_{1}-a_{1},k_{2}-a_{2},\dots ,k_{s}-a_{s},n)^{s}=J_{s}(n)d(n),
+\displaystyle e^{ix}=\cos x+i\sin x,
+\displaystyle (n-1)!\equiv -1{\pmod {n}}
+\displaystyle 2+2+2=6\equiv 0{\pmod {6}}
+\displaystyle a^{n}-b^{n}=(a-b)\sum _{k=0}^{n-1}a^{k}b^{n-1-k}.
+\displaystyle X_{0},\ldots ,X_{N-1}
+\displaystyle \sum _{n=1}^{\infty }{\frac {4\cdot (-1)^{n+1}q^{2n+1}}{1-q^{2n+1}}}=\sum _{m=1}^{\infty }r_{2}(m)q^{m}.
+\displaystyle a^{r}\equiv a^{r+\lambda (n)}{\pmod {n}}
+\displaystyle (2^{r}+1)\mid (2^{k}+1).
+\displaystyle {\frac {1}{2T}}\int _{-T}^{T}|F(a+it)|^{2}\,dt=\sum _{n=1}^{\infty }[f(n)]^{2}n^{-2a}{\text{ as }}T\sim \infty .
+\displaystyle 2^{p-1}\equiv 1{\bmod {p^{2}}}
+\displaystyle g(x)=\sum _{m=1}^{\infty }{\frac {f(mx)}{m^{s}}}\quad {\mbox{ for all }}x\geq 1\quad \Longleftrightarrow \quad f(x)=\sum _{m=1}^{\infty }\mu (m){\frac {g(mx)}{m^{s}}}\quad {\mbox{ for all }}x\geq 1.
+\displaystyle r/f^{n},\,r\in R,\,n\geq 0
+\displaystyle {\begin{aligned}\sigma _{9}(n)&={\frac {1}{11}}\left\{10(3n-2)\sigma _{7}(n)+\sigma _{1}(n)+480\sum _{0<k<n}\sigma _{1}(k)\sigma _{7}(n-k)\right\}\\&={\frac {1}{11}}\left\{21\sigma _{5}(n)-10\sigma _{3}(n)+5040\sum _{0<k<n}\sigma _{3}(k)\sigma _{5}(n-k)\right\}.\;\end{aligned}}
+\displaystyle F_{n}=(F_{n-1}-1)^{2}+1
+\displaystyle a^{p-1}\equiv 1
+\displaystyle \lambda ^{n}(x+y)=\sum _{0}^{n}\lambda ^{i}(x)\lambda ^{n-i}(y)
+\displaystyle X_{k+N}\ {\stackrel {\mathrm {def} }{=}}\ \sum _{n=0}^{N-1}x_{n}e^{-{\frac {i2\pi }{N}}(k+N)n}=\sum _{n=0}^{N-1}x_{n}e^{-{\frac {i2\pi }{N}}kn}\underbrace {e^{-i2\pi n}} _{1}=\sum _{n=0}^{N-1}x_{n}e^{-{\frac {i2\pi }{N}}kn}=X_{k}.
+\displaystyle \sum _{n=1}^{\infty }\mu (n)\,{\frac {q^{n}}{1-q^{n}}}=q.
+\displaystyle \operatorname {Br} (k)
+\displaystyle \sum _{d\mid n}{\frac {\mu (d)}{d}}.
+\displaystyle {\mathfrak {m}}
+\displaystyle \{0,1,\dots ,n-1\}
+\displaystyle X_{0},X_{1},\ldots ,X_{N-1}
+\displaystyle 7^{222}{\pmod {10}}
+\displaystyle phi(n)+sigma(n)=n*tau(n)
+\displaystyle H=gHg^{-1}\forall g\in A_{4}
+\displaystyle -N/2
+\displaystyle a,a^{2},\ldots ,a^{k}\equiv 1{\pmod {n}}
+\displaystyle \displaystyle \varphi ^{c}(n)=2,
+\displaystyle \left\{\mathbf {x_{n}} \right\}:=x_{0},x_{1},\ldots ,x_{N-1}
+\displaystyle p(z)=z^{n}-1
+\displaystyle \zeta (0)=-{\tfrac {1}{2}};
+\displaystyle (\mathbb {Z} /q\mathbb {Z} )^{*}
+\displaystyle P(F_{n})\geq 2^{n+2}(4n+9)+1.
+\displaystyle \gcd(a,b)=\sum _{k|a{\text{ and }}k|b}\varphi (k).
+\displaystyle 0\leq f(n)\leq cg(n)
+\displaystyle \deg S_{i}(X)<d_{i},
+\displaystyle A
+\displaystyle c_{q}(n)c_{r}(n)=c_{qr}(n).\;
+\displaystyle c_{1}\geq c_{2}\geq \cdots \geq c_{k}
+\displaystyle f\cdot g=o(F\cdot G).
+\displaystyle 2^{3}\cdot 3^{2}\cdot 5
+\displaystyle {\begin{aligned}\lim \inf {\frac {\varphi (n+1)}{\varphi (n)}}&=0\quad {\text{and}}\\[5px]\lim \sup {\frac {\varphi (n+1)}{\varphi (n)}}&=\infty .\end{aligned}}
+\displaystyle M_{i}N_{i}+m_{i}n_{i}=1.
+\displaystyle \mathbf {Z} [1/10]
+\displaystyle \sum _{n\leq x}f(n)\sim \sum _{n\leq x}g(n)
+\displaystyle {\begin{aligned}x&=a_{1}+x_{1}n_{1}\\&\vdots \\x&=a_{k}+x_{k}n_{k},\end{aligned}}
+\displaystyle \prod _{p^{k}}f(p^{k})\;
+\displaystyle 7
+\displaystyle |f(\sigma +it)|<C+\varepsilon |\sigma +it|{\frac {1}{\sigma }}
+\displaystyle k(\!(t)\!)=\varinjlim t^{-m}k[\![t]\!]
+\displaystyle \liminf _{n\to \infty }{\frac {f(n)}{g(n)}}>0
+\displaystyle \textstyle N\to \infty 
+\displaystyle (\mathbb {Z} /1\,\mathbb {Z} )^{\times }\cong \mathrm {C} _{1}
+\displaystyle \gamma =\sum _{n=1}^{\infty }{\frac {|G_{n}|}{n}}={\frac {1}{2}}+{\frac {1}{24}}+{\frac {1}{72}}+{\frac {19}{2880}}+{\frac {3}{800}}+\cdots ,
+\displaystyle \omega _{N}^{N}=1
+\displaystyle D(a,s)+D(b,s)=\sum _{n=1}^{\infty }(a+b)(n)n^{-s}\ 
+\displaystyle \zeta (1)=1+{\tfrac {1}{2}}+{\tfrac {1}{3}}+\cdots =\infty ;
+\displaystyle \gamma (a,q)=\lim _{x\to \infty }\left(\sum _{0<n\leq x \atop n\equiv a{\pmod {q}}}{\frac {1}{n}}-{\frac {\ln x}{q}}\right).
+\displaystyle \gamma =-{\frac {2}{1+2a}}\left\{\ln \Gamma (a+1)-{\frac {1}{2}}\ln(2\pi )+{\frac {1}{2}}+\sum _{n=1}^{\infty }{\frac {(-1)^{n}\psi _{n+1}(a)}{n}}\right\},\qquad \Re (a)>-1
+\displaystyle \mathbb {C} ^{n}
+\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong \mathrm {C} _{\varphi (n)},
+\displaystyle A_{i}(X),\ldots ,A_{k}(X)
+\displaystyle 1/(2+{\sqrt {5}})
+\displaystyle a\equiv a^{\lambda (n)+1}{\pmod {n}}
